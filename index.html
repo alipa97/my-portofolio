@@ -1,0 +1,896 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alifa's Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<!-- <body class="smooth-scroll bg-gradient-to-br from-pink-50 via-purple-50 to-blue-50"> -->
+<body class="smooth-scroll bg-white">
+    <div class="blob-container">
+        <div class="blob blob-lg bg-deep-red move-1" style="top: -10%; left: -10%;"></div>
+        
+        <div class="blob blob-md bg-rose move-2" style="top: -5%; right: -5%;"></div>
+        
+        <div class="blob blob-lg bg-soft-pink move-3" style="bottom: -15%; right: -10%;"></div>
+        
+        <div class="blob blob-md bg-cream move-4" style="bottom: -10%; left: -5%;"></div>
+        
+        <div class="blob blob-sm bg-deep-red move-2" style="top: 40%; left: 30%; opacity: 0.4;"></div>
+        <div class="blob blob-sm bg-rose move-1" style="top: 20%; right: 20%; opacity: 0.3;"></div>
+    </div>
+
+    <nav class="fixed top-0 w-full bg-white/80 backdrop-blur-md shadow-sm z-50">
+        <div class="max-w-7xl mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <div class="text-2xl font-bold gradient-text">ALIFA</div>
+                
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="nav-link text-gray-700 hover:text-[#B23A48] transition">Home</a>
+                    <a href="#about" class="nav-link text-gray-700 hover:text-[#B23A48] transition">About Me</a>
+                    <a href="#portfolio" class="nav-link text-gray-700 hover:text-[#B23A48] transition">Portfolio</a>
+                    <a href="#contact" class="nav-link text-gray-700 hover:text-[#B23A48] transition">Contact</a>
+                </div>
+
+                <button id="menu-btn" class="md:hidden text-gray-700">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+
+            <div id="mobile-menu" class="hidden md:hidden mt-4 space-y-2">
+                <a href="#home" class="nav-link block text-gray-700 hover:text-[#B23A48] transition py-2 border-b border-gray-100">Home</a>
+                <a href="#about" class="nav-link block text-gray-700 hover:text-[#B23A48] transition py-2 border-b border-gray-100">About</a>
+                <a href="#portfolio" class="nav-link block text-gray-700 hover:text-[#B23A48] transition py-2 border-b border-gray-100">Portfolio</a>
+                <a href="#contact" class="nav-link block text-gray-700 hover:text-[#B23A48] transition py-2 border-b border-gray-100">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="pt-24 pb-12 px-6">
+        <div class="relative max-w-7xl mx-auto" data-aos="zoom-in" data-aos-duration="100">
+            <div class="grid md:grid-cols-2 gap-14 items-center
+                bg-white/60 backdrop-blur-2xl
+                border border-white/40
+                rounded-[36px]
+                px-10 py-14
+                shadow-[0_40px_120px_rgba(0,0,0,0.12)]">
+                    
+                    <div>
+                        <p class="text-[#B23A48] font-semibold text-2xl mb-3" data-aos="fade-right" data-aos-delay="100">
+                            Full-stack Developer & QA Engineer
+                        </p>
+
+                        <h1 class="text-6xl md:text-7xl font-extrabold text-gray-900 leading-tight mb-6" data-aos="fade-right" data-aos-delay="600">
+                            Alifa<br/>
+                            <span class="gradient-text">Salsabila</span>
+                        </h1>
+
+                        <p class="text-[#735751] text-lg leading-relaxed max-w-xl mb-10" data-aos="fade-right" data-aos-delay="800">
+                            Computer Science student at Universitas Pendidikan Indonesia with expertise in Full-stack Development and Software Quality Assurance. Proficient in Laravel, Node.js, Flutter, and comprehensive testing methodologies.
+                        </p>
+
+                        <div data-aos="fade-up" data-aos-delay="1000">
+                            <a href="#portfolio" class="magic-btn">
+                                <span class="magic-icon-container">
+                                    <span class="star-1">✦</span>
+                                    <span class="star-2">✦</span>
+                                </span>
+                                <span class="magic-text">My Project</span>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="relative flex justify-center" data-aos="fade-left" data-aos-delay="600">
+                        
+                        <div class="absolute inset-0 bg-gradient-to-tr from-[#B23A48] to-[#461220]
+                                    rounded-[32px] blur-3xl opacity-30"></div>
+
+                        <img src="assets/img/profile.JPG"
+                            alt="Alifa Salsabila"
+                            class="relative rounded-[32px] shadow-2xl
+                                    w-full max-w-sm object-cover">
+
+                        <div class="absolute -right-6 top-12 bg-white/80 backdrop-blur
+                                    rounded-2xl shadow-xl px-6 py-4" 
+                            data-aos="zoom-in" data-aos-delay="100">
+                            <p class="text-gray-500 text-sm">Experience</p>
+                            <p class="text-4xl font-bold gradient-text">2+</p>
+                        </div>
+
+                        <div class="absolute -left-6 bottom-12 bg-white/80 backdrop-blur
+                                    rounded-2xl shadow-xl px-8 py-4"
+                            data-aos="zoom-in" data-aos-delay="100">
+                            <p class="text-gray-500 text-sm">Projects</p>
+                            <p class="text-4xl font-bold gradient-text">24+</p>
+                        </div>
+                    </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-24 px-6 bg-white/5 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto">
+            
+            <div class="text-center mb-20" data-aos="fade-up">
+                <h2 class="text-5xl font-extrabold text-gray-900 mb-4">About Me</h2>
+                <div class="w-24 h-1.5 bg-[#B23A48] mx-auto rounded-full"></div>
+                <p class="text-gray-500 mt-6 max-w-2xl mx-auto italic">Education, Professional Journey, and Technical Expertise.</p>
+            </div>
+
+            <div class="mb-24 px-4">
+                <h3 class="text-2xl font-bold text-gray-800 mb-10 flex items-center gap-3" data-aos="fade-right">
+                    <span class="bg-[#B23A48] text-white p-2 rounded-lg">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M23.835 8.5L12 .807L.165 8.5L12 16.192l8-5.2V16h2V9.693z"/><path fill="currentColor" d="M5 17.5v-3.665l7 4.55l7-4.55V17.5c0 1.47-1.014 2.615-2.253 3.338C15.483 21.576 13.802 22 12 22s-3.482-.424-4.747-1.162C6.014 20.115 5 18.97 5 17.5"/></svg>
+                    </span> Education
+                </h3>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="bg-gray-50 rounded-[28px] p-6 border border-gray-100 flex flex-col justify-between hover:border-[#B23A48]/30 transition-all" data-aos="fade-up">
+                        <div class="flex justify-between items-start mb-4">
+                            <span class="px-3 py-1 bg-black text-white rounded-full text-[10px] font-bold tracking-wider">2023 - PRESENT</span>
+                            <span class="text-[10px] font-bold text-gray-400 uppercase">Bachelor's Degree</span>
+                        </div>
+                        <h4 class="text-xl font-bold text-gray-900">Universitas Pendidikan Indonesia</h4>
+                        <p class="text-[#B23A48] font-semibold text-sm">Computer Science (GPA: 3.74/4.00)</p>
+                    </div>
+                    <div class="bg-gray-50 rounded-[28px] p-6 border border-gray-100 flex flex-col justify-between hover:border-[#B23A48]/30 transition-all" data-aos="fade-up" data-aos-delay="100">
+                        <div class="flex justify-between items-start mb-4">
+                            <span class="px-3 py-1 bg-gray-200 text-gray-600 rounded-full text-[10px] font-bold tracking-wider">2020 - 2023</span>
+                            <span class="text-[10px] font-bold text-gray-400 uppercase">High School</span>
+                        </div>
+                        <h4 class="text-xl font-bold text-gray-900">SMAN 24 Kota Bandung</h4>
+                        <p class="text-gray-500 font-semibold text-sm">Science Stream</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mb-24 px-4">
+                <h3 class="text-2xl font-bold text-gray-800 mb-10 flex items-center gap-3" data-aos="fade-right">
+                    <span class="bg-[#B23A48] text-white p-2 rounded-lg">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M15.78 15.84S18.64 13 19.61 12c3.07-3 1.54-9.18 1.54-9.18S15 1.29 12 4.36C9.66 6.64 8.14 8.22 8.14 8.22S4.3 7.42 2 9.72L14.25 22c2.3-2.33 1.53-6.16 1.53-6.16m-1.5-9a2 2 0 0 1 2.83 0a2 2 0 1 1-2.83 0M3 21a7.8 7.8 0 0 0 5-2l-3-3c-2 1-2 5-2 5"/></svg>
+                    </span> Experience & Achievements
+                </h3>
+                
+                <div class="grid grid-cols-1 md:grid-cols-6 gap-5">
+                    
+                    <div class="md:col-span-3 bg-[#1a1a1a] text-white p-6 rounded-[30px] shadow-lg flex flex-col justify-between hover:-translate-y-2 transition-transform duration-300" data-aos="fade-up">
+                        <div class="flex justify-between items-start mb-4">
+                            <div class="w-12 h-12 rounded-xl overflow-hidden flex items-center justify-center">
+                                <img src="assets/img/logo-xera.png" alt="XTRAHERA" class="max-w-full max-h-full object-contain">
+                            </div>
+                            <div class="text-right">
+                                <span class="block text-[10px] text-red-400 font-mono">2024 - NOW</span>
+                                <span class="bg-white/10 px-2 py-0.5 rounded text-[9px] uppercase">Work</span>
+                            </div>
+                        </div>
+                        <h4 class="text-lg font-bold">Fullstack Developer</h4>
+                        <p class="text-gray-400 text-[11px] mb-3">XTRAHERA</p>
+                        <p class="text-[12px] text-gray-300 leading-relaxed">Developing responsive web applications for international and BUMN clients with Laravel and Node.js.</p>
+                    </div>
+
+                    <div class="md:col-span-3 bg-white p-6 rounded-[30px] border border-gray-100 shadow-sm flex flex-col justify-between hover:-translate-y-2 transition-transform duration-300" data-aos="fade-up">
+                        <div class="flex justify-between items-start mb-4">
+                            <div class="w-12 h-12 bg-gray-50 rounded-xl overflow-hidden flex items-center justify-center bg-white border border-gray-100">
+                                <img src="assets/img/logo-rekind.png" alt="REKIND" class="max-w-full max-h-full object-contain">
+                            </div>
+                            <div class="text-right">
+                                <span class="block text-[10px] text-[#B23A48] font-bold">2024 - 2025</span>
+                                <span class="bg-gray-100 px-2 py-0.5 rounded text-[9px] uppercase text-gray-500">Project</span>
+                            </div>
+                        </div>
+                        <h4 class="text-lg font-bold">Frontend Developer</h4>
+                        <p class="text-gray-500 text-[11px] mb-3">BUMN (PT Rekayasa Industri)</p>
+                        <p class="text-[12px] text-gray-600 leading-relaxed">Translated complex Figma designs into pixel-perfect enterprise web components using Laravel.</p>
+                    </div>
+
+                    <div class="md:col-span-2 bg-white p-6 rounded-[30px] border border-gray-100 shadow-sm flex flex-col justify-between hover:-translate-y-2 transition-transform duration-300" data-aos="fade-up">
+                        <div class="flex justify-between items-start mb-4">
+                            <div class="w-12 h-12 bg-white/10 rounded-xl overflow-hidden flex items-center justify-center border border-red/20">
+                                <img src="assets/img/logo-cpc.png" alt="CPC" class="max-w-full max-h-full object-contain">
+                            </div>
+                            <span class="block text-[10px] text-[#461220] font-bold">2024 - NOW</span>
+                        </div>
+                        <h4 class="text-lg font-bold">Programming Club</h4>
+                        <p class="text-[#461220]/60 text-[11px] mb-3">CPC UPI</p>
+                        <p class="text-[12px] text-gray-600">Actively participating in algorithmic problem-solving sessions using C++ and Python.</p>
+                    </div>
+
+                    <div class="md:col-span-2 bg-white/30 p-6 rounded-[30px] border border-gray-100 shadow-sm flex flex-col justify-between hover:-translate-y-2 transition-transform duration-300" data-aos="fade-up">
+                        <div class="flex justify-between items-start mb-4">
+                            <div class="flex gap-2">
+                                <div class="w-18 h-12 bg-white rounded-xl flex items-center justify-center p-1 shadow-sm">
+                                    <img src="assets/img/logo-gemastik.png" alt="Gemastik" class="max-w-full max-h-full object-contain">
+                                </div>
+                                <div class="w-12 h-12 bg-white rounded-xl p-1 overflow-hidden shadow-sm">
+                                    <img 
+                                        src="assets/img/Logo-Kemendiktisaintek.png" 
+                                        alt="Kemendiktisaintek" 
+                                        class="w-full h-full object-contain"
+                                    >
+                                </div>
+                            </div>
+                            <div class="text-right">
+                                <span class="block text-[10px] text-[#461220] font-bold">2025</span>
+                            </div>
+                        </div>
+                        <h4 class="text-lg font-bold text-[#461220]">UPI Representative for Gemastik</h4>
+                        <p class="text-[#B23A48] text-[11px] mb-3">Kemendikbudristek</p>
+                        <p class="text-[12px] text-[#461220]/90 leading-relaxed">Selected through internal university qualification to represent Universitas Pendidikan Indonesia in the National ICT Business & Competitive Programming competition.</p>
+                    </div>
+
+                    <div class="md:col-span-2 bg-white p-6 rounded-[30px] border border-gray-100 shadow-sm flex flex-col justify-between hover:-translate-y-2 transition-transform duration-300" data-aos="fade-up">
+                        <div class="flex justify-between items-start mb-4">
+                            <div class="flex gap-2">
+                                <div class="w-12 h-12 rounded-xl overflow-hidden shadow-sm">
+                                    <img 
+                                        src="assets/img/logo-pkm.png" 
+                                        alt="PKM" 
+                                        class="w-full h-full object-cover"
+                                    >
+                                </div>
+                                <div class="w-12 h-12 bg-white rounded-xl overflow-hidden shadow-sm">
+                                    <img 
+                                        src="assets/img/logo-belmawa.png" 
+                                        alt="belmawa" 
+                                        class="w-full h-full object-cover"
+                                    >
+                                </div>
+                            </div>
+                            <div class="text-right">
+                                <span class="block text-[10px] text-blue-600 font-bold">2025</span>
+                                <!-- <span class="bg-gray-100 px-2 py-0.5 rounded text-[9px] uppercase text-gray-500">Project</span> -->
+                            </div>
+                        </div>
+                        <h4 class="text-lg font-bold">Researcher & Game Developer</h4>
+                        <p class="text-blue-800/60 text-[11px] mb-3">PKM-PM (Pengabdian Masyarakat)</p>
+                        <p class="text-[12px] text-blue-900/80">Developed an innovative educational game concept and technical framework for community social impact.</p>
+                    </div>
+
+                    <div class="md:col-span-2 bg-white/30 p-6 rounded-[30px] border border-gray-100 shadow-sm flex flex-col justify-between hover:-translate-y-2 transition-transform duration-300" data-aos="fade-up">
+                        <div class="flex justify-between items-start mb-4">
+                            <div class="flex gap-2">
+                                <div class="w-12 h-12 rounded-xl overflow-hidden shadow-sm">
+                                    <img 
+                                        src="assets/img/logo-arkavidia.jpg" 
+                                        alt="Arkavidia 9.0" 
+                                        class="w-full h-full object-cover"
+                                    >
+                                </div>
+                                <div class="w-12 h-12 bg-white rounded-xl overflow-hidden shadow-sm">
+                                    <img 
+                                        src="assets/img/logo-itb.png" 
+                                        alt="ITB" 
+                                        class="w-full h-full object-cover"
+                                    >
+                                </div>
+                            </div>
+                            <span class="block text-[10px] text-[#461220] font-bold">2025</span>
+                        </div>
+                        <h4 class="text-lg font-bold">UXVidia Participant</h4>
+                        <p class="text-[#8C2F39] text-[11px] mb-3">Arkavidia 9.0 - ITB</p>
+                        <p class="text-[12px] text-gray-600">Participated in the UXVidia Design Challenge, focusing on creating user-centric interface solutions and innovative user experiences.</p>
+                    </div>
+
+                    <div class="md:col-span-2 bg-white p-6 rounded-[30px] border border-gray-100 shadow-sm flex flex-col justify-between hover:-translate-y-2 transition-transform duration-300" data-aos="fade-up">
+                        <div class="flex justify-between items-start mb-4">
+                            <div class="flex gap-2">
+                                <div class="w-12 h-12 rounded-xl overflow-hidden shadow-sm">
+                                    <img 
+                                        src="assets/img/logo-dinamik-20.png" 
+                                        alt="DINAMIK 20" 
+                                        class="w-full h-full object-cover"
+                                    >
+                                </div>
+                                <div class="w-12 h-12 bg-white rounded-xl overflow-hidden shadow-sm">
+                                    <img 
+                                        src="assets/img/logo-kemakom.png" 
+                                        alt="Kemakom" 
+                                        class="w-full h-full object-cover"
+                                    >
+                                </div>
+                            </div>
+                            <span class="block text-[10px] text-[#461220] font-bold">2024 - 2025</span>
+                        </div>
+                        <h4 class="text-lg font-bold">Event Organizer</h4>
+                        <p class="text-gray-500 text-[11px] mb-3">DINAMIK 19 & 20</p>
+                        <p class="text-[12px] text-gray-600 leading-relaxed">Managed national-scale IT event planning and external stakeholder communications.</p>
+                    </div>
+
+                    <div class="md:col-span-2 bg-white/30 p-6 rounded-[30px] border border-gray-100 shadow-sm flex flex-col justify-between hover:-translate-y-2 transition-transform duration-300" data-aos="fade-up">
+                        <div class="flex justify-between items-start mb-4">
+                            <div class="w-12 h-12 bg-white/10 rounded-xl overflow-hidden flex items-center justify-center border border-red/20">
+                                <img src="assets/img/campus-day.jpeg" alt="Campus Day" class="max-w-full max-h-full object-contain">
+                            </div>
+                            <span class="block text-[10px] text-[#461220] font-bold">2023</span>
+                        </div>
+                        <h4 class="text-lg font-bold">Web Developer</h4>
+                        <p class="text-[#B23A48] text-[11px] mb-3">Campus Day SMAN 24 Bandung</p>
+                        <p class="text-[12px] text-gray-600">Web Developer for Campus Day 23, Alumni Project — Building a university information platform for high school students through collaborative development.</p>
+                    </div>
+
+                    <div class="md:col-span-2 bg-white p-6 rounded-[30px] border border-gray-100 shadow-sm flex flex-col justify-between hover:-translate-y-2 transition-transform duration-300" data-aos="fade-up">
+                        <div class="flex justify-between items-start mb-4">
+                            <div class="w-12 h-12 bg-white rounded-xl overflow-hidden shadow-sm">
+                                 <img 
+                                    src="assets/img/logo-osn.png" 
+                                    alt="OSN" 
+                                    class="w-full h-full object-cover"
+                                >
+                            </div>
+                            <span class="block text-[10px] text-[#461220] font-bold">2022</span>
+                        </div>
+                        <h4 class="text-lg font-bold">Mathematics OSN</h4>
+                        <p class="text-gray-500 text-[11px] mb-3">City Representative</p>
+                        <p class="text-[12px] text-gray-600">Represented Bandung city in the National Science Olympiad for Mathematics.</p>
+                    </div>
+
+                    <div class="md:col-span-2 bg-white/30 p-6 rounded-[30px] border border-gray-100 shadow-sm flex flex-col justify-between hover:-translate-y-2 transition-transform duration-300" data-aos="fade-up">
+                        <div class="flex justify-between items-start mb-4">
+                            <div class="w-12 h-12 bg-white rounded-xl overflow-hidden shadow-sm">
+                                 <img 
+                                    src="assets/img/logo-osis.png" 
+                                    alt="osis" 
+                                    class="w-full h-full object-cover"
+                                >
+                            </div>
+                            <div class="text-right">
+                                <span class="block block text-[10px] text-[#461220] font-bold">2021 - 2022</span>
+                                <span class="bg-gray-100 px-2 py-0.5 rounded text-[9px] uppercase text-gray-500 font-bold">Leadership</span>
+                            </div>
+                        </div>
+                        <h4 class="text-lg font-bold">Head of Section VI</h4>
+                        <p class="text-[#8C2F39] text-[11px] mb-3">OSIS SMAN 24 Bandung</p>
+                        <p class="text-[12px] text-gray-600 leading-relaxed">Led program innovations, managed creative fundraising (Danus), and supervised journalistic publications.</p>
+                    </div>
+
+                    <div class="md:col-span-2 bg-[#8C2F39] text-white p-6 rounded-[30px] flex flex-col justify-between hover:-translate-y-2 transition-transform duration-300" data-aos="fade-up">
+                        <div class="flex justify-between items-start mb-4">
+                            <div class="w-12 h-12 bg-white rounded-xl p-1 overflow-hidden shadow-sm">
+                                 <img 
+                                    src="assets/img/logo-dp.png" 
+                                    alt="Diniyyah Puteri Padang Panjang"
+                                    class="w-full h-full object-cover"
+                                >
+                            </div>
+                            <div class="text-right">
+                                <span class="block text-[10px] opacity-70 font-mono">2018</span>
+                                <span>🥇</span>
+                            </div>
+                        </div>
+                        <h4 class="text-lg font-bold leading-tight">1st Winner Robotics</h4>
+                        <p class="text-[10px] opacity-70 mb-3">Provincial Level</p>
+                        <p class="text-[12px] opacity-90 leading-relaxed">Achieved first place in the regional robotics competition at MTsS Diniyyah Puteri.</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <div id="skills-sub">
+                <div class="px-4">
+
+                    <h3 class="text-2xl font-bold text-gray-800 mb-10 flex items-center gap-3" data-aos="fade-right">
+                        <span class="bg-[#B23A48] text-white p-2 rounded-lg">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 512 512"><path fill="currentColor" d="M501.1 395.7L384 278.6c-23.1-23.1-57.6-27.6-85.4-13.9L192 158.1V96L64 0L0 64l96 128h62.1l106.6 106.6c-13.6 27.8-9.2 62.3 13.9 85.4l117.1 117.1c14.6 14.6 38.2 14.6 52.7 0l52.7-52.7c14.5-14.6 14.5-38.2 0-52.7M331.7 225c28.3 0 54.9 11 74.9 31l19.4 19.4c15.8-6.9 30.8-16.5 43.8-29.5c37.1-37.1 49.7-89.3 37.9-136.7c-2.2-9-13.5-12.1-20.1-5.5l-74.4 74.4l-67.9-11.3L334 98.9l74.4-74.4c6.6-6.6 3.4-17.9-5.7-20.2c-47.4-11.7-99.6.9-136.6 37.9c-28.5 28.5-41.9 66.1-41.2 103.6l82.1 82.1c8.1-1.9 16.5-2.9 24.7-2.9m-103.9 82l-56.7-56.7L18.7 402.8c-25 25-25 65.5 0 90.5s65.5 25 90.5 0l123.6-123.6c-7.6-19.9-9.9-41.6-5-62.7M64 472c-13.2 0-24-10.8-24-24c0-13.3 10.7-24 24-24s24 10.7 24 24c0 13.2-10.7 24-24 24"/></svg>
+                        </span> Technical Skills
+                    </h3>
+                </div>
+                <div class="mb-14">
+                    <h3 class="text-center text-gray-600 uppercase tracking-[0.3em] text-md font-bold mb-8">Technologies I Use</h3>
+                    <div class="flex flex-wrap justify-center gap-4 max-w-4xl mx-auto">
+                        <!-- Programming Languages -->
+                        <div class="skill-pill">
+                            <img src="assets/icons/c.svg" alt="C">
+                            <span>C</span>
+                        </div>
+                        <div class="skill-pill">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C++">
+                            <span>C++</span>
+                        </div>
+                        <div class="skill-pill">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java">
+                            <span>Java</span>
+                        </div>
+                        <div class="skill-pill">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP">
+                            <span>PHP</span>
+                        </div>
+                        <div class="skill-pill">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
+                            <span>Python</span>
+                        </div>
+                        <div class="skill-pill">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="skill-pill">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dart/dart-original.svg" alt="Dart">
+                            <span>Dart</span>
+                        </div>
+                        <div class="skill-pill">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg" alt="SQLite">
+                            <span>SQL</span>
+                        </div>
+                        <!-- database -->
+                        <div class="skill-pill">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL">
+                            <span>MySQL</span>
+                        </div>
+                        <div class="skill-pill">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB">
+                            <span>MongoDB</span>
+                        </div>
+                        <div class="skill-pill">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg" alt="SQLite">
+                            <span>SQLite</span>
+                        </div>
+                        <div class="skill-pill">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git">
+                            <span>Git</span>
+                        </div>
+                        <div class="skill-pill">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-original.svg" alt="Laravel">
+                            <span>Laravel</span>
+                        </div>
+                        <div class="skill-pill">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js">
+                            <span>Node.js</span>
+                        </div>
+                        <div class="skill-pill">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg" alt="Flutter">
+                            <span>Flutter</span>
+                        </div>
+                        <div class="skill-pill">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" alt="Flask">
+                            <span>Flask</span>
+                        </div>
+                        <div class="skill-pill">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" alt="Tailwind CSS">
+                            <span>Tailwind CSS</span>
+                        </div>
+                        <div class="skill-pill">
+                            <img src="https://www.svgrepo.com/show/375531/api.svg" alt="REST API">
+                            <span>REST API</span>
+                        </div>
+                        <div class="skill-pill">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5">
+                            <span>HTML5</span>
+                        </div>
+                        <div class="skill-pill">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3">
+                            <span>CSS3</span>
+                        </div>
+                        <div class="skill-pill">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap">
+                            <span>Bootstrap</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="text-center text-gray-600 uppercase tracking-[0.3em] text-md font-bold mb-8">Development & Productivity Tools</h3>
+                    <div class="flex flex-wrap justify-center gap-4 max-w-4xl mx-auto">
+                        <div class="skill-pill">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="VS Code">
+                            <span>VS Code</span>
+                        </div>
+                        <div class="skill-pill">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="Github">
+                            <span>Github</span>
+                        </div>
+                        <div class="skill-pill">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma">
+                            <span>Figma</span>
+                        </div>
+                        <div class="skill-pill">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/canva/canva-original.svg" alt="Canva">
+                            <span>Canva</span>
+                        </div>
+                        <div class="skill-pill">
+                            <img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" alt="Postman">
+                            <span>Postman</span>
+                        </div>
+                        <div class="skill-pill">
+                            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNTYiIGhlaWdodD0iMzkzIiB2aWV3Qm94PSIwIDAgMjU2IDM5MyI+PHBhdGggZmlsbD0iIzE5ZDg5ZiIgZD0iTTI1NiAyNjEuNDA3SDEyNy45OTh2MTMwLjcyNUgyNTZ6Ii8+PHBhdGggZD0iTTEyOC4wMDEgMEwwIDEzMC43MjV2MTMwLjcyNmgxMjguMDAxbDEyNy45NTgtMTMwLjcyNlYweiIvPjwvc3ZnPg==" alt="Katalon Studio">
+                            <span>Katalon Studio</span>
+                        </div>
+                        <div class="skill-pill">
+                            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBmaWxsPSJjdXJyZW50Q29sb3IiIGQ9Ik00LjM1IDcuNzlzLS4yNDctLjQtLjUzNy0uMjI4Yy0uMTQuMDg0LS4zNzQuMzE4LS42NTMuNjU4bC4yNTcuNDg0YTYgNiAwIDAgMSAuNTE3LS42NTNjLS4wNzkuMDktLjI0Ni4yOTgtLjQ4NC42NjJxLjUwMS0uMDM1Ljk5Ni0uMTIzYy4wOTktLjU0OS0uMDk2LS44LS4wOTYtLjhtLS4zODYuMjI4bC4wMjItLjAyNHpNLjkxIDE0LjAyYTQ1IDQ1IDAgMCAwLS43NzQgMi4zM2EuMi4yIDAgMCAxLS4xMzYuMTMyYy4yMy0uNzYuNDU4LTEuNDc2LjY4Ny0yLjEyNGMtLjE0My0uMDMzLS4zNDYuMDA3LS41OTQuMTFjLjE3LS4xMy4zMzktLjI0Mi41LS4yNTJjLS4wNTEtLjAxMS0uMTgzLS4wNTctLjM2LS4yMmMuMTY5LjA2My4zMTYuMDk0LjQyMi4wNzJjLS4wMjItLjI4Mi0uMTc0LS41Ny0uMzc0LS44NmMtLjAwMS0uMDAyLjI4LjE2MS4zODMuMzNsLjAwMi0uMDIzcS4wMjUtLjMzLjA5My0uNjU0di0uMDAycS4wNS0uMjYxLjEyNy0uNTIybC4wNjYtLjIyM3EuMDQzLS4xMy4wOTMtLjI3cS4xNjUtLjQ1Mi4zNzUtLjg4NGwuMDM2LS4wNzJxLjE5Mi0uMzg2LjQwOC0uNzZxLjExNS0uMTk5LjIzMS0uMzlxLjAxLS4wMTEuMDE3LS4wMjZMMi4xMSA5LjcxbC4wMDgtLjAxM3EuMzU1LS41Ny43NTQtMS4xMDhhOCA4IDAgMCAxIC4yMjktLjI5NmwuMDU4LS4wNzJsLjI1Ni40ODJhMTEgMTEgMCAwIDAtLjI2OC40MDRxLS4yNTkuNDE1LS40ODcuODQ2bC0uMjE3LjQxNGwtLjIyMi0uNDM5bC4yMi40NGwtLjAwNy4wMTVsLS4xMzMuMjdsLS4wNzcuMTZsLS4yMDYuNDQ0YTQzIDQzIDAgMCAwLS41NyAxLjM0NGwtLjE4LjQ1N2wtLjA0LjEwM2wtLjEzNC4zNTd2LjAwNGwtLjAzMy4wODhsLS4xNDEuMzgxem0zLjIzNS00LjYyM2E1IDUgMCAwIDEtLjMzNC41NjJjLS4xMDYuMTQ5LS4yMTYuMjUtLjQ1Ny4zNjNsLjAyMi0uMDA0cS4wMDItLjAwMi4wMDYtLjAwMmMuMTI1LS4wMjMuMjgtLjA3NC4zNy0uMTI3YS4yLjIgMCAwIDAgLjAzNi0uMDI0YTEgMSAwIDAgMS0uMDIuMDg5cS0uMDEuMDM4LS4wMjYuMDg1bC0uMDEyLjAzM2wtLjAzNi4wOTJhMyAzIDAgMCAxLS4xMDIuMjI2bC0uMDI4LjA1N2wtLjAyNC4wMzlhMSAxIDAgMCAxLS4wODQuMTE2bC0uMDQuMDQ0YTEgMSAwIDAgMS0uMTEzLjEwMWExLjIgMS4yIDAgMCAxLS4yNy4xNTFsLjAxNy0uMDAybC4wNjQtLjAxMXEuMTk1LS4wNDcuMzYxLS4xNmMtLjEzOC4yNzUtLjMyNi40OTctLjYyOC42MTJsLjA1Mi0uMDA3bC4wNS0uMDExYTEgMSAwIDAgMCAuMjU0LS4wODdhNyA3IDAgMCAxLS4xOC40OTJxLS4xMDYuMjYtLjIyNS40N2EyLjYgMi42IDAgMCAxLS4zNS40ODdjLS4yNzYuMjk4LS43MDUuNTQtMS4wMjcuNThsLjAxNi4wMDNjLjM2Ni4wNzYuNzQ1LS4wNDcuOTk2LS4zMjRhMyAzIDAgMCAxLS4xMDYuMTg3Yy0uMTQ4LjI0LS4zMTguMzg2LS42NTQuNTM3Yy4yMy4wMTMuMzUtLjA0MS40NDgtLjE2NWExIDEgMCAwIDEtLjA1Mi4xYy0uMjE1LjM1Ni0uNjM0LjQ3OC0xLjExNy40NTZhLjU0LjU0IDAgMCAxIC4xNzQuMzdjLS4wNzQtLjEzNC0uMTUyLS4yNTEtLjI1MS0uMjk3bC4xMTYtLjMzNGwuMDItLjA1NHYtLjAwNmwuMTMyLS4zN2wuMDI2LS4wN2wuMDAzLS4wMWwuMTctLjQ1NGwuMDA3LS4wMjJsLjE2OC0uNDM1cS4wOTMtLjIzOC4xODQtLjQ2cS4xODQtLjQ1Mi4zODItLjg5N3EuMDc3LS4xNzQuMTUyLS4zMzZsLjA1LS4xMDhsLjA5Ny0uMjA1cS4wNDMtLjA5My4wODgtLjE4M2wuMDI3LS4wNThxLjAwMy0uMDAzLjAwMi0uMDExbC4wMDYtLjAwMXEuMTEtLjIyNS4yMTMtLjQyM3EuMjI2LS40MzUuNDc0LS44NTdsLjAxMy0uMDIzcS4xMzMtLjIyMi4yNDYtLjM5NnEuNS0uMDM1Ljk5NS0uMTJxLS4wMTUuMDc4LS4wMzguMTY1YTMgMyAwIDAgMS0uMDc1LjIyNWE0IDQgMCAwIDEtLjE4Ny40MTN6bTIuMzUxLjY3NHY0LjU5NmMwIC4yOC0uMDQxLjUyNy0uMTI1LjczMmExLjM0IDEuMzQgMCAwIDEtLjM1LjUxMmExLjQgMS40IDAgMCAxLS41MzEuM3EtLjMwNi4wOTUtLjY3NC4wOTVhMi43IDIuNyAwIDAgMS0uNjU5LS4wNzRhLjA2LjA2IDAgMCAxLS4wNDYtLjA2di0uODQyYS4wNjMuMDYzIDAgMCAxIC4wNzYtLjA2MnEuMTE3LjAyNy4yNS4wNDVjLjE2Mi4wMjQuMzc2LjAzLjU0LS4wMWEuNDguNDggMCAwIDAgLjMzMi0uMjlhLjguOCAwIDAgMCAuMDUyLS4zMTN2LTQuNjNjMC0uMDM1LjAyNy0uMDYzLjA2Mi0uMDYzaDEuMDFjLjAzNiAwIC4wNjMuMDI4LjA2My4wNjN6bTguNTg4IDEuNDRhMS4zNSAxLjM1IDAgMCAwLS41MTgtLjMzNGExLjkgMS45IDAgMCAwLS42NzUtLjExNHEtLjM4MyAwLS43MDIuMTI1Yy0uMjA4LjA4Mi0uMzk1LjIxLS41NDUuMzc3YTEuNzUgMS43NSAwIDAgMC0uMzUuNjE5YTIuNyAyLjcgMCAwIDAtLjEyMy44NTljMCAuMzIuMDQ0LjYwNi4xMzUuODQ4cS4xMzkuMzYxLjM4Ni42MDNjLjE2NC4xNTcuMzY0LjI3Ni41OS4zNTVhMi4zIDIuMyAwIDAgMCAuNzQyLjExOHEuMjEzIDAgLjM3Ny0uMDE1YTIuMyAyLjMgMCAwIDAgLjYxLS4xM3EuMTQzLS4wNS4yNzMtLjEyYS4wNi4wNiAwIDAgMCAuMDMzLS4wNTV2LS43N2EuMDYzLjA2MyAwIDAgMC0uMDktLjA1NWEyLjUgMi41IDAgMCAxLS44MjcuMjY1cS0uMTUzLjAxNS0uMzA3LjAxNGEuOS45IDAgMCAxLS4zMzItLjA1NWEuNy43IDAgMCAxLS4yNDMtLjE2MmEuOC44IDAgMCAxLS4xNTUtLjI2M2ExLjIgMS4yIDAgMCAxLS4wNTgtLjI5NWgyLjE1N2EuMDYzLjA2MyAwIDAgMCAuMDYzLS4wNjJ2LS40ODNhMi4xIDIuMSAwIDAgMC0uMTE0LS43MjVhMS41IDEuNSAwIDAgMC0uMzI3LS41NDR6bS0xLjc1OCAxLjAyOXEuMDMzLS4zMjUuMTc2LS40NzhhLjUyLjUyIDAgMCAxIC4zOTUtLjE2N2EuNTUuNTUgMCAwIDEgLjI0Ni4wNTJxLjEwNi4wNTEuMTc2LjE0NGEuNy43IDAgMCAxIC4xMDUuMjJxLjAzLjEwNy4wMzguMjI5em0xMC42NzMtMS4zODd2LjkzNGEuMDYyLjA2MiAwIDAgMS0uMDc3LjA2YS43LjcgMCAwIDAtLjI1NC0uMDI3bC0uMDgtLjAwNHEtLjE4MSAwLS4zMzcuMDQ3YS42NC42NCAwIDAgMC0uMjUzLjE0NWEuNy43IDAgMCAwLS4xNjMuMjY0cS0uMDU5LjE2Ni0uMDU5LjQxMXYxLjg1NmEuMDYzLjA2MyAwIDAgMS0uMDYzLjA2M2gtLjk5NGEuMDYzLjA2MyAwIDAgMS0uMDYzLS4wNjN2LTMuNjQ1YzAtLjAzNS4wMjgtLjA2My4wNjMtLjA2M2guNzUzYy4wMjggMCAuMDUzLjAyLjA2LjA0NmwuMTI0LjQ2MnEuMDYtLjEuMTMzLS4xOTFhLjkzLjkzIDAgMCAxIC40ODctLjMzOGExLjEgMS4xIDAgMCAxIC40MzQtLjA0NHEuMDUtLjAwMi4wOTYuMDA2bC4wODQuMDExYS4zLjMgMCAwIDEgLjA2Ni4wMTFhLjA2LjA2IDAgMCAxIC4wNDQuMDU5em0tNS45NTYgMi43OTRhLjA2LjA2IDAgMCAxIC4wMjcuMDV2Ljc0MWEuMDYuMDYgMCAwIDEtLjAzMy4wNTVhMS41IDEuNSAwIDAgMS0uMzY0LjEyNWMtLjMwNC4wNjgtLjYyLjA2Ni0uOTI0LS4wMDhhLjkuOSAwIDAgMS0uMzgxLS4yMDdhMS4wNCAxLjA0IDAgMCAxLS4yNTYtLjM5N2ExLjggMS44IDAgMCAxLS4wODgtLjYwOFYxMmgtLjQxNGEuMDYzLjA2MyAwIDAgMS0uMDYyLS4wNjJ2LS40MmEuMDYuMDYgMCAwIDEgLjAzLS4wNTNsLjUyOS0uMzIzbC4yOC0uNzVhLjA2LjA2IDAgMCAxIC4wNTgtLjA0aC42MzZjLjAzNSAwIC4wNjIuMDI4LjA2Mi4wNjN2LjcxNGguODI1Yy4wMzQgMCAuMDYzLjAyOC4wNjMuMDYydi43NDdhLjA2My4wNjMgMCAwIDEtLjA2My4wNjNoLS44MjV2MS42OTVxMCAuMTg3LjA4NS4yNjhhLjMyLjMyIDAgMCAwIC4yMzEuMDg0cS4xNCAwIC4yNjMtLjAzcS4xMzMtLjAzNC4yNjQtLjA4YS4wNi4wNiAwIDAgMSAuMDU3LjAwN3ptLTYuMTA1LTMuODc2djQuNzdhLjA2My4wNjMgMCAwIDEtLjA2Mi4wNjFoLS45NDNhLjA2My4wNjMgMCAwIDEtLjA2My0uMDYzdi0yLjQ1bC4wMTQtLjQ3M2wuMDEtLjI0MmwuMDA4LS4xODdsLTEuMDE4IDMuMzdhLjA2LjA2IDAgMCAxLS4wNi4wNDRoLS45M2EuMDYuMDYgMCAwIDEtLjA2LS4wNDRsLS45MjktMy4zMmEyNSAyNSAwIDAgMSAuMDMzLjg4cS4wMDUuMTExLjAwNS4yMDR2Mi4yMThhLjA2My4wNjMgMCAwIDEtLjA2My4wNjNoLS45MDNhLjA2My4wNjMgMCAwIDEtLjA2My0uMDYzVjEwLjA3YzAtLjAzNC4wMjctLjA2My4wNjItLjA2M2gxLjM3NmMuMDMgMCAuMDUzLjAyLjA2MS4wNDdsLjk4MSAzLjQ3M2wxLjA0Ni0zLjQ3NGEuMDYuMDYgMCAwIDEgLjA2LS4wNDRoMS4zNzZjLjAzNCAwIC4wNjIuMDI3LjA2Mi4wNjF6bTkuMTM1IDEuNDRhMS4zNSAxLjM1IDAgMCAwLS41MTctLjMzNGExLjkgMS45IDAgMCAwLS42NzYtLjExNGMtLjI1MyAwLS40OS4wNDEtLjcwMS4xMjVjLS4yMDguMDgyLS4zOTUuMjEtLjU0NS4zNzdhMS43NSAxLjc1IDAgMCAwLS4zNS42MTljLS4wODcuMjc4LS4xMy41NjgtLjEyNC44NTljMCAuMzIuMDQ2LjYwNi4xMzUuODQ4cS4xNC4zNjEuMzg3LjYwM2MuMTY0LjE1Ny4zNjQuMjc2LjU5LjM1NWEyLjMgMi4zIDAgMCAwIC43NDIuMTE4cS4yMTMgMCAuMzc2LS4wMTVhMi4zIDIuMyAwIDAgMCAuODg0LS4yNWEuMDYuMDYgMCAwIDAgLjAzMy0uMDU1di0uNzdhLjA2My4wNjMgMCAwIDAtLjA5LS4wNTVhMi41IDIuNSAwIDAgMS0uODI4LjI2NXEtLjE1Mi4wMTUtLjMwNi4wMTRhLjkuOSAwIDAgMS0uMzMyLS4wNTVhLjcuNyAwIDAgMS0uMjQyLS4xNjJhLjguOCAwIDAgMS0uMTU3LS4yNjNhMS4yIDEuMiAwIDAgMS0uMDU3LS4yOTVoMi4xNTdhLjA2My4wNjMgMCAwIDAgLjA2My0uMDYydi0uNDgzYTIuMSAyLjEgMCAwIDAtLjExNC0uNzI1YTEuNSAxLjUgMCAwIDAtLjMyOC0uNTQ0em0tLjc2NS41OGEuNy43IDAgMCAxIC4xMDYuMjJxLjAzLjEwNy4wMzguMjI5aC0xLjEzN3EuMDM0LS4zMjUuMTc3LS40NzhhLjUyLjUyIDAgMCAxIC4zOTUtLjE2N2EuNTUuNTUgMCAwIDEgLjI0Ni4wNTJhLjUuNSAwIDAgMSAuMTc1LjE0NE02LjI2IDcuNjNoLS4xMzdMNS40MSA5LjMzNmguMTc5bC4yMTgtLjUzNGguNzY5bC4yMi41MzRoLjE4bC0uNzE0LTEuNzA4SDYuMjZ6bS0uNDE5IDEuMDRsLjM1Mi0uODQ0bC4zNDEuODQ0em0xLjQ4My4wMzVoLjU1NWMuMjkyIDAgLjQ4OS0uMjYyLjQ4OS0uNTRjMC0uMjY1LS4yMTEtLjUzNi0uNTAzLS41MzZoLS43MDh2MS43MDhoLjE2NnptMC0uOTI2aC41MzJjLjE4NyAwIC4zNDYuMTcyLjM0Ni4zODZjMCAuMjA3LS4xMy4zOTItLjMzMi4zOTJoLS41NDZ6bTEuMTI5IDEuNTU4bC4yMTgtLjUzNGguNzY3bC4yMi41MzRoLjE4NGwtLjcxNC0xLjcwOEg4Ljk5bC0uNzE1IDEuNzA4em0uNjA2LTEuNTFsLjM0Mi44NDNIOC43MWwuMzUyLS44NDRIOS4wNnptLjc3OC42NDNjMC0uNDEuMjk3LS44NS44MS0uODVhLjY3LjY3IDAgMCAxIC42MzEuMzcybC0uMTM1LjA4MWEuNTQuNTQgMCAwIDAtLjUwNC0uMzAzYy0uNDA4IDAtLjYzMi4zNjUtLjYzMi43MDljMCAuMzc2LjI3Ni43MTguNjM5LjcxOGEuNTguNTggMCAwIDAgLjUyNi0uMzE4bC4xNC4wNzNjLS4xMTEuMjU2LS40MTQuMzk3LS42NzYuMzk3Yy0uNDY4IDAtLjc5OS0uNDQ3LS43OTktLjg4em0xLjg3NS44NjdoLS4xNjVWNy42MjloLjE2NXYuNzZoMS4wMTF2LS43NmguMTY5djEuNzA4aC0uMTY5di0uNzk5aC0xLjAxem0yLjcxIDBoLTEuMTQ1VjcuNjI5aDEuMTI0di4xNWgtLjk1OXYuNjE2aC44MzZ2LjE0MmgtLjgzN3YuNjVoLjk4MnYuMTV6Ii8+PC9zdmc+" alt="Apache JMeter">
+                            <span>Apache JMeter</span>
+                        </div>
+                        <div class="skill-pill">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/trello/trello-original.svg" alt="Trello">
+                            <span>Trello</span>
+                        </div>
+                        <div class="skill-pill">
+                            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgdmlld0JveD0iMCAwIDMyIDMyIj48ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9IlNWR1N1VWlpMHB0IiB4MT0iNC40OTQiIHgyPSIxMy44MzIiIHkxPSItMjA5Mi4wODYiIHkyPSItMjA3NS45MTQiIGdyYWRpZW50VHJhbnNmb3JtPSJ0cmFuc2xhdGUoMCAyMTAwKSIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiPjxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iIzE4ODg0ZiIvPjxzdG9wIG9mZnNldD0iLjUiIHN0b3AtY29sb3I9IiMxMTdlNDMiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiMwYjY2MzEiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cGF0aCBmaWxsPSIjMTg1YzM3IiBkPSJNMTkuNTgxIDE1LjM1TDguNTEyIDEzLjR2MTQuNDA5QTEuMTkgMS4xOSAwIDAgMCA5LjcwNSAyOWgxOS4xQTEuMTkgMS4xOSAwIDAgMCAzMCAyNy44MDlWMjIuNVoiLz48cGF0aCBmaWxsPSIjMjFhMzY2IiBkPSJNMTkuNTgxIDNIOS43MDVhMS4xOSAxLjE5IDAgMCAwLTEuMTkzIDEuMTkxVjkuNUwxOS41ODEgMTZsNS44NjEgMS45NUwzMCAxNlY5LjVaIi8+PHBhdGggZmlsbD0iIzEwN2M0MSIgZD0iTTguNTEyIDkuNWgxMS4wNjlWMTZIOC41MTJaIi8+PHBhdGggZD0iTTE2LjQzNCA4LjJIOC41MTJ2MTYuMjVoNy45MjJhMS4yIDEuMiAwIDAgMCAxLjE5NC0xLjE5MVY5LjM5MUExLjIgMS4yIDAgMCAwIDE2LjQzNCA4LjIiIG9wYWNpdHk9IjAuMSIvPjxwYXRoIGQ9Ik0xNS43ODMgOC44NUg4LjUxMlYyNS4xaDcuMjcxYTEuMiAxLjIgMCAwIDAgMS4xOTQtMS4xOTFWMTAuMDQxYTEuMiAxLjIgMCAwIDAtMS4xOTQtMS4xOTEiIG9wYWNpdHk9IjAuMiIvPjxwYXRoIGQ9Ik0xNS43ODMgOC44NUg4LjUxMlYyMy44aDcuMjcxYTEuMiAxLjIgMCAwIDAgMS4xOTQtMS4xOTFWMTAuMDQxYTEuMiAxLjIgMCAwIDAtMS4xOTQtMS4xOTEiIG9wYWNpdHk9IjAuMiIvPjxwYXRoIGQ9Ik0xNS4xMzIgOC44NWgtNi42MlYyMy44aDYuNjJhMS4yIDEuMiAwIDAgMCAxLjE5NC0xLjE5MVYxMC4wNDFhMS4yIDEuMiAwIDAgMC0xLjE5NC0xLjE5MSIgb3BhY2l0eT0iMC4yIi8+PHBhdGggZmlsbD0idXJsKCNTVkdTdVVpaTBwdCkiIGQ9Ik0zLjE5NCA4Ljg1aDExLjkzOGExLjE5MyAxLjE5MyAwIDAgMSAxLjE5NCAxLjE5MXYxMS45MThhMS4xOTMgMS4xOTMgMCAwIDEtMS4xOTQgMS4xOTFIMy4xOTRBMS4xOSAxLjE5IDAgMCAxIDIgMjEuOTU5VjEwLjA0MUExLjE5IDEuMTkgMCAwIDEgMy4xOTQgOC44NSIvPjxwYXRoIGZpbGw9IiNmZmYiIGQ9Im01LjcgMTkuODczbDIuNTExLTMuODg0bC0yLjMtMy44NjJoMS44NDdMOS4wMTMgMTQuNmMuMTE2LjIzNC4yLjQwOC4yMzguNTI0aC4wMTdxLjEyMy0uMjgxLjI2LS41NDZsMS4zNDItMi40NDdoMS43bC0yLjM1OSAzLjg0bDIuNDE5IDMuOTA1aC0xLjgwOWwtMS40NS0yLjcxMUEyLjQgMi40IDAgMCAxIDkuMiAxNi44aC0uMDI0YTEuNyAxLjcgMCAwIDEtLjE2OC4zNTFsLTEuNDkzIDIuNzIyWiIvPjxwYXRoIGZpbGw9IiMzM2M0ODEiIGQ9Ik0yOC44MDYgM2gtOS4yMjV2Ni41SDMwVjQuMTkxQTEuMTkgMS4xOSAwIDAgMCAyOC44MDYgMyIvPjxwYXRoIGZpbGw9IiMxMDdjNDEiIGQ9Ik0xOS41ODEgMTZIMzB2Ni41SDE5LjU4MVoiLz48L3N2Zz4=" alt="Excel">
+                            <span>Excel</span>
+                        </div>
+                        <div class="skill-pill">
+                            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMjgiIGhlaWdodD0iMTI4IiB2aWV3Qm94PSIwIDAgMTI4IDEyOCI+PHBhdGggZmlsbD0iI2ZmZiIgZD0ibTc2LjI1LjI1bDEzLjA1OS4wODZjLjI0Ni4xOTEuNDQ1LjMxNi42NTYuNDFjMi4zNjcgMS4wNyA0LjkzMyAxLjgzNiA3LjA2NiAzLjI1OGM2LjE4NCA0LjExIDEyLjIyMyA4LjQ0MSAxOC4yNTggMTIuNzdjMi44MDUgMi4wMDcgNS41NyA0LjA5NyA4LjE1NiA2LjM3YzEuOTIyIDEuNjg4IDIuNzg1IDQuMDgzIDIuNzkgNi42MzdsLS4wMDUgODAuMzcxYy0uMDAzIDEuMTIxLS4xOTUgMi4yNzQtLjUwNyAzLjM1MmMtMS40MTggNC45MTQtNC41NjMgOC4yNzctOS41MTIgOS41OWMtMi42MS42OTEtNS4zNjcuOTA2LTguMDc0IDEuMTI5Yy00LjIyMy4zNTEtOC40NjEuNTIzLTEyLjY5Mi43NzdsLTguMDA0LjVsLTEyLjgxNi43NTRsLTcuODc5LjQ5MmwtMTIuOTQxLjc1bC02LjY4OC4yNzRjLS4yMTUuMDExLS40MTQuMzEyLS42MTcuNDhjLTUuMDkgMC0xMC4xNzYgMC0xNS4zMDktLjA4MmMtLjI0Ni0uMTk1LS40MzMtLjM1Mi0uNjUyLS40MTRjLTMuMTAyLS44OTktNS43MDMtMi42MTMtNy43MDMtNS4xMDJjLTIuNzctMy40NDEtNS40MDItNi45ODgtOC4wNjYtMTAuNTExYy0zLjI3NC00LjMyOS02LjYzMy04LjU5NC05LjcyNy0xMy4wNDdhMTUuNDcgMTUuNDcgMCAwIDEtMi43OS04Ljg3NWE3MjEyMiA3MjEyMiAwIDAgMSAuMDA5LTcxLjIxMWMwLS42ODQuMTItMS4zNzUuMjM4LTIuMDU1QzMuNzQyIDkuNjQ1IDkuMTUyIDUuNzQ2IDE1LjU4NiA1LjAyM2MzLjM0LS4zNzUgNi43MDMtLjU0MyAxMC4wNTktLjc2NWw4Ljg3LS41MTJsMy44MTMtLjI1bDExLjUtLjk5Mmw2LjM3NS0uNWwxMC41NTktLjc1bDguODctLjUyNGMuMjE2LS4wMTUuNDE1LS4zMTIuNjE4LS40OE0yNS45NDUgMTE0LjE4NGMuNTMyLjY5MSAxLjEyNSAxLjM0NyAxLjU5IDIuMDgyYzIuMjU0IDMuNTI3IDUuNDg1IDQuODA4IDkuNTkgNC41MzVsMjcuODA5LTEuNjU2bDMxLjI5Ni0xLjg5MWwxNS41ODItMS4wMDRjNC42MTgtLjM3MSA2Ljg0OC0yLjg2NyA2LjkzOC03LjV2LTFsLjAzNS03NS44NjNjLjAwNC0yLjI4NS0uNzg1LTMuODgzLTIuNjEzLTUuMTZsLTIyLjAyNC0xNS41MmMtMy41NDMtMi41NzgtNy4zMDQtMy43ODEtMTEuNjYtMy40MzdMNTcuODI0IDkuNTk0bC0yNS43ODkgMS45MDJsLTE2LjE4NyAxLjI2MmMtMy4yNy4zLTUuMjk3IDIuMy01Ljg4MyA1LjUwOGExNCAxNCAwIDAgMC0uMjA3IDIuNDhsLS4wNjcgNjYuMjQyYy0uMDIzIDQuMzQgMS4zMDUgNy45NSAzLjkwMyAxMS4yN3ptMCAwIi8+PHBhdGggZD0ibTI1Ljg4NyAxMTQuMTE3bC0xMi4yOTMtMTUuODZjLTIuNTk4LTMuMzItMy45MjYtNi45MjktMy45MDMtMTEuMjY5bC4wNjctNjYuMjQyYzAtLjgyOC4wNjItMS42NjguMjA3LTIuNDhjLjU4Ni0zLjIwNyAyLjYxMy01LjIwNyA1Ljg4My01LjUwOGwxNi4xODctMS4yNjJsMjUuNzktMS45MDJMODIuNDg4IDcuNzdjNC4zNTYtLjM0NCA4LjExNy44NTkgMTEuNjYgMy40MzdjNy4yNjIgNS4yODUgMTQuNjYgMTAuMzgzIDIyLjAyNCAxNS41MmMxLjgyOCAxLjI3NyAyLjYxNyAyLjg3NSAyLjYxMyA1LjE2bC0uMDM1IDc1Ljg2N3YxYy0uMDkgNC42MjktMi4zMiA3LjEyNS02LjkzOCA3LjQ5NmMtNS4xODcuNDE4LTEwLjM4Ni42ODgtMTUuNTgyIDEuMDA0bC0zMS4yOTYgMS44OWwtMjcuODA5IDEuNjU3Yy00LjEwNS4yNzMtNy4zMzYtMS4wMDgtOS41OS00LjUzNWMtLjQ2NS0uNzM1LTEuMDU4LTEuMzkxLTEuNjQ4LTIuMTQ5bTYuNDA2LTQ1Ljk5MnYzMy40ODhsLjAwOCA2LjI0NmMuMDU0IDIuODAxIDEuNDI2IDQuMTk2IDQuMjI2IDQuMzU2Yy43MDMuMDM5IDEuNDE0LjAxNSAyLjEyMS0uMDI4bDIzLjQ0Mi0xLjM4Mmw0NC43NjUtMi41NTljMi43OS0uMTU2IDQuMDc5LTEuMzc5IDQuMzQtNC4xNDRjLjA1MS0uNDk3LjAzNS0xIC4wMzUtMS41bC4wMDQtNjQuNDc3YzAtLjM3NS4wMTItLjc1LS4wMTEtMS4xMjVjLS4xNjgtMi41NjYtMS4yNy0zLjYxMy0zLjgyLTMuNDc3bC0yMy4wNzEgMS4zMjlhNDM3OTEgNDM3OTEgMCAwIDAtMzIuNDE4IDEuODk4bC0xNi4yMDcuOTczYy0yLjA2Ni4xMzItMyAxLjAyMy0zLjMxMiAzLjA0M2ExMC42IDEwLjYgMCAwIDAtLjA5OCAxLjYxN3ptNTcuMTcyLTUyLjcyN2MtMS45NTctMS4wNjItNC4wODItMS40MTQtNi4yNy0xLjI5M2MtMy4zNjMuMTg0LTYuNzI2LjQ2MS0xMC4wOS43MDRsLTQ3Ljk0OSAzLjQ4NGMtMS40NDkuMTA1LTIuOTA2LjIxLTQuMzM2LjQ2OWMtLjQ4LjA4Ni0xLjA4Ni41Ny0xLjIzNCAxLjAwOGMtLjExLjMwOC4zNzUuOTMuNzMgMS4yN2MuNjU3LjYyOCAxLjQxNCAxLjE1NSAyLjEzIDEuNzIyYzEuNjk5IDEuMzQgMy41MDcgMi41NjIgNS4wNjYgNC4wNDNjMi45NTcgMi44MDggNi4zOTggMy40NTcgMTAuMzQgMy4xNzJsMzEuMDM1LTEuOTQ2bDMzLjQxLTIuMDA0Yy4zMDUtLjAxNS42MS0uMTA5IDEuMjgxLS4yMzRjLS42MTMtLjYzNy0uOTY5LTEuMTI1LTEuNDMzLTEuNDY5YTIzNCAyMzQgMCAwIDAtNC45NTctMy41NjJhNjk4IDY5OCAwIDAgMC03LjcyMy01LjM2NG0wIDAiLz48cGF0aCBmaWxsPSIjZmZmIiBkPSJtMzIuMjkzIDY4bC4wMDQtMjUuNjE3YzAtLjU0LjAxNi0xLjA4Ni4wOTgtMS42MTdjLjMxMi0yLjAyIDEuMjQ2LTIuOTEgMy4zMTItMy4wNDNsMTYuMjA3LS45NzNsMzIuNDE4LTEuODk4bDIzLjA3LTEuMzI5YzIuNTUxLS4xMzYgMy42NTMuOTE0IDMuODIgMy40NzdjLjAyNC4zNzUuMDEyLjc1LjAxMiAxLjEyNWwtLjAwNCA2NC40NzdsLS4wMzUgMS41Yy0uMjYxIDIuNzY1LTEuNTUgMy45ODgtNC4zNCA0LjE0NGwtNDQuNzY1IDIuNTU5bC0yMy40NDIgMS4zODJsLTIuMTIuMDI4Yy0yLjgwMS0uMTYtNC4xNzMtMS41NTUtNC4yMjctNC4zNTJsLS4wMDgtNi4yNXptNDUuNzY2LjA2Nkw2NS4xOTEgNDguNDYxYy0uNDQ5LS42ODQtLjg5LS45MS0xLjcxOC0uODJsLTUuNDg1LjM3bC0xMC4wOS43MzljLTIuNDguMjI3LTMuOTggMi41NTktMy4yOTMgNC45NzdsNS4zNDQuNDU3djQzLjI5M2wtMy42NCAxLjAyN2MtMS42MTQuNDc2LTIuMzA1IDEuODM2LTEuNzYyIDMuNTc0bDEyLjMwOC0uNzA3bDQuODQ4LS4zOThjMi4wOS0uMzQ0IDMuMjE1LTEuNjI1IDMuNDk2LTMuNzE1bC02LjczLTEuNTM1VjYzLjE2bC41LjdsMTUuNDY4IDI0LjE1MmEzNjEgMzYxIDAgMCAwIDcuMDA0IDEwLjQ2YzEuNzA3IDIuNDUgNC4yMjMgMy4yIDcuMDUxIDIuNTljMS43Ny0uMzc4IDMuNDY5LTEuMDk3IDUuMjAzLTEuNjU2Yy45MDMtLjI5MyAxLjIxMS0uODMyIDEuMjA3LTEuODQ0bC0uMDMtNDQuNWMwLTIuNjAxIDAtMi42MDEgMi41NzMtMy4xMmMyLjYwMi0uNTI0IDMuMjU0LTEuNTYzIDIuNjYtNC4zNDRsLTE1LjU1Ljk0NWMtMS42OTIuMTIxLTIuOTczIDEuNTM1LTMuMjMgMy4xOGMtLjEyNi43OTMuMDM4IDEuMjMuOTg3IDEuMjg1bDQuNzA4LjUydjMwLjE3OWE3NDM1IDc0MzUgMCAwIDAtOC45NjEtMTMuNjM3ek04OS41NSAxNS40NDFhMTEyMyAxMTIzIDAgMCAxIDcuNjM2IDUuMzJhMjM0IDIzNCAwIDAgMSA0Ljk1OCAzLjU2M2MuNDY0LjM0NC44Mi44MzIgMS40MzMgMS40NjlsLTEuMjgxLjIzNGwtMzMuNDEgMi4wMDRsLTMxLjAzNSAxLjk0NmMtMy45NDIuMjg1LTcuMzgzLS4zNjQtMTAuMzQtMy4xNzJjLTEuNTU5LTEuNDgtMy4zNjctMi43MDMtNS4wNjctNC4wNDNjLS43MTUtLjU2Ny0xLjQ3Mi0xLjA5NC0yLjEyOS0xLjcyM2MtLjM1NS0uMzQtLjg0LS45Ni0uNzMtMS4yN2MuMTQ4LS40MzcuNzU4LS45MjEgMS4yMzQtMS4wMDdjMS40My0uMjU4IDIuODg3LS4zNjQgNC4zMzYtLjQ2OWw0Ny45NS0zLjQ4NGwxMC4wOS0uNzA0YzIuMTg3LS4xMiA0LjMxMi4yMyA2LjM1NSAxLjMzNm0wIDAiLz48cGF0aCBkPSJtNzguMTEzIDY4LjE0bDguOTA3IDEzLjU2N3YtMzAuMThsLTQuNzA3LS41MmMtLjk1LS4wNTQtMS4xMTQtLjQ5MS0uOTg5LTEuMjg0Yy4yNTgtMS42NDUgMS41NC0zLjA1OSAzLjIzLTMuMThsMTUuNTUxLS45NDVjLjU5NCAyLjc4LS4wNTggMy44Mi0yLjY2IDQuMzQzYy0yLjU3NC41MTYtMi41NzQuNTE2LTIuNTc0IDMuMTIxbC4wMzEgNDQuNWMuMDA0IDEuMDEyLS4zMDQgMS41NTEtMS4yMDcgMS44NDRsLTUuMjAzIDEuNjU2Yy0yLjgyOC42MDYtNS4zNDQtLjE0LTcuMDUtMi41OWEzNjcgMzY3IDAgMCAxLTcuMDA0LTEwLjQ2bC0xNS40Ny0yNC4xNTNjLS4xMDktLjE3Mi0uMjM0LS4zMzItLjUtLjY5OXYzMi41NjNsNi43MzEgMS41MzVjLS4yODEgMi4wOS0xLjQwNiAzLjM3LTMuNDk2IDMuNzE1Yy0xLjU5NC4yNjEtMy4yMy4zLTQuODQ4LjM5OGwtMTIuMzA4LjcwN2MtLjU0My0xLjczOC4xNDgtMy4wOTggMS43NjItMy41NzRsMy42NC0xLjAyN1Y1NC4xODRsLTUuMzQ0LS40NTdjLS42ODctMi40MTguODEzLTQuNzUgMy4yOTMtNC45NzdjMy4zNTYtLjMxMyA2LjcyNy0uNTA0IDEwLjA5LS43MzhjMS44MjgtLjEyNSAzLjY2NC0uMTcyIDUuNDg1LS4zNzFjLjgyOC0uMDkgMS4yNy4xMzYgMS43MTguODJ6bTAgMCIvPjwvc3ZnPg==" alt="Notion">
+                            <span>Notion</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio-section">
+        <div class="portfolio-container">
+            
+            <div class="portfolio-header">
+                <div class="header-glow"></div>
+                
+                <h2 class="portfolio-title">Projects I've <span class="highlight">Worked on</span></h2>
+                <span class="porto-count text-gray-700">Total Projects: 25</span>
+                <a href="projects.html" class="see-more-btn">
+                    <span>See More Projects</span>
+                    <div class="btn-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14m-4 4l4-4m-4-4l4 4"/></svg>
+                        
+                    </div>
+                </a>
+            </div>
+
+            <div class="porto-grid">
+                <div class="porto-card" onclick="openModal('modal-emindtut')">
+                    <div class="porto-thumb">
+                        <button class="porto-expand-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/>
+                            </svg>
+                        </button>
+                        <img src="assets/porto/emindtut/thumb.png" alt="Project">
+
+                    </div>
+                    <div class="porto-info">
+                        <h3 class="project-name">Emindtutor SaaS Platform</h3>
+                        <p class="project-cat">WEB APPLICATION</p>
+                    </div>
+                </div>
+
+                <div class="porto-card" onclick="openModal('modal-binbud')">
+                    <div class="porto-thumb">
+                        <button class="porto-expand-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/>
+                            </svg>
+                        </button>
+                        <img src="assets/porto/binbud/thumb.png" alt="Project">
+                    </div>
+                    <div class="porto-info">
+                        <h3 class="project-name">BinBuddy - Gamified Waste Management App</h3>
+                        <p class="project-cat">UI/UX DESIGN</p>
+                    </div>
+                </div>
+
+                <div class="porto-card" onclick="openModal('modal-rekind')">
+                    <div class="porto-thumb">
+                        <button class="porto-expand-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/>
+                            </svg>
+                        </button>
+                        <img src="assets/porto/rekind/thumb.png" alt="Project">
+                    </div>
+                    <div class="porto-info">
+                        <h3 class="project-name">CoComm Product & Deliverables</h3>
+                        <p class="project-cat">WEB APPLICATION</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="modal-emindtut" class="modal-overlay">
+        <div class="modal-window">
+            <button class="modal-close" onclick="closeModal('modal-emindtut')">&times;</button>
+            
+            <div class="modal-content-layout">
+                <div class="modal-gallery">
+                    <div class="slider-container" id="slider-emindtut">
+                        <img src="assets/porto/emindtut/1.png" alt="Detail 1">
+                        <img src="assets/porto/emindtut/2.png" alt="Detail 2"> 
+                        <img src="assets/porto/emindtut/3.png" alt="Detail 3"> 
+                    </div>
+
+                    <div class="slider-nav">
+                        <button class="slider-btn" onclick="slidePorto('slider-emindtut', 'left')">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                <path d="M15 18l-6-6 6-6"/>
+                            </svg>
+                        </button>
+                        <button class="slider-btn" onclick="slidePorto('slider-emindtut', 'right')">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                <path d="M9 18l6-6-6-6"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="modal-details">
+                    <span class="modal-category">WEB APPLICATION</span>
+                    <h2>Emindtutor SaaS Platform</h2>
+                    <div class="modal-divider"></div>
+
+                    <p class="modal-description">
+                        This project is a web-based SaaS (Software as a Service) platform designed to digitalize 
+                        the education sector for the Malaysian market. The platform enables educational business 
+                        owners, such as tuition centers or religious classes, to manage their operations seamlessly. 
+                        It features a multi-user ecosystem with dedicated portals for administrators, tutors, 
+                        and students, supporting both English and Malay languages for a localized experience.
+                    </p>
+
+                    <div class="modal-info-list">
+                        <div class="info-item">
+                            <span class="info-label">Role</span>
+                            <span class="info-value">End-to-End Developer (UI/UX Designer, Backend Developer, & QA)</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Tech Stack</span>
+                            <span class="info-value">Laravel, Tailwind CSS, MySQL</span>
+                        </div>
+                        
+                        <a href="https://emindtutor.com/" target="_blank" class="btn-visit">
+                            View Live Project
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-binbud" class="modal-overlay">
+        <div class="modal-window">
+            <button class="modal-close" onclick="closeModal('modal-binbud')">&times;</button>
+            
+            <div class="modal-content-layout">
+                <div class="modal-gallery">
+                    <div class="slider-container" id="slider-binbud">
+                        <img src="assets/porto/binbud/1.png" alt="Detail 1">
+                        <img src="assets/porto/binbud/2.png" alt="Detail 2"> 
+                        <img src="assets/porto/binbud/3.png" alt="Detail 3"> 
+                        <img src="assets/porto/binbud/4.png" alt="Detail 4">
+                        <img src="assets/porto/binbud/6.png" alt="Detail 6">
+                        <img src="assets/porto/binbud/7.png" alt="Detail 7">
+                        <img src="assets/porto/binbud/8.png" alt="Detail 8">
+                    </div>
+
+                    <div class="slider-nav">
+                        <button class="slider-btn" onclick="slidePorto('slider-binbud', 'left')">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                <path d="M15 18l-6-6 6-6"/>
+                            </svg>
+                        </button>
+                        <button class="slider-btn" onclick="slidePorto('slider-binbud', 'right')">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                <path d="M9 18l6-6-6-6"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="modal-details">
+                    <span class="modal-category">UI/UX DESIGN</span>
+                    <h2>BinBuddy - Gamified Waste Management App</h2>
+                    <div class="modal-divider"></div>
+
+                    <p class="modal-description">
+                        BinBuddy is a mobile app concept designed for the Arkavidia 9.0 
+                        UX competition to tackle Indonesia's waste crisis. It uses gamification 
+                        to turn responsible waste disposal into a fun, rewarding habit. The app 
+                        features waste identification, a bin-locator map, and a reward system to 
+                        encourage sustainable living and support global SDGs.
+                    </p>
+
+                    <div class="modal-info-list">
+                        <div class="info-item">
+                            <span class="info-label">Role</span>
+                            <span class="info-value">UI/UX Designer</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Tech Stack</span>
+                            <span class="info-value">Figma, Canva</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Context</span>
+                            <span class="info-value">Arkavidia 9.0 National Competition</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Key Features</span>
+                            <span class="info-value">Waste Scanning, Nearest Bin Map, Rewards & Achievements.</span>
+                        </div>
+                        
+                        <a href="https://www.figma.com/file/pG69gtnWXwdPVW2ayGaShI/BinBuds" target="_blank" class="btn-visit">
+                            View Prototype
+                        </a>
+                        <a href="https://drive.google.com/file/d/1Oo7N-L0FRKKYC6z5nGcy6mZ72b77Aj0y/view?usp=sharing" target="_blank" class="btn-visit">
+                            View Proposal
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-rekind" class="modal-overlay">
+        <div class="modal-window">
+            <button class="modal-close" onclick="closeModal('modal-rekind')">&times;</button>
+            
+            <div class="modal-content-layout">
+                <div class="modal-gallery">
+                    <div class="slider-container" id="slider-rekind">
+                        <img src="assets/porto/rekind/1.png" alt="Detail 1">
+                        <img src="assets/porto/rekind/2.png" alt="Detail 2"> 
+                        <img src="assets/porto/rekind/3.png" alt="Detail 3"> 
+                        <img src="assets/porto/rekind/4.png" alt="Detail 4">
+                        <img src="assets/porto/rekind/5.png" alt="Detail 5">
+                    </div>
+
+                    <div class="slider-nav">
+                        <button class="slider-btn" onclick="slidePorto('slider-rekind', 'left')">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                <path d="M15 18l-6-6 6-6"/>
+                            </svg>
+                        </button>
+                        <button class="slider-btn" onclick="slidePorto('slider-rekind', 'right')">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                <path d="M9 18l6-6-6-6"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="modal-details">
+                    <span class="modal-category">WEB APPLICATION</span>
+                    <h2>CoComm Product & Deliverables</h2>
+                    <div class="modal-divider"></div>
+
+                    <p class="modal-description">
+                        Developed in collaboration with PT Rekayasa Industri (Rekind), 
+                        a major Indonesian state-owned enterprise (BUMN) in industrial 
+                        engineering. This platform was created to digitize and centralize 
+                        internal resource management. The application streamlines access to 
+                        corporate documents, automates equipment lending through a ticketing 
+                        system, and provides an integrated approval workflow for data 
+                        submission between employees and managers.
+                    </p>
+
+                    <div class="modal-info-list">
+                        <div class="info-item">
+                            <span class="info-label">Role</span>
+                            <span class="info-value">Lead UI/UX Designer & Frontend Developer</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Tech Stack</span>
+                            <span class="info-value">Figma, Laravel, Tailwind CSS, MySQL</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Context</span>
+                            <span class="info-value">Consultancy Project Course in partnership with Xtrahera</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Key Features</span>
+                            <span class="info-value">Automated Ticketing System, Corporate Resource Library, Management Approval Workflow, Survey & Data Management.</span>
+                        </div>
+                        
+                        <a href="https://www.figma.com/proto/xMLZDfJWqPkKSvnZggxvxg/PROKON-1.2?node-id=153-18386&t=LQ67eSP6HsnkdxFd-1&scaling=contain&content-scaling=fixed" target="_blank" class="btn-visit">
+                            View Prototype
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section id="contact" class="py-24 px-6 relative overflow-hidden">
+        <div class="absolute top-0 right-0 w-[500px] h-[500px] bg-indigo-600/20 blur-[120px] rounded-full -mr-64 -mt-64"></div>
+        <div class="absolute bottom-0 left-0 w-[300px] h-[300px] bg-purple-600/10 blur-[100px] rounded-full -ml-32 -mb-32"></div>
+
+        <div class="max-w-6xl mx-auto relative z-10">
+            <div class="bg-white/15 backdrop-blur-xl border border-white/10 rounded-[40px] p-8 md:p-16 shadow-2xl" data-aos="zoom-in-up">
+                <div class="grid md:grid-cols-2 gap-16 items-start">
+                    
+                    <div data-aos="fade-right" data-aos-delay="200">
+                        <h2 class="text-4xl font-bold text-[#461220] mb-6">Get in touch</h2>
+                        <p class="text-[#735751] mb-10 leading-relaxed text-lg">
+                            I'm very approachable and would love to speak to you. Feel free to call, send me an email, or simply complete the enquiry form.
+                        </p>
+                        
+                        <div class="space-y-6 mb-12">
+                            <div class="flex items-center gap-4 group cursor-pointer">
+                                <div class="w-12 h-12 bg-[#461220]/10 rounded-full flex items-center justify-center group-hover:bg-[#FCB9B2] transition-colors">
+                                    <i class="fa-solid fa-phone text-[#461220]"></i>
+                                </div>
+                                <span class="text-[#735751] font-medium">+62 823-8647-8746</span>
+                            </div>
+                            <div class="flex items-center gap-4 group cursor-pointer">
+                                <div class="w-12 h-12 bg-[#461220]/10 rounded-full flex items-center justify-center group-hover:bg-[#FCB9B2] transition-colors">
+                                    <i class="fa-solid fa-envelope text-[#461220]"></i>
+                                </div>
+                                <span class="text-[#735751] font-medium">mkanzaki97@gmail.com</span>
+                            </div>
+                        </div>
+
+                        <div class="flex gap-4">
+                            <a href="https://www.instagram.com/fshn_by/" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-indigo-500/80 flex items-center justify-center text-white hover:bg-indigo-500 transition-all"><i class="fab fa-instagram"></i></a>
+                            <a href="https://github.com/alipa97" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-gray-900/80 flex items-center justify-center text-white hover:bg-black transition-all"><i class="fab fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/alifasalsabilacomsci/" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-blue-600/80 flex items-center justify-center text-white hover:bg-blue-600 transition-all"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="bg-[#FCB9B2]/50 p-8 rounded-3xl border border-white/10" data-aos="fade-left" data-aos-delay="400">
+                        <h3 class="text-xl font-semibold text-[#461220] mb-6">Send me a message</h3>
+                        <form action="https://formspree.io/f/mqeavbez" method="POST" class="space-y-4">
+                            <div>
+                                <input type="text" name="name" placeholder="Name" required
+                                    class="w-full bg-white/10 border border-white/10 rounded-xl px-4 py-3 text-[#461220] placeholder-gray-500 focus:outline-none focus:border-indigo-500 transition-all">
+                            </div>
+
+                            <div>
+                                <input type="email" name="email" placeholder="Email Address" required
+                                    class="w-full bg-white/10 border border-white/10 rounded-xl px-4 py-3 text-[#461220] placeholder-gray-500 focus:outline-none focus:border-indigo-500 transition-all">
+                            </div>
+
+                            <div>
+                                <input type="text" name="subject" placeholder="Subject"
+                                    class="w-full bg-white/10 border border-white/10 rounded-xl px-4 py-3 text-[#461220] placeholder-gray-500 focus:outline-none focus:border-indigo-500 transition-all">
+                            </div>
+
+                            <div>
+                                <textarea name="message" placeholder="Your message" rows="4" required
+                                    class="w-full bg-white/10 border border-white/10 rounded-xl px-4 py-3 text-[#461220] placeholder-gray-500 focus:outline-none focus:border-indigo-500 transition-all"></textarea>
+                            </div>
+
+                            <button type="submit" class="magic-btn">
+                                Send message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-[#8C2F39] py-12 px-6 border-t border-white/5">
+        <div class="max-w-6xl mx-auto">
+            <div class="flex flex-wrap justify-center gap-8 md:gap-12 mb-10 text-gray-300 font-medium">
+                <a href="#home" class="hover:text-white transition-colors">Home</a>
+                <a href="#about" class="hover:text-white transition-colors">About me</a>
+                <a href="#portfolio" class="hover:text-white transition-colors">Work</a>
+                <a href="#contact" class="hover:text-white transition-colors">Contact</a>
+            </div>
+
+            <div class="flex justify-center gap-6 mb-10">
+                <a href="https://www.instagram.com/fshn_by/" target="_blank" rel="noopener noreferrer" class="text-xl text-gray-400 hover:text-pink-500 transition-all"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/alifasalsabilacomsci/" target="_blank" rel="noopener noreferrer" class="text-xl text-gray-400 hover:text-blue-500 transition-all"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/alipa97" target="_blank" rel="noopener noreferrer" class="text-xl text-gray-400 hover:text-white transition-all"><i class="fab fa-github"></i></a>
+            </div>
+
+            <div class="border-t border-white/5 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-white text-sm">© 2026 Alifa Salsabila. All rights reserved.</p>
+                <div class="flex gap-6 text-sm text-gray-500">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+    AOS.init({
+        duration: 1000,
+        once: true,
+        offset: 200
+    });
+    </script>
+</body>
+</html>

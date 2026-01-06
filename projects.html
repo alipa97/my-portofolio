@@ -1,0 +1,2154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Projects | Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/style.css"> 
+</head>
+<body class="smooth-scroll bg-white">
+    <!-- Animated Background -->
+    <div class="blob-container">
+        <div class="blob blob-lg bg-deep-red move-1" style="top: -10%; left: -10%;"></div>
+        
+        <div class="blob blob-md bg-rose move-2" style="top: -5%; right: -5%;"></div>
+        
+        <div class="blob blob-lg bg-soft-pink move-3" style="bottom: -15%; right: -10%;"></div>
+        
+        <div class="blob blob-md bg-cream move-4" style="bottom: -10%; left: -5%;"></div>
+        
+        <div class="blob blob-sm bg-deep-red move-2" style="top: 40%; left: 30%; opacity: 0.4;"></div>
+        <div class="blob blob-sm bg-rose move-1" style="top: 20%; right: 20%; opacity: 0.3;"></div>
+    </div>
+
+    <nav class="fixed top-0 w-full bg-white/80 backdrop-blur-md shadow-sm z-50">
+        <div class="max-w-7xl mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <a href="index.html" class="text-2xl font-bold gradient-text">ALIFA</a>
+                
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html#home" class="text-gray-700 hover:text-[#B23A48] transition">Home</a>
+                    <a href="index.html#about" class="text-gray-700 hover:text-[#B23A48] transition">About</a>
+                    <a href="index.html#services" class="text-gray-700 hover:text-[#B23A48] transition">Services</a>
+                    <a href="index.html#portfolio" class="text-[#B23A48] font-semibold transition">Portfolio</a>
+                    <a href="index.html#contact" class="text-gray-700 hover:text-[#B23A48] transition">Contact</a>
+                </div>
+
+                <button id="menu-btn" class="md:hidden text-gray-700">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+
+            <div id="mobile-menu" class="hidden md:hidden mt-4 space-y-2">
+                <a href="index.html#home" class="block text-gray-700 py-2">Home</a>
+                <a href="index.html#about" class="block text-gray-700 py-2">About</a>
+                <a href="index.html#services" class="block text-gray-700 py-2">Services</a>
+                <a href="#portfolio" class="block text-[#B23A48] py-2">Portfolio</a>
+                <a href="index.html#contact" class="block text-gray-700 py-2">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio-section">
+        <div class="portfolio-container">
+
+            <header class="archive-header">
+                <!-- <div class="container"> -->
+                    <a href="index.html" class="back-home">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M19 12H5M12 19l-7-7 7-7"/>
+                        </svg>
+                        Back to Home
+                    </a>
+                    
+                    <div class="header-glow"></div>
+                
+                    <h2 class="portfolio-title">Archive <span class="highlight">Projects</span></h2>
+                    <span class="porto-count text-gray-700">Total Projects: 25</span>
+                <!-- </div> -->
+                <div class="header-glow"></div>
+            </header>
+
+            <div class="porto-grid">
+                <div class="porto-card" onclick="openModal('modal-emindtut')">
+                    <div class="porto-thumb">
+                        <button class="porto-expand-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+                                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M11.1 3.002c-3.648.007-5.56.096-6.78 1.317C3.002 5.637 3.002 7.758 3.002 12s0 6.363 1.318 7.681c1.317 1.318 3.438 1.318 7.68 1.318s6.363 0 7.68-1.318c1.222-1.22 1.312-3.132 1.318-6.78m-.518-9.383l-5.549 5.534m5.55-5.534c-.495-.495-3.822-.449-4.526-.439m4.525.439c.494.494.448 3.825.438 4.53"/>
+                            </svg>
+                        </button>
+                        <img src="assets/porto/emindtut/thumb.png" alt="Project">
+                    </div>
+                    <div class="porto-info">
+                        <h3 class="project-name">Emindtutor SaaS Platform</h3>
+                        <p class="project-cat">WEB APPLICATION</p>
+                    </div>
+                </div>
+
+                <div class="porto-card" onclick="openModal('modal-binbud')">
+                    <div class="porto-thumb">
+                        <button class="porto-expand-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+                                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M11.1 3.002c-3.648.007-5.56.096-6.78 1.317C3.002 5.637 3.002 7.758 3.002 12s0 6.363 1.318 7.681c1.317 1.318 3.438 1.318 7.68 1.318s6.363 0 7.68-1.318c1.222-1.22 1.312-3.132 1.318-6.78m-.518-9.383l-5.549 5.534m5.55-5.534c-.495-.495-3.822-.449-4.526-.439m4.525.439c.494.494.448 3.825.438 4.53"/>
+                            </svg>
+                        </button>
+                        <img src="assets/porto/binbud/thumb.png" alt="Project">
+                    </div>
+                    <div class="porto-info">
+                        <h3 class="project-name">BinBuddy - Gamified Waste Management App</h3>
+                        <p class="project-cat">UI/UX DESIGN</p>
+                    </div>
+                </div>
+                <div class="porto-card" onclick="openModal('modal-rekind')">
+                    <div class="porto-thumb">
+                        <button class="porto-expand-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+                                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M11.1 3.002c-3.648.007-5.56.096-6.78 1.317C3.002 5.637 3.002 7.758 3.002 12s0 6.363 1.318 7.681c1.317 1.318 3.438 1.318 7.68 1.318s6.363 0 7.68-1.318c1.222-1.22 1.312-3.132 1.318-6.78m-.518-9.383l-5.549 5.534m5.55-5.534c-.495-.495-3.822-.449-4.526-.439m4.525.439c.494.494.448 3.825.438 4.53"/>
+                            </svg>
+                        </button>
+                        <img src="assets/porto/rekind/thumb.png" alt="Project">
+                    </div>
+                    <div class="porto-info">
+                        <h3 class="project-name">CoComm Product & Deliverables</h3>
+                        <p class="project-cat">WEB APPLICATION</p>
+                    </div>
+                </div>
+                <div class="porto-card" onclick="openModal('modal-florist')">
+                    <div class="porto-thumb">
+                        <button class="porto-expand-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+                                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M11.1 3.002c-3.648.007-5.56.096-6.78 1.317C3.002 5.637 3.002 7.758 3.002 12s0 6.363 1.318 7.681c1.317 1.318 3.438 1.318 7.68 1.318s6.363 0 7.68-1.318c1.222-1.22 1.312-3.132 1.318-6.78m-.518-9.383l-5.549 5.534m5.55-5.534c-.495-.495-3.822-.449-4.526-.439m4.525.439c.494.494.448 3.825.438 4.53"/>
+                            </svg>
+                        </button>
+                        <img src="assets/porto/florist/thumb.png" alt="Project">
+                    </div>
+                    <div class="porto-info">
+                        <h3 class="project-name">Teska Florist - E-Commerce Platform</h3>
+                        <p class="project-cat">WEB APPLICATION</p>
+                    </div>
+                </div>
+                <div class="porto-card" onclick="openModal('modal-buzkit')">
+                    <div class="porto-thumb">
+                        <button class="porto-expand-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+                                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M11.1 3.002c-3.648.007-5.56.096-6.78 1.317C3.002 5.637 3.002 7.758 3.002 12s0 6.363 1.318 7.681c1.317 1.318 3.438 1.318 7.68 1.318s6.363 0 7.68-1.318c1.222-1.22 1.312-3.132 1.318-6.78m-.518-9.383l-5.549 5.534m5.55-5.534c-.495-.495-3.822-.449-4.526-.439m4.525.439c.494.494.448 3.825.438 4.53"/>
+                            </svg>
+                        </button>
+                        <img src="assets/porto/buzkit/thumb.png" alt="Project">
+                    </div>
+                    <div class="porto-info">
+                        <h3 class="project-name">BuzKIT - Bus Keep In Track</h3>
+                        <p class="project-cat">ICT BUSINESS & INNOVATION</p>
+                    </div>
+                </div>
+                <div class="porto-card" onclick="openModal('modal-sugarsling')">
+                    <div class="porto-thumb">
+                        <button class="porto-expand-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+                                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M11.1 3.002c-3.648.007-5.56.096-6.78 1.317C3.002 5.637 3.002 7.758 3.002 12s0 6.363 1.318 7.681c1.317 1.318 3.438 1.318 7.68 1.318s6.363 0 7.68-1.318c1.222-1.22 1.312-3.132 1.318-6.78m-.518-9.383l-5.549 5.534m5.55-5.534c-.495-.495-3.822-.449-4.526-.439m4.525.439c.494.494.448 3.825.438 4.53"/>
+                            </svg>
+                        </button>
+                        <img src="assets/porto/sugarsling/thumb.png" alt="Project">
+                    </div>
+                    <div class="porto-info">
+                        <h3 class="project-name">SugarSlingGame - OOP Based Desktop Game</h3>
+                        <p class="project-cat">DESKTOP GAME DEVELOPMENT</p>
+                    </div>
+                </div>
+                <div class="porto-card" onclick="openModal('modal-spss')">
+                    <div class="porto-thumb">
+                        <button class="porto-expand-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+                                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M11.1 3.002c-3.648.007-5.56.096-6.78 1.317C3.002 5.637 3.002 7.758 3.002 12s0 6.363 1.318 7.681c1.317 1.318 3.438 1.318 7.68 1.318s6.363 0 7.68-1.318c1.222-1.22 1.312-3.132 1.318-6.78m-.518-9.383l-5.549 5.534m5.55-5.534c-.495-.495-3.822-.449-4.526-.439m4.525.439c.494.494.448 3.825.438 4.53"/>
+                            </svg>
+                        </button>
+                        <img src="assets/porto/spss/thumb.png" alt="Project">
+                    </div>
+                    <div class="porto-info">
+                        <h3 class="project-name">Attendance System - SMK N 4 Klaten</h3>
+                        <p class="project-cat">WEB APPLICATION</p>
+                    </div>
+                </div>
+                <div class="porto-card" onclick="openModal('modal-campusday')">
+                    <div class="porto-thumb">
+                        <button class="porto-expand-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+                                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M11.1 3.002c-3.648.007-5.56.096-6.78 1.317C3.002 5.637 3.002 7.758 3.002 12s0 6.363 1.318 7.681c1.317 1.318 3.438 1.318 7.68 1.318s6.363 0 7.68-1.318c1.222-1.22 1.312-3.132 1.318-6.78m-.518-9.383l-5.549 5.534m5.55-5.534c-.495-.495-3.822-.449-4.526-.439m4.525.439c.494.494.448 3.825.438 4.53"/>
+                            </svg>
+                        </button>
+                        <img src="assets/porto/campusday/thumb.png" alt="Project">
+                    </div>
+                    <div class="porto-info">
+                        <h3 class="project-name">Campus Day 2024 - SMA Negeri 24 Bandung</h3>
+                        <p class="project-cat">WEB DEVELOPMENT</p>
+                    </div>
+                </div>
+                <div class="porto-card" onclick="openModal('modal-camping')">
+                    <div class="porto-thumb">
+                        <button class="porto-expand-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+                                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M11.1 3.002c-3.648.007-5.56.096-6.78 1.317C3.002 5.637 3.002 7.758 3.002 12s0 6.363 1.318 7.681c1.317 1.318 3.438 1.318 7.68 1.318s6.363 0 7.68-1.318c1.222-1.22 1.312-3.132 1.318-6.78m-.518-9.383l-5.549 5.534m5.55-5.534c-.495-.495-3.822-.449-4.526-.439m4.525.439c.494.494.448 3.825.438 4.53"/>
+                            </svg>
+                        </button>
+                        <img src="assets/porto/camping/thumb.png" alt="Project">
+                    </div>
+                    <div class="porto-info">
+                        <h3 class="project-name">Camping Gear Rental App</h3>
+                        <p class="project-cat">MOBILE APPLICATION</p>
+                    </div>
+                </div>
+                <div class="porto-card" onclick="openModal('modal-cafe')">
+                    <div class="porto-thumb">
+                        <button class="porto-expand-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+                                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M11.1 3.002c-3.648.007-5.56.096-6.78 1.317C3.002 5.637 3.002 7.758 3.002 12s0 6.363 1.318 7.681c1.317 1.318 3.438 1.318 7.68 1.318s6.363 0 7.68-1.318c1.222-1.22 1.312-3.132 1.318-6.78m-.518-9.383l-5.549 5.534m5.55-5.534c-.495-.495-3.822-.449-4.526-.439m4.525.439c.494.494.448 3.825.438 4.53"/>
+                            </svg>
+                        </button>
+                        <img src="assets/porto/cafe/thumb.png" alt="Project">
+                    </div>
+                    <div class="porto-info">
+                        <h3 class="project-name">Coffee Omma - POS & Cafe Management System</h3>
+                        <p class="project-cat">WEB APPLICATION</p>
+                    </div>
+                </div>
+                <div class="porto-card" onclick="openModal('modal-mepel-ibu')">
+                    <div class="porto-thumb">
+                        <button class="porto-expand-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+                                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M11.1 3.002c-3.648.007-5.56.096-6.78 1.317C3.002 5.637 3.002 7.758 3.002 12s0 6.363 1.318 7.681c1.317 1.318 3.438 1.318 7.68 1.318s6.363 0 7.68-1.318c1.222-1.22 1.312-3.132 1.318-6.78m-.518-9.383l-5.549 5.534m5.55-5.534c-.495-.495-3.822-.449-4.526-.439m4.525.439c.494.494.448 3.825.438 4.53"/>
+                            </svg>
+                        </button>
+                        <img src="assets/porto/mepel-ibu/thumb.png" alt="Project">
+                    </div>
+                    <div class="porto-info">
+                        <h3 class="project-name">IPAS Interactive Learning Media</h3>
+                        <p class="project-cat">WEB APPLICATION</p>
+                    </div>
+                </div>
+                <div class="porto-card" onclick="openModal('modal-zmart')">
+                    <div class="porto-thumb">
+                        <button class="porto-expand-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+                                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M11.1 3.002c-3.648.007-5.56.096-6.78 1.317C3.002 5.637 3.002 7.758 3.002 12s0 6.363 1.318 7.681c1.317 1.318 3.438 1.318 7.68 1.318s6.363 0 7.68-1.318c1.222-1.22 1.312-3.132 1.318-6.78m-.518-9.383l-5.549 5.534m5.55-5.534c-.495-.495-3.822-.449-4.526-.439m4.525.439c.494.494.448 3.825.438 4.53"/>
+                            </svg>
+                        </button>
+                        <img src="assets/porto/zmart/thumb.png" alt="Project">
+                    </div>
+                    <div class="porto-info">
+                        <h3 class="project-name">ZMart GIS - Social Empowerment Monitoring System</h3>
+                        <p class="project-cat">WEB APPLICATION</p>
+                    </div>
+                </div>
+                <div class="porto-card" onclick="openModal('modal-solaris')">
+                    <div class="porto-thumb">
+                        <button class="porto-expand-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+                                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M11.1 3.002c-3.648.007-5.56.096-6.78 1.317C3.002 5.637 3.002 7.758 3.002 12s0 6.363 1.318 7.681c1.317 1.318 3.438 1.318 7.68 1.318s6.363 0 7.68-1.318c1.222-1.22 1.312-3.132 1.318-6.78m-.518-9.383l-5.549 5.534m5.55-5.534c-.495-.495-3.822-.449-4.526-.439m4.525.439c.494.494.448 3.825.438 4.53"/>
+                            </svg>
+                        </button>
+                        <img src="assets/porto/solaris/thumb.png" alt="Project">
+                    </div>
+                    <div class="porto-info">
+                        <h3 class="project-name">Solaris - 3D Solar System Simulation</h3>
+                        <p class="project-cat">COMPUTER GRAPHICS</p>
+                    </div>
+                </div>
+                <div class="porto-card" onclick="openModal('modal-sisop')">
+                    <div class="porto-thumb">
+                        <button class="porto-expand-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+                                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M11.1 3.002c-3.648.007-5.56.096-6.78 1.317C3.002 5.637 3.002 7.758 3.002 12s0 6.363 1.318 7.681c1.317 1.318 3.438 1.318 7.68 1.318s6.363 0 7.68-1.318c1.222-1.22 1.312-3.132 1.318-6.78m-.518-9.383l-5.549 5.534m5.55-5.534c-.495-.495-3.822-.449-4.526-.439m4.525.439c.494.494.448 3.825.438 4.53"/>
+                            </svg>
+                        </button>
+                        <img src="assets/porto/sisop/thumb.png" alt="Project">
+                    </div>
+                    <div class="porto-info">
+                        <h3 class="project-name">Unix-style File System Simulator</h3>
+                        <p class="project-cat">OPERATING SYSTEM SIMULATION</p>
+                    </div>
+                </div>
+                <div class="porto-card" onclick="openModal('modal-delish')">
+                    <div class="porto-thumb">
+                        <button class="porto-expand-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+                                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M11.1 3.002c-3.648.007-5.56.096-6.78 1.317C3.002 5.637 3.002 7.758 3.002 12s0 6.363 1.318 7.681c1.317 1.318 3.438 1.318 7.68 1.318s6.363 0 7.68-1.318c1.222-1.22 1.312-3.132 1.318-6.78m-.518-9.383l-5.549 5.534m5.55-5.534c-.495-.495-3.822-.449-4.526-.439m4.525.439c.494.494.448 3.825.438 4.53"/>
+                            </svg>
+                        </button>
+                        <img src="assets/porto/delish/thumb.png" alt="Project">
+                    </div>
+                    <div class="porto-info">
+                        <h3 class="project-name">Recipe Community App - Full-stack Cooking Platform</h3>
+                        <p class="project-cat">MOBILE APPLICATION</p>
+                    </div>
+                </div>
+                <div class="porto-card" onclick="openModal('modal-kir')">
+                    <div class="porto-thumb">
+                        <button class="porto-expand-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+                                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M11.1 3.002c-3.648.007-5.56.096-6.78 1.317C3.002 5.637 3.002 7.758 3.002 12s0 6.363 1.318 7.681c1.317 1.318 3.438 1.318 7.68 1.318s6.363 0 7.68-1.318c1.222-1.22 1.312-3.132 1.318-6.78m-.518-9.383l-5.549 5.534m5.55-5.534c-.495-.495-3.822-.449-4.526-.439m4.525.439c.494.494.448 3.825.438 4.53"/>
+                            </svg>
+                        </button>
+                        <img src="assets/porto/kir/thumb.png" alt="Project">
+                    </div>
+                    <div class="porto-info">
+                        <h3 class="project-name">KIR - Room Inventory Management System</h3>
+                        <p class="project-cat">WEB APPLICATION</p>
+                    </div>
+                </div>
+                <div class="porto-card" onclick="openModal('modal-toga')">
+                    <div class="porto-thumb">
+                        <button class="porto-expand-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+                                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M11.1 3.002c-3.648.007-5.56.096-6.78 1.317C3.002 5.637 3.002 7.758 3.002 12s0 6.363 1.318 7.681c1.317 1.318 3.438 1.318 7.68 1.318s6.363 0 7.68-1.318c1.222-1.22 1.312-3.132 1.318-6.78m-.518-9.383l-5.549 5.534m5.55-5.534c-.495-.495-3.822-.449-4.526-.439m4.525.439c.494.494.448 3.825.438 4.53"/>
+                            </svg>
+                        </button>
+                        <img src="assets/porto/toga/thumb.png" alt="Project">
+                    </div>
+                    <div class="porto-info">
+                        <h3 class="project-name">AR-TOGA: AI-Powered Medicinal Plant Identification</h3>
+                        <p class="project-cat">MOBILE APPLICATION & AI INTEGRATION</p>
+                    </div>
+                </div>
+                <div class="porto-card" onclick="openModal('modal-bigdata')">
+                    <div class="porto-thumb">
+                        <button class="porto-expand-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+                                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M11.1 3.002c-3.648.007-5.56.096-6.78 1.317C3.002 5.637 3.002 7.758 3.002 12s0 6.363 1.318 7.681c1.317 1.318 3.438 1.318 7.68 1.318s6.363 0 7.68-1.318c1.222-1.22 1.312-3.132 1.318-6.78m-.518-9.383l-5.549 5.534m5.55-5.534c-.495-.495-3.822-.449-4.526-.439m4.525.439c.494.494.448 3.825.438 4.53"/>
+                            </svg>
+                        </button>
+                        <img src="assets/porto/bigdata/thumb.png" alt="Project">
+                    </div>
+                    <div class="porto-info">
+                        <h3 class="project-name">Stock Market Dashboard - Integrated Data Pipeline & Visualization</h3>
+                        <p class="project-cat">BIG DATA PLATFORMS</p>
+                    </div>
+                </div>
+                <div class="porto-card" onclick="openModal('modal-idea-cipta')">
+                    <div class="porto-thumb">
+                        <button class="porto-expand-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+                                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M11.1 3.002c-3.648.007-5.56.096-6.78 1.317C3.002 5.637 3.002 7.758 3.002 12s0 6.363 1.318 7.681c1.317 1.318 3.438 1.318 7.68 1.318s6.363 0 7.68-1.318c1.222-1.22 1.312-3.132 1.318-6.78m-.518-9.383l-5.549 5.534m5.55-5.534c-.495-.495-3.822-.449-4.526-.439m4.525.439c.494.494.448 3.825.438 4.53"/>
+                            </svg>
+                        </button>
+                        <img src="assets/porto/idea-cipta/thumb.png" alt="Project">
+                    </div>
+                    <div class="porto-info">
+                        <h3 class="project-name">Interior & Exterior Design Marketplace</h3>
+                        <p class="project-cat">WEB APPLICATION</p>
+                    </div>
+                </div>
+                <div class="porto-card" onclick="openModal('modal-proyek')">
+                    <div class="porto-thumb">
+                        <button class="porto-expand-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+                                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M11.1 3.002c-3.648.007-5.56.096-6.78 1.317C3.002 5.637 3.002 7.758 3.002 12s0 6.363 1.318 7.681c1.317 1.318 3.438 1.318 7.68 1.318s6.363 0 7.68-1.318c1.222-1.22 1.312-3.132 1.318-6.78m-.518-9.383l-5.549 5.534m5.55-5.534c-.495-.495-3.822-.449-4.526-.439m4.525.439c.494.494.448 3.825.438 4.53"/>
+                            </svg>
+                        </button>
+                        <img src="assets/porto/proyek/thumb.png" alt="Project">
+                    </div>
+                    <div class="porto-info">
+                        <h3 class="project-name">ProTrack - Internal Project Management System</h3>
+                        <p class="project-cat">WEB APPLICATION</p>
+                    </div>
+                </div>
+                <div class="porto-card" onclick="openModal('modal-jarkom')">
+                    <div class="porto-thumb">
+                        <button class="porto-expand-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+                                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M11.1 3.002c-3.648.007-5.56.096-6.78 1.317C3.002 5.637 3.002 7.758 3.002 12s0 6.363 1.318 7.681c1.317 1.318 3.438 1.318 7.68 1.318s6.363 0 7.68-1.318c1.222-1.22 1.312-3.132 1.318-6.78m-.518-9.383l-5.549 5.534m5.55-5.534c-.495-.495-3.822-.449-4.526-.439m4.525.439c.494.494.448 3.825.438 4.53"/>
+                            </svg>
+                        </button>
+                        <img src="assets/porto/jarkom/thumb.png" alt="Project">
+                    </div>
+                    <div class="porto-info">
+                        <h3 class="project-name">Smart SME Network - Integrated IoT & Infrastructure Design</h3>
+                        <p class="project-cat">NETWORK ENGINEERING & IOT</p>
+                    </div>
+                </div>
+                <div class="porto-card" onclick="openModal('modal-rental')">
+                    <div class="porto-thumb">
+                        <button class="porto-expand-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+                                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M11.1 3.002c-3.648.007-5.56.096-6.78 1.317C3.002 5.637 3.002 7.758 3.002 12s0 6.363 1.318 7.681c1.317 1.318 3.438 1.318 7.68 1.318s6.363 0 7.68-1.318c1.222-1.22 1.312-3.132 1.318-6.78m-.518-9.383l-5.549 5.534m5.55-5.534c-.495-.495-3.822-.449-4.526-.439m4.525.439c.494.494.448 3.825.438 4.53"/>
+                            </svg>
+                        </button>
+                        <img src="assets/porto/rental/thumb.png" alt="Project">
+                    </div>
+                    <div class="porto-info">
+                        <h3 class="project-name">Car Rental Management System</h3>
+                        <p class="project-cat">WEB APPLICATION</p>
+                    </div>
+                </div>
+                <div class="porto-card" onclick="openModal('modal-search-engine')">
+                    <div class="porto-thumb">
+                        <button class="porto-expand-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+                                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M11.1 3.002c-3.648.007-5.56.096-6.78 1.317C3.002 5.637 3.002 7.758 3.002 12s0 6.363 1.318 7.681c1.317 1.318 3.438 1.318 7.68 1.318s6.363 0 7.68-1.318c1.222-1.22 1.312-3.132 1.318-6.78m-.518-9.383l-5.549 5.534m5.55-5.534c-.495-.495-3.822-.449-4.526-.439m4.525.439c.494.494.448 3.825.438 4.53"/>
+                            </svg>
+                        </button>
+                        <img src="assets/porto/search-engine/thumb.png" alt="Project">
+                    </div>
+                    <div class="porto-info">
+                        <h3 class="project-name">Andal Search Engine - Web Crawler & Information Retrieval</h3>
+                        <p class="project-cat">ALGORITHMS & DATA STRUCTURES</p>
+                    </div>
+                </div>
+                <div class="porto-card" onclick="openModal('modal-iot')">
+                    <div class="porto-thumb">
+                        <button class="porto-expand-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+                                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M11.1 3.002c-3.648.007-5.56.096-6.78 1.317C3.002 5.637 3.002 7.758 3.002 12s0 6.363 1.318 7.681c1.317 1.318 3.438 1.318 7.68 1.318s6.363 0 7.68-1.318c1.222-1.22 1.312-3.132 1.318-6.78m-.518-9.383l-5.549 5.534m5.55-5.534c-.495-.495-3.822-.449-4.526-.439m4.525.439c.494.494.448 3.825.438 4.53"/>
+                            </svg>
+                        </button>
+                        <img src="assets/porto/iot/thumb.png" alt="Project">
+                    </div>
+                    <div class="porto-info">
+                        <h3 class="project-name">SmartRation - IoT-Based Student Meal Monitoring System</h3>
+                        <p class="project-cat">IOT & COMPUTER VISION</p>
+                    </div>
+                </div>
+                <div class="porto-card" onclick="openModal('modal-gor')">
+                    <div class="porto-thumb">
+                        <button class="porto-expand-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+                                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M11.1 3.002c-3.648.007-5.56.096-6.78 1.317C3.002 5.637 3.002 7.758 3.002 12s0 6.363 1.318 7.681c1.317 1.318 3.438 1.318 7.68 1.318s6.363 0 7.68-1.318c1.222-1.22 1.312-3.132 1.318-6.78m-.518-9.383l-5.549 5.534m5.55-5.534c-.495-.495-3.822-.449-4.526-.439m4.525.439c.494.494.448 3.825.438 4.53"/>
+                            </svg>
+                        </button>
+                        <img src="assets/porto/gor/thumb.png" alt="Project">
+                    </div>
+                    <div class="porto-info">
+                        <h3 class="project-name">Kharisma Sports Center - Integrated Booking System</h3>
+                        <p class="project-cat">DATABASE SYSTEMS & WEB DEVELOPMENT</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MODAL PROJECT -->
+    <div id="modal-emindtut" class="modal-overlay">
+        <div class="modal-window">
+            <button class="modal-close" onclick="closeModal('modal-emindtut')">&times;</button>
+            
+            <div class="modal-content-layout">
+                <div class="modal-gallery">
+                    <div class="slider-container" id="slider-emindtut">
+                        <img src="assets/porto/emindtut/1.png" alt="Detail 1">
+                        <img src="assets/porto/emindtut/2.png" alt="Detail 2"> 
+                        <img src="assets/porto/emindtut/3.png" alt="Detail 3"> 
+                    </div>
+
+                    <div class="slider-nav">
+                        <button class="slider-btn" onclick="slidePorto('slider-emindtut', 'left')">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                <path d="M15 18l-6-6 6-6"/>
+                            </svg>
+                        </button>
+                        <button class="slider-btn" onclick="slidePorto('slider-emindtut', 'right')">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                <path d="M9 18l6-6-6-6"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="modal-details">
+                    <span class="modal-category">WEB APPLICATION</span>
+                    <h2>Emindtutor SaaS Platform</h2>
+                    <div class="modal-divider"></div>
+
+                    <p class="modal-description">
+                        This project is a web-based SaaS (Software as a Service) platform designed to digitalize 
+                        the education sector for the Malaysian market. The platform enables educational business 
+                        owners, such as tuition centers or religious classes, to manage their operations seamlessly. 
+                        It features a multi-user ecosystem with dedicated portals for administrators, tutors, 
+                        and students, supporting both English and Malay languages for a localized experience.
+                    </p>
+
+                    <div class="modal-info-list">
+                        <div class="info-item">
+                            <span class="info-label">Role</span>
+                            <span class="info-value">End-to-End Developer (UI/UX Designer, Backend Developer, & QA)</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Tech Stack</span>
+                            <span class="info-value">Laravel, Tailwind CSS, MySQL</span>
+                        </div>
+                        
+                        <a href="https://emindtutor.com/" target="_blank" class="btn-visit">
+                            View Live Project
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-binbud" class="modal-overlay">
+        <div class="modal-window">
+            <button class="modal-close" onclick="closeModal('modal-binbud')">&times;</button>
+            
+            <div class="modal-content-layout">
+                <div class="modal-gallery">
+                    <div class="slider-container" id="slider-binbud">
+                        <img src="assets/porto/binbud/1.png" alt="Detail 1">
+                        <img src="assets/porto/binbud/2.png" alt="Detail 2"> 
+                        <img src="assets/porto/binbud/3.png" alt="Detail 3"> 
+                        <img src="assets/porto/binbud/4.png" alt="Detail 4">
+                        <img src="assets/porto/binbud/6.png" alt="Detail 6">
+                        <img src="assets/porto/binbud/7.png" alt="Detail 7">
+                        <img src="assets/porto/binbud/8.png" alt="Detail 8">
+                    </div>
+
+                    <div class="slider-nav">
+                        <button class="slider-btn" onclick="slidePorto('slider-binbud', 'left')">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                <path d="M15 18l-6-6 6-6"/>
+                            </svg>
+                        </button>
+                        <button class="slider-btn" onclick="slidePorto('slider-binbud', 'right')">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                <path d="M9 18l6-6-6-6"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="modal-details">
+                    <span class="modal-category">UI/UX DESIGN</span>
+                    <h2>BinBuddy - Gamified Waste Management App</h2>
+                    <div class="modal-divider"></div>
+
+                    <p class="modal-description">
+                        BinBuddy is a mobile app concept designed for the Arkavidia 9.0 
+                        UX competition to tackle Indonesia's waste crisis. It uses gamification 
+                        to turn responsible waste disposal into a fun, rewarding habit. The app 
+                        features waste identification, a bin-locator map, and a reward system to 
+                        encourage sustainable living and support global SDGs.
+                    </p>
+
+                    <div class="modal-info-list">
+                        <div class="info-item">
+                            <span class="info-label">Role</span>
+                            <span class="info-value">UI/UX Designer</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Tech Stack</span>
+                            <span class="info-value">Figma, Canva</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Context</span>
+                            <span class="info-value">Arkavidia 9.0 National Competition</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Key Features</span>
+                            <span class="info-value">Waste Scanning, Nearest Bin Map, Rewards & Achievements.</span>
+                        </div>
+                        
+                        <a href="https://www.figma.com/file/pG69gtnWXwdPVW2ayGaShI/BinBuds" target="_blank" class="btn-visit">
+                            View Prototype
+                        </a>
+                        <a href="https://drive.google.com/file/d/1Oo7N-L0FRKKYC6z5nGcy6mZ72b77Aj0y/view?usp=sharing" target="_blank" class="btn-visit">
+                            View Proposal
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-rekind" class="modal-overlay">
+        <div class="modal-window">
+            <button class="modal-close" onclick="closeModal('modal-rekind')">&times;</button>
+            
+            <div class="modal-content-layout">
+                <div class="modal-gallery">
+                    <div class="slider-container" id="slider-rekind">
+                        <img src="assets/porto/rekind/1.png" alt="Detail 1">
+                        <img src="assets/porto/rekind/2.png" alt="Detail 2"> 
+                        <img src="assets/porto/rekind/3.png" alt="Detail 3"> 
+                        <img src="assets/porto/rekind/4.png" alt="Detail 4">
+                        <img src="assets/porto/rekind/5.png" alt="Detail 5">
+                    </div>
+
+                    <div class="slider-nav">
+                        <button class="slider-btn" onclick="slidePorto('slider-rekind', 'left')">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                <path d="M15 18l-6-6 6-6"/>
+                            </svg>
+                        </button>
+                        <button class="slider-btn" onclick="slidePorto('slider-rekind', 'right')">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                <path d="M9 18l6-6-6-6"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="modal-details">
+                    <span class="modal-category">WEB APPLICATION</span>
+                    <h2>CoComm Product & Deliverables</h2>
+                    <div class="modal-divider"></div>
+
+                    <p class="modal-description">
+                        Developed in collaboration with PT Rekayasa Industri (Rekind), 
+                        a major Indonesian state-owned enterprise (BUMN) in industrial 
+                        engineering. This platform was created to digitize and centralize 
+                        internal resource management. The application streamlines access to 
+                        corporate documents, automates equipment lending through a ticketing 
+                        system, and provides an integrated approval workflow for data 
+                        submission between employees and managers.
+                    </p>
+
+                    <div class="modal-info-list">
+                        <div class="info-item">
+                            <span class="info-label">Role</span>
+                            <span class="info-value">Lead UI/UX Designer & Frontend Developer</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Tech Stack</span>
+                            <span class="info-value">Figma, Laravel, Tailwind CSS, MySQL</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Context</span>
+                            <span class="info-value">Consultancy Project Course in partnership with Xtrahera</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Key Features</span>
+                            <span class="info-value">Automated Ticketing System, Corporate Resource Library, Management Approval Workflow, Survey & Data Management.</span>
+                        </div>
+                        
+                        <a href="https://www.figma.com/proto/xMLZDfJWqPkKSvnZggxvxg/PROKON-1.2?node-id=153-18386&t=LQ67eSP6HsnkdxFd-1&scaling=contain&content-scaling=fixed" target="_blank" class="btn-visit">
+                            View Prototype
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-florist" class="modal-overlay">
+        <div class="modal-window">
+            <button class="modal-close" onclick="closeModal('modal-florist')">&times;</button>
+            
+            <div class="modal-content-layout">
+                <div class="modal-gallery">
+                    <div class="slider-container" id="slider-florist">
+                        <img src="assets/porto/florist/1.png" alt="Detail 1">
+                        <img src="assets/porto/florist/2.png" alt="Detail 2"> 
+                        <img src="assets/porto/florist/3.png" alt="Detail 3"> 
+                    </div>
+
+                    <div class="slider-nav">
+                        <button class="slider-btn" onclick="slidePorto('slider-florist', 'left')">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                <path d="M15 18l-6-6 6-6"/>
+                            </svg>
+                        </button>
+                        <button class="slider-btn" onclick="slidePorto('slider-florist', 'right')">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                <path d="M9 18l6-6-6-6"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="modal-details">
+                    <span class="modal-category">WEB APPLICATION</span>
+                    <h2>Teska Florist - E-Commerce Platform</h2>
+                    <div class="modal-divider"></div>
+
+                    <p class="modal-description">
+                        Teska Florist is a streamlined e-commerce web application 
+                        dedicated to flower sales. As a full-stack project developed 
+                        during my tenure at Xtrahera, the platform features a clean 
+                        and elegant user interface to showcase floral products. It 
+                        includes essential e-commerce functionalities such as product 
+                        catalogs, order history tracking, and a seamless checkout experience.
+                    </p>
+
+                    <div class="modal-info-list">
+                        <div class="info-item">
+                            <span class="info-label">Role</span>
+                            <span class="info-value">End-to-End Developer (UI/UX Designer, Backend Developer, & QA)</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Tech Stack</span>
+                            <span class="info-value">Laravel, Tailwind CSS, MySQL</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Context</span>
+                            <span class="info-value">Professional Work (Xtrahera Client)</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Key Features</span>
+                            <span class="info-value">Floral Product Catalog, Order Management System, User Authentication, Responsive Design.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-buzkit" class="modal-overlay">
+        <div class="modal-window">
+            <button class="modal-close" onclick="closeModal('modal-buzkit')">&times;</button>
+            
+            <div class="modal-content-layout">
+                <div class="modal-gallery">
+                    <div class="slider-container" id="slider-buzkit">
+                        <img src="assets/porto/buzkit/1.png" alt="Detail 1">
+                        <img src="assets/porto/buzkit/2.png" alt="Detail 2"> 
+                        <img src="assets/porto/buzkit/3.png" alt="Detail 3"> 
+                        <img src="assets/porto/buzkit/4.png" alt="Detail 4"> 
+                        <img src="assets/porto/buzkit/5.png" alt="Detail 5"> 
+                        <img src="assets/porto/buzkit/6.png" alt="Detail 6"> 
+                        <img src="assets/porto/buzkit/7.jpeg" alt="Detail 7"> 
+                    </div>
+
+                    <div class="slider-nav">
+                        <button class="slider-btn" onclick="slidePorto('slider-buzkit', 'left')">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                <path d="M15 18l-6-6 6-6"/>
+                            </svg>
+                        </button>
+                        <button class="slider-btn" onclick="slidePorto('slider-buzkit', 'right')">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                <path d="M9 18l6-6-6-6"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="modal-details">
+                    <span class="modal-category">ICT BUSINESS & INNOVATION</span>
+                    <h2>BuzKIT - Bus Keep In Track</h2>
+                    <div class="modal-divider"></div>
+
+                    <p class="modal-description">
+                        BuzKIT is a tech-driven business solution designed to 
+                        revolutionize public transportation by eliminating 
+                        uncertainty in bus schedules. As a GPS-based real-time 
+                        tracking platform, it provides accurate arrival estimates 
+                        and delay notifications to improve commuter trust. Developed 
+                        for the GEMASTIK National Competition, BuzKIT supports the 
+                        "Smart Mobility" initiative by integrating IoT technology 
+                        with a data-driven business model to reduce urban traffic 
+                        and carbon emissions.
+                    </p>
+
+                    <div class="modal-info-list">
+                        <div class="info-item">
+                            <span class="info-label">Role</span>
+                            <span class="info-value">Chief Executive Officer (CEO) & Team Lead</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Tech Stack</span>
+                            <span class="info-value">IoT GPS Integration, Figma (Prototyping)</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Context</span>
+                            <span class="info-value">GEMASTIK (ICT Business Category)</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Key Features</span>
+                            <span class="info-value">Real-time Bus Tracking, Smart City Integration, Delay Notifications, Sustainability-focused Analytics.</span>
+                        </div>
+                        <a href="https://drive.google.com/file/d/1O4c6DABz92mSvSpT3cEysVpY0CQxqaQg/view?usp=sharing" target="_blank" class="btn-visit">
+                            Watch MVP Video
+                        </a>
+                        <a href="https://drive.google.com/file/d/1MBrIBc0nD-67vwJK7NlhOozBlZ1Lhppz/view?usp=sharing" target="_blank" class="btn-visit">
+                            View Pitch Deck
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-sugarsling" class="modal-overlay">
+        <div class="modal-window">
+            <button class="modal-close" onclick="closeModal('modal-sugarsling')">&times;</button>
+            
+            <div class="modal-content-layout">
+                <div class="modal-gallery">
+                    <div class="slider-container" id="slider-sugarsling">
+                        <img src="assets/porto/sugarsling/1.png" alt="Detail 1">
+                        <img src="assets/porto/sugarsling/2.png" alt="Detail 2"> 
+                        <img src="assets/porto/sugarsling/3.png" alt="Detail 3"> 
+                        <img src="assets/porto/sugarsling/4.png" alt="Detail 4"> 
+                    </div>
+
+                    <div class="slider-nav">
+                        <button class="slider-btn" onclick="slidePorto('slider-sugarsling', 'left')">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                <path d="M15 18l-6-6 6-6"/>
+                            </svg>
+                        </button>
+                        <button class="slider-btn" onclick="slidePorto('slider-sugarsling', 'right')">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                <path d="M9 18l6-6-6-6"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="modal-details">
+                    <span class="modal-category">DESKTOP GAME DEVELOPMENT</span>
+                    <h2>SugarSlingGame - OOP Based Desktop Game</h2>
+                    <div class="modal-divider"></div>
+
+                    <p class="modal-description">
+                        SugarSlingGame is a Java-based desktop game developed to 
+                        demonstrate advanced Object-Oriented Programming (OOP) 
+                        and MVVM architecture. The game features target-grabbing 
+                        mechanics using a Lasso, a dynamic scoring system with 
+                        various object values (Pokemon), and collision detection 
+                        for obstacles. The project focuses on clean code structure, 
+                        effectively decoupling business logic, the user interface, 
+                        and data binding.
+                    </p>
+
+                    <div class="modal-info-list">
+                        <div class="info-item">
+                            <span class="info-label">Role</span>
+                            <span class="info-value">Game Developer</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Tech Stack</span>
+                            <span class="info-value">Java (Swing & AWT), MySQL</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Context</span>
+                            <span class="info-value">Object-Oriented Programming Course (DPBO) Task</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Key Features</span>
+                            <span class="info-value">MVVM Architecture, Lasso Mechanics, Dynamic Scoring, Collision Detection Logic.</span>
+                        </div>
+                        <a href="https://www.youtube.com/watch?v=Mts0_eQZhyw&t=203s" target="_blank" class="btn-visit">
+                            Watch Demo Video
+                        </a>
+                        <a href="https://github.com/alipa97/Sugar-Sling-Game" target="_blank" class="btn-visit">
+                            View on GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-spss" class="modal-overlay">
+        <div class="modal-window">
+            <button class="modal-close" onclick="closeModal('modal-spss')">&times;</button>
+            
+            <div class="modal-content-layout">
+                <div class="modal-gallery">
+                    <div class="slider-container" id="slider-spss">
+                        <img src="assets/porto/spss/1.png" alt="Detail 1">
+                        <img src="assets/porto/spss/2.png" alt="Detail 2"> 
+                        <img src="assets/porto/spss/3.png" alt="Detail 3"> 
+                        <img src="assets/porto/spss/4.png" alt="Detail 4"> 
+                    </div>
+
+                    <div class="slider-nav">
+                        <button class="slider-btn" onclick="slidePorto('slider-spss', 'left')">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                <path d="M15 18l-6-6 6-6"/>
+                            </svg>
+                        </button>
+                        <button class="slider-btn" onclick="slidePorto('slider-spss', 'right')">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                <path d="M9 18l6-6-6-6"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="modal-details">
+                    <span class="modal-category">WEB APPLICATION</span>
+                    <h2>Attendance System - SMK N 4 Klaten</h2>
+                    <div class="modal-divider"></div>
+
+                    <p class="modal-description">
+                        This web-based application was developed to digitalize 
+                        the student attendance process for midday congregational 
+                        prayers (Sholat Dzuhur Berjamaah). As a full-stack project 
+                        at Xtrahera, the system utilizes real-time GPS location 
+                        tracking to ensure students are within the school's 
+                        designated perimeter when clocking in. The platform 
+                        features a responsive interface optimized for mobile use, 
+                        allowing students to easily verify their attendance status 
+                        and location.
+                    </p>
+
+                    <div class="modal-info-list">
+                        <div class="info-item">
+                            <span class="info-label">Role</span>
+                            <span class="info-value">Full-stack Developer (UI/UX Designer, Frontend, Backend & QA)</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Tech Stack</span>
+                            <span class="info-value">Laravel, Tailwind CSS, MySQL, Google Maps API</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Context</span>
+                            <span class="info-value">Professional Work (Xtrahera Client)</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Key Features</span>
+                            <span class="info-value">Geofencing-based Attendance, Real-time GPS Validation, Responsive Dashboard, Attendance History Tracking.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-campusday" class="modal-overlay">
+        <div class="modal-window">
+            <button class="modal-close" onclick="closeModal('modal-campusday')">&times;</button>
+            
+            <div class="modal-content-layout">
+                <div class="modal-gallery">
+                    <div class="slider-container" id="slider-campusday">
+                        <img src="assets/porto/campusday/1.png" alt="Detail 1">
+                        <img src="assets/porto/campusday/2.png" alt="Detail 2"> 
+                        <img src="assets/porto/campusday/3.png" alt="Detail 3"> 
+                        <img src="assets/porto/campusday/5.png" alt="Detail 4"> 
+                    </div>
+
+                    <div class="slider-nav">
+                        <button class="slider-btn" onclick="slidePorto('slider-campusday', 'left')">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                <path d="M15 18l-6-6 6-6"/>
+                            </svg>
+                        </button>
+                        <button class="slider-btn" onclick="slidePorto('slider-campusday', 'right')">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                <path d="M9 18l6-6-6-6"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="modal-details">
+                    <span class="modal-category">WEB DEVELOPMENT</span>
+                    <h2>Campus Day 2024 - SMA Negeri 24 Bandung</h2>
+                    <div class="modal-divider"></div>
+
+                    <p class="modal-description">
+                        This was my first professional web project, developed during my 
+                        first semester of college for my high school's annual "Campus Day" 
+                        event. Working in a small developer team, I co-designed and built an 
+                        informational landing page to help students explore university majors 
+                        and event schedules. The platform served as a central information 
+                        hub for hundreds of alumni and students during the event.
+                    </p>
+
+                    <div class="modal-info-list">
+                        <div class="info-item">
+                            <span class="info-label">Role</span>
+                            <span class="info-value">Web Developer</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Tech Stack</span>
+                            <span class="info-value">HTML5, CSS3, Tailwind CSS</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Context</span>
+                            <span class="info-value">Alumni Volunteer Project (SMAN 24 Bandung)</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Key Features</span>
+                            <span class="info-value">Event Information Display, Major Exploration Guide, Responsive Landing Page.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-camping" class="modal-overlay">
+        <div class="modal-window">
+            <button class="modal-close" onclick="closeModal('modal-camping')">&times;</button>
+            
+            <div class="modal-content-layout">
+                <div class="modal-gallery">
+                    <div class="slider-container" id="slider-camping">
+                        <img src="assets/porto/camping/1.png" alt="Detail 1">
+                        <img src="assets/porto/camping/2.png" alt="Detail 2"> 
+                        <img src="assets/porto/camping/3.png" alt="Detail 3"> 
+                        <img src="assets/porto/camping/4.png" alt="Detail 4"> 
+                        <img src="assets/porto/camping/5.png" alt="Detail 5"> 
+                        <img src="assets/porto/camping/6.png" alt="Detail 6"> 
+                        <img src="assets/porto/camping/7.png" alt="Detail 7"> 
+                        <img src="assets/porto/camping/8.png" alt="Detail 8">                         
+                    </div>
+
+                    <div class="slider-nav">
+                        <button class="slider-btn" onclick="slidePorto('slider-camping', 'left')">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                <path d="M15 18l-6-6 6-6"/>
+                            </svg>
+                        </button>
+                        <button class="slider-btn" onclick="slidePorto('slider-camping', 'right')">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                <path d="M9 18l6-6-6-6"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="modal-details">
+                    <span class="modal-category">MOBILE APPLICATION</span>
+                    <h2>Camping Gear Rental App</h2>
+                    <div class="modal-divider"></div>
+
+                    <p class="modal-description">
+                        This project is a mobile application interface developed 
+                        as a specialized assignment for the Visual and Mobile 
+                        Device Programming course. Built using Flutter, the app 
+                        focuses on providing a seamless user experience for renting 
+                        outdoor and camping equipment. It features a dark-themed, 
+                        modern UI with a complete flow from product catalogs and 
+                        item details to a comprehensive checkout and order summary system.
+                    </p>
+
+                    <div class="modal-info-list">
+                        <div class="info-item">
+                            <span class="info-label">Role</span>
+                            <span class="info-value">Mobile UI Developer</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Tech Stack</span>
+                            <span class="info-value">Flutter, Dart</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Context</span>
+                            <span class="info-value">Course Quiz (Visual & Mobile Programming)</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Key Features</span>
+                            <span class="info-value">Equipment Catalog, Package Deals, Detailed Item Reviews, and Integrated Shopping Cart UI.</span>
+                        </div>
+                        <a href="https://github.com/alipa97/KuisSatuProvis_Kelompok62" target="_blank" class="btn-visit">
+                            View on GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-cafe" class="modal-overlay">
+        <div class="modal-window">
+            <button class="modal-close" onclick="closeModal('modal-cafe')">&times;</button>
+            
+            <div class="modal-content-layout">
+                <div class="modal-gallery">
+                    <div class="slider-container" id="slider-cafe">
+                        <img src="assets/porto/cafe/1.png" alt="Detail 1">
+                        <img src="assets/porto/cafe/2.png" alt="Detail 2"> 
+                        <img src="assets/porto/cafe/3.png" alt="Detail 3"> 
+                        <img src="assets/porto/cafe/4.png" alt="Detail 4"> 
+                    </div>
+
+                    <div class="slider-nav">
+                        <button class="slider-btn" onclick="slidePorto('slider-cafe', 'left')">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                <path d="M15 18l-6-6 6-6"/>
+                            </svg>
+                        </button>
+                        <button class="slider-btn" onclick="slidePorto('slider-cafe', 'right')">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                <path d="M9 18l6-6-6-6"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="modal-details">
+                    <span class="modal-category">WEB APPLICATION</span>
+                    <h2>Coffee Omma - POS & Cafe Management System</h2>
+                    <div class="modal-divider"></div>
+
+                    <p class="modal-description">
+                        Developed as a professional full-stack project for Xtrahera, 
+                        Coffee Omma is a comprehensive web-based Point of Sale (POS) 
+                        and ordering system designed for cafes. The platform streamlines 
+                        the customer ordering experience through an intuitive digital 
+                        menu. It also provides a robust administrative dashboard for 
+                        cafe owners to manage user registration, update menu inventories 
+                        (Create, Read, Update, Delete), and track real-time sales history 
+                        for better business monitoring.
+                    </p>
+
+                    <div class="modal-info-list">
+                        <div class="info-item">
+                            <span class="info-label">Role</span>
+                            <span class="info-value">Full-stack Developer (UI/UX Designer, Frontend, Backend)</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Tech Stack</span>
+                            <span class="info-value">Laravel, Tailwind CSS, MySQL</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Context</span>
+                            <span class="info-value">Professional Work (Xtrahera Client)</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Key Features</span>
+                            <span class="info-value">User Account Management, Dynamic Menu Management System, Sales History Tracking, Responsive Digital Ordering UI.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-mepel-ibu" class="modal-overlay">
+        <div class="modal-window">
+            <button class="modal-close" onclick="closeModal('modal-mepel-ibu')">&times;</button>
+            
+            <div class="modal-content-layout">
+                <div class="modal-gallery">
+                    <div class="slider-container" id="slider-mepel-ibu">
+                        <img src="assets/porto/mepel-ibu/1.png" alt="Detail 1">
+                        <img src="assets/porto/mepel-ibu/2.png" alt="Detail 2"> 
+                        <img src="assets/porto/mepel-ibu/3.png" alt="Detail 3"> 
+                        <img src="assets/porto/mepel-ibu/4.png" alt="Detail 4"> 
+                        <img src="assets/porto/mepel-ibu/5.png" alt="Detail 5"> 
+                        <img src="assets/porto/mepel-ibu/6.png" alt="Detail 6"> 
+                        <img src="assets/porto/mepel-ibu/7.png" alt="Detail 7"> 
+                    </div>
+
+                    <div class="slider-nav">
+                        <button class="slider-btn" onclick="slidePorto('slider-mepel-ibu', 'left')">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                <path d="M15 18l-6-6 6-6"/>
+                            </svg>
+                        </button>
+                        <button class="slider-btn" onclick="slidePorto('slider-mepel-ibu', 'right')">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                <path d="M9 18l6-6-6-6"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="modal-details">
+                    <span class="modal-category">WEB APPLICATION</span>
+                    <h2>IPAS Interactive Learning Media</h2>
+                    <div class="modal-divider"></div>
+
+                    <p class="modal-description">
+                        Developed as a web-based Learning Management System (LMS) 
+                        for science education during my tenure at Xtrahera. The 
+                        platform features a sequential learning path where students 
+                        must complete specific modules to unlock subsequent materials 
+                        and quizzes. It includes a comprehensive teacher dashboard for 
+                        monitoring student activity, managing class data, and tracking 
+                        learning progress through real-time analytics.
+                    </p>
+
+                    <div class="modal-info-list">
+                        <div class="info-item">
+                            <span class="info-label">Role</span>
+                            <span class="info-value">Backend Developer & UI Implementer</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Tech Stack</span>
+                            <span class="info-value">PHP, Tailwind CSS, MySQL</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Context</span>
+                            <span class="info-value">Professional Work (Xtrahera Client)</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Key Features</span>
+                            <span class="info-value">Sequential Module Locking System, Interactive Quizzes, Teacher Management Dashboard, Student Progress Analytics.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-zmart" class="modal-overlay">
+        <div class="modal-window">
+            <button class="modal-close" onclick="closeModal('modal-zmart')">&times;</button>
+            
+            <div class="modal-content-layout">
+                <div class="modal-gallery">
+                    <div class="slider-container" id="slider-zmart">
+                        <img src="assets/porto/zmart/1.png" alt="Detail 1">
+                        <img src="assets/porto/zmart/2.png" alt="Detail 2"> 
+                        <img src="assets/porto/zmart/3.png" alt="Detail 3"> 
+                        <img src="assets/porto/zmart/4.png" alt="Detail 4"> 
+                        <img src="assets/porto/zmart/5.png" alt="Detail 5"> 
+                        <img src="assets/porto/zmart/6.png" alt="Detail 6"> 
+                        <img src="assets/porto/zmart/7.png" alt="Detail 7"> 
+                    </div>
+
+                    <div class="slider-nav">
+                        <button class="slider-btn" onclick="slidePorto('slider-zmart', 'left')">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                <path d="M15 18l-6-6 6-6"/>
+                            </svg>
+                        </button>
+                        <button class="slider-btn" onclick="slidePorto('slider-zmart', 'right')">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                <path d="M9 18l6-6-6-6"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="modal-details">
+                    <span class="modal-category">WEB APPLICATION</span>
+                    <h2>ZMart GIS - Social Empowerment Monitoring System</h2>
+                    <div class="modal-divider"></div>
+
+                    <p class="modal-description">
+                        ZMart GIS is a web-based geographic information system designed 
+                        to map and monitor micro-business empowerment programs in Bontang City. 
+                        The platform provides interactive maps to visualize beneficiary distribution, 
+                        track monthly "infaq" contributions, and analyze program effectiveness. 
+                        It streamlines social assistance efforts through data-driven reporting and 
+                        real-time spatial analysis.
+                    </p>
+
+                    <div class="modal-info-list">
+                        <div class="info-item">
+                            <span class="info-label">Role</span>
+                            <span class="info-value">Full-stack Developer (UI/UX Designer, Frontend, Backend & QA)</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Tech Stack</span>
+                            <span class="info-value">Laravel, Tailwind CSS, MySQL, Leaflet.js</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Context</span>
+                            <span class="info-value">Professional Work (Xtrahera)</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Key Features</span>
+                            <span class="info-value">Interactive GIS Mapping, Data Filtering & Analytics Dashboard, PDF Report Generation, Multi-level User Access.</span>
+                        </div>
+                        <a href="https://github.com/alipa97/zmart" target="_blank" class="btn-visit">
+                            View on GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-solaris" class="modal-overlay">
+        <div class="modal-window">
+            <button class="modal-close" onclick="closeModal('modal-solaris')">&times;</button>
+            
+            <div class="modal-content-layout">
+                <div class="modal-gallery">
+                    <div class="slider-container" id="slider-solaris">
+                        <img src="assets/porto/solaris/1.png" alt="Detail 1">
+                        <img src="assets/porto/solaris/2.png" alt="Detail 2"> 
+                        <img src="assets/porto/solaris/3.png" alt="Detail 3"> 
+                        <img src="assets/porto/solaris/4.png" alt="Detail 4"> 
+                    </div>
+
+                    <div class="slider-nav">
+                        <button class="slider-btn" onclick="slidePorto('slider-solaris', 'left')">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                <path d="M15 18l-6-6 6-6"/>
+                            </svg>
+                        </button>
+                        <button class="slider-btn" onclick="slidePorto('slider-solaris', 'right')">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                <path d="M9 18l6-6-6-6"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="modal-details">
+                    <span class="modal-category">COMPUTER GRAPHICS</span>
+                    <h2>Solaris - 3D Solar System Simulation</h2>
+                    <div class="modal-divider"></div>
+
+                    <p class="modal-description">
+                        Solaris is an interactive 3D solar system simulation developed 
+                        using OpenGL and GLUT. This project features realistic planetary 
+                        movements based on astronomical data, dynamic scaling, and an 
+                        interactive spacecraft-style camera system. Users can navigate 
+                        through space, toggle orbital paths, and manage celestial bodies 
+                        in real-time. This project was built to demonstrate proficiency 
+                        in 3D rendering, texture mapping (TGA), and 
+                        complex object-oriented logic in a graphics environment.
+                    </p>
+
+                    <div class="modal-info-list">
+                        <div class="info-item">
+                            <span class="info-label">Role</span>
+                            <span class="info-value">Graphics Programmer (Team of 4)</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Tech Stack</span>
+                            <span class="info-value">OpenGL, GLUT, C++</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Context</span>
+                            <span class="info-value">Computer Graphics & Multimedia Course Project</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Key Features</span>
+                            <span class="info-value">Realistic Orbital Mechanics, Interactive Spacecraft Camera, Dynamic Planet Scaling, Real-time Texture Mapping, and Customizable Orbit Visualization.</span>
+                        </div>
+                        <a href="https://github.com/alipa97/Solaris---OpenGL" target="_blank" class="btn-visit">
+                            View on GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-sisop" class="modal-overlay">
+        <div class="modal-window">
+            <button class="modal-close" onclick="closeModal('modal-sisop')">&times;</button>
+            
+            <div class="modal-content-layout">
+                <div class="modal-gallery">
+                    <div class="slider-container" id="slider-sisop">
+                        <img src="assets/porto/sisop/1.png" alt="Detail 1">
+                        <img src="assets/porto/sisop/2.png" alt="Detail 2">
+                    </div>
+
+                    <div class="slider-nav">
+                        <button class="slider-btn" onclick="slidePorto('slider-sisop', 'left')">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                <path d="M15 18l-6-6 6-6"/>
+                            </svg>
+                        </button>
+                        <button class="slider-btn" onclick="slidePorto('slider-sisop', 'right')">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                <path d="M9 18l6-6-6-6"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="modal-details">
+                    <span class="modal-category">OPERATING SYSTEM SIMULATION</span>
+                    <h2>Unix-style File System Simulator</h2>
+                    <div class="modal-divider"></div>
+
+                    <p class="modal-description">
+                        This project is a high-fidelity simulation of a Unix/Linux file system, developed 
+                        to demonstrate core Operating System concepts such as directory tree structures, 
+                        permission management (rwx), and disk quota allocation. It features a dual-interface 
+                        system: a modern, responsive React/Next.js File Explorer and a Real-time Terminal 
+                        Emulator for command-line interaction. The backend, built with FastAPI, handles the 
+                        complex logic for file operations, permission validation, and disk space calculation.
+                    </p>
+
+                    <div class="modal-info-list">
+                        <div class="info-item">
+                            <span class="info-label">Role</span>
+                            <span class="info-value">Full-stack Developer (Team Project)</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Tech Stack</span>
+                            <span class="info-value">Python (FastAPI), Next.js, React, Tailwind CSS</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Context</span>
+                            <span class="info-value">Operating Systems Course Project</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Key Features</span>
+                            <span class="info-value">Full File & Directory CRUD, Unix-style Permission Management ($rwx$), Disk Usage & 
+                                Quota Monitoring, Real-time Terminal Emulator, and Hierarchical Tree-view Navigation.</span>
+                        </div>
+                        <a href="https://github.com/alipa97/File-System-Simulator" target="_blank" class="btn-visit">
+                            View on GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-delish" class="modal-overlay">
+        <div class="modal-window">
+            <button class="modal-close" onclick="closeModal('modal-delish')">&times;</button>
+            
+            <div class="modal-content-layout">
+                <div class="modal-gallery">
+                    <div class="slider-container" id="slider-delish">
+                        <img src="assets/porto/delish/1.png" alt="Detail 1">
+                        <img src="assets/porto/delish/2.png" alt="Detail 2"> 
+                        <img src="assets/porto/delish/3.png" alt="Detail 3"> 
+                        <img src="assets/porto/delish/4.png" alt="Detail 4"> 
+                        <img src="assets/porto/delish/5.png" alt="Detail 5"> 
+                        <img src="assets/porto/delish/6.png" alt="Detail 6"> 
+                        <img src="assets/porto/delish/7.png" alt="Detail 7"> 
+                    </div>
+
+                    <div class="slider-nav">
+                        <button class="slider-btn" onclick="slidePorto('slider-delish', 'left')">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                <path d="M15 18l-6-6 6-6"/>
+                            </svg>
+                        </button>
+                        <button class="slider-btn" onclick="slidePorto('slider-delish', 'right')">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                <path d="M9 18l6-6-6-6"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="modal-details">
+                    <span class="modal-category">MOBILE APPLICATION</span>
+                    <h2>Recipe Community App - Full-stack Cooking Platform</h2>
+                    <div class="modal-divider"></div>
+
+                    <p class="modal-description">
+                        A cross-platform mobile application developed as a final project for the Visual 
+                        & Mobile Programming course. This app serves as a comprehensive ecosystem for 
+                        food enthusiasts, featuring an advanced recipe engine with interactive cooking 
+                        modes. Built using a modern full-stack architecture, it integrates a Flutter-based 
+                        UI with a Node.js backend to handle complex features like real-time notifications, 
+                        social community interactions, and automated portion scaling.
+                    </p>
+
+                    <div class="modal-info-list">
+                        <div class="info-item">
+                            <span class="info-label">Role</span>
+                            <span class="info-value">Mobile & Backend Developer (Team Project)</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Tech Stack</span>
+                            <span class="info-value">Flutter, Node.js, RESTful API, Figma (UI/UX Design), Git (Version Control).</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Context</span>
+                            <span class="info-value">Final Course Project (Visual & Mobile Programming)</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Key Features</span>
+                            <span class="info-value">Preference-based Search, Advanced Step-by-Step Cooking Mode with Voice Navigation & Timers, Dynamic Portion 
+                                Adjustment, User Recipe Creation & Social Sharing, and Comprehensive Activity History.</span>
+                        </div>
+                        <a href="https://github.com/alipa97/NodeJS-BackEnd-DelishApp" target="_blank" class="btn-visit">
+                            View on GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-kir" class="modal-overlay">
+        <div class="modal-window">
+            <button class="modal-close" onclick="closeModal('modal-kir')">&times;</button>
+            
+            <div class="modal-content-layout">
+                <div class="modal-gallery">
+                    <div class="slider-container" id="slider-kir">
+                        <img src="assets/porto/kir/1.png" alt="Detail 1">
+                        <img src="assets/porto/kir/2.png" alt="Detail 2"> 
+                        <img src="assets/porto/kir/3.png" alt="Detail 3"> 
+                        <img src="assets/porto/kir/4.png" alt="Detail 4"> 
+                        <img src="assets/porto/kir/5.png" alt="Detail 5"> 
+                    </div>
+
+                    <div class="slider-nav">
+                        <button class="slider-btn" onclick="slidePorto('slider-kir', 'left')">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                <path d="M15 18l-6-6 6-6"/>
+                            </svg>
+                        </button>
+                        <button class="slider-btn" onclick="slidePorto('slider-kir', 'right')">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                <path d="M9 18l6-6-6-6"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="modal-details">
+                    <span class="modal-category">WEB APPLICATION</span>
+                    <h2>KIR - Room Inventory Management System</h2>
+                    <div class="modal-divider"></div>
+
+                    <p class="modal-description">
+                        This web-based application was developed for Dinas Komunikasi dan Informatika 
+                        Kabupaten Garut to manage and track office equipment across various government 
+                        units. As my first full-stack project at Xtrahera, I implemented a three-tier 
+                        user access system (Super Admin, Office Admins, and Employees). The platform 
+                        automates the creation of "Kartu Inventaris Ruangan" (Room Inventory Cards) and 
+                        provides comprehensive reporting tools to monitor the condition and distribution 
+                        of assets in real-time.
+                    </p>
+
+                    <div class="modal-info-list">
+                        <div class="info-item">
+                            <span class="info-label">Role</span>
+                            <span class="info-value">Full-stack Developer (Frontend & Backend)</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Tech Stack</span>
+                            <span class="info-value">Laravel, Tailwind CSS, MySQL</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Context</span>
+                            <span class="info-value">Professional Work (First Project at Xtrahera)</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Key Features</span>
+                            <span class="info-value">Multi-level User Access Control, Comprehensive Asset CRUD, Real-time Inventory Reporting, and Automated PDF Generation for Inventory Cards (Cetak Kartu).</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-toga" class="modal-overlay">
+        <div class="modal-window">
+            <button class="modal-close" onclick="closeModal('modal-toga')">&times;</button>
+            
+            <div class="modal-content-layout">
+                <div class="modal-gallery">
+                    <div class="slider-container" id="slider-toga">
+                        <img src="assets/porto/toga/1.jpeg" alt="Detail 1">
+                        <img src="assets/porto/toga/2.jpeg" alt="Detail 2"> 
+                        <img src="assets/porto/toga/3.jpeg" alt="Detail 3"> 
+                        <img src="assets/porto/toga/4.jpeg" alt="Detail 4"> 
+                        <img src="assets/porto/toga/5.jpeg" alt="Detail 5"> 
+                        <img src="assets/porto/toga/6.jpeg" alt="Detail 6"> 
+                    </div>
+
+                    <div class="slider-nav">
+                        <button class="slider-btn" onclick="slidePorto('slider-toga', 'left')">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                <path d="M15 18l-6-6 6-6"/>
+                            </svg>
+                        </button>
+                        <button class="slider-btn" onclick="slidePorto('slider-toga', 'right')">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                <path d="M9 18l6-6-6-6"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="modal-details">
+                    <span class="modal-category">MOBILE APPLICATION & AI INTEGRATION</span>
+                    <h2>AR-TOGA: AI-Powered Medicinal Plant Identification</h2>
+                    <div class="modal-divider"></div>
+
+                    <p class="modal-description">
+                        AR-TOGA is an innovative mobile application designed to identify and educate users about 
+                        Indonesian Medicinal Plants (Tanaman Obat Keluarga). The project integrates Augmented Reality 
+                        (AR) with Artificial Intelligence to transform traditional botanical learning into an 
+                        interactive experience. In this project, I collaborated with a partner who developed the 
+                        Convolutional Neural Network (CNN) model, while I specialized in the mobile development 
+                        phase—focusing on seamless model integration and real-time camera processing to deliver 
+                        instant identification and health benefits to the user.
+                    </p>
+
+                    <div class="modal-info-list">
+                        <div class="info-item">
+                            <span class="info-label">Role</span>
+                            <span class="info-value">Mobile Developer & AI Integrator</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Tech Stack</span>
+                            <span class="info-value">Flutter, TensorFlow Lite (CNN Integration)</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Context</span>
+                            <span class="info-value">Professional Work (Xtrahera)</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Key Features</span>
+                            <span class="info-value">Real-time Plant Recognition via Camera, Interactive AR Educational Content, Comprehensive Database of Medicinal Benefits, and Accurate CNN-based Classification.</span>
+                        </div>
+                        <a href="https://github.com/alipa97/plant" target="_blank" class="btn-visit">
+                            View on GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-bigdata" class="modal-overlay">
+        <div class="modal-window">
+            <button class="modal-close" onclick="closeModal('modal-bigdata')">&times;</button>
+            
+            <div class="modal-content-layout">
+                <div class="modal-gallery">
+                    <div class="slider-container" id="slider-bigdata">
+                        <img src="assets/porto/bigdata/1.png" alt="Detail 1">
+                        <img src="assets/porto/bigdata/2.png" alt="Detail 2"> 
+                        <img src="assets/porto/bigdata/3.png" alt="Detail 3"> 
+                        <img src="assets/porto/bigdata/4.png" alt="Detail 4"> 
+                    </div>
+
+                    <div class="slider-nav">
+                        <button class="slider-btn" onclick="slidePorto('slider-bigdata', 'left')">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                <path d="M15 18l-6-6 6-6"/>
+                            </svg>
+                        </button>
+                        <button class="slider-btn" onclick="slidePorto('slider-bigdata', 'right')">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                <path d="M9 18l6-6-6-6"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="modal-details">
+                    <span class="modal-category">BIG DATA PLATFORMS</span>
+                    <h2>Stock Market Dashboard - Integrated Data Pipeline & Visualization</h2>
+                    <div class="modal-divider"></div>
+
+                    <p class="modal-description">
+                        This project is an end-to-end Big Data solution designed to scrape, process, and 
+                        visualize real-time stock market data from IDX, Yahoo Finance, and IQ Plus. I was 
+                        responsible for the UI Dashboard design and assisted in the data engineering process. 
+                        The system uses Apache Airflow on Docker to orchestrate daily data ingestion into 
+                        MongoDB. The final output is an interactive dashboard that provides stock trends, 
+                        financial metrics, and market news summaries.
+                    </p>
+
+                    <div class="modal-info-list">
+                        <div class="info-item">
+                            <span class="info-label">Role</span>
+                            <span class="info-value">UI Designer & Data Engineering Assistant</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Tech Stack</span>
+                            <span class="info-value">Python, HTML, MongoDB, Apache Airflow, Docker, Chart.js, Tailwind CSS.</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Context</span>
+                            <span class="info-value">Big Data Course Project</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Key Features</span>
+                            <span class="info-value">Automated Web Scraping (XBRL & API), Multi-source Data Integration (IDX & YFinance), News Sentiment/Summary Transformation, Real-time Visual Charts, and Containerized Infrastructure.</span>
+                        </div>
+                        <a href="https://github.com/alipa97/tugas-akhir-bigdata-kel4" target="_blank" class="btn-visit">
+                            View on GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-idea-cipta" class="modal-overlay">
+        <div class="modal-window">
+            <button class="modal-close" onclick="closeModal('modal-idea-cipta')">&times;</button>
+            
+            <div class="modal-content-layout">
+                <div class="modal-gallery">
+                    <div class="slider-container" id="slider-idea-cipta">
+                        <img src="assets/porto/idea-cipta/1.png" alt="Detail 1">
+                        <img src="assets/porto/idea-cipta/2.png" alt="Detail 2"> 
+                        <img src="assets/porto/idea-cipta/3.png" alt="Detail 3"> 
+                        <img src="assets/porto/idea-cipta/4.png" alt="Detail 4"> 
+                    </div>
+
+                    <div class="slider-nav">
+                        <button class="slider-btn" onclick="slidePorto('slider-idea-cipta', 'left')">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                <path d="M15 18l-6-6 6-6"/>
+                            </svg>
+                        </button>
+                        <button class="slider-btn" onclick="slidePorto('slider-idea-cipta', 'right')">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                <path d="M9 18l6-6-6-6"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="modal-details">
+                    <span class="modal-category">WEB APPLICATION</span>
+                    <h2>Interior & Exterior Design Marketplace</h2>
+                    <div class="modal-divider"></div>
+
+                    <p class="modal-description">
+                        This web-based marketplace was developed for CV Idea Cipta Engineering, a construction 
+                        services firm specializing in architecture, interior, and exterior design. The platform 
+                        serves as a digital bridge between clients and design professionals, allowing users to 
+                        browse through various design packages, manage bookings, and complete payments online. 
+                        It features a comprehensive management system for administrators to monitor transactions, 
+                        verify payments, and analyze monthly revenue through interactive data analytics.
+                    </p>
+
+                    <div class="modal-info-list">
+                        <div class="info-item">
+                            <span class="info-label">Role</span>
+                            <span class="info-value">Full-stack Developer (UI Implementation & Backend)</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Tech Stack</span>
+                            <span class="info-value">Laravel, MySQL, Tailwind CSS</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Context</span>
+                            <span class="info-value">Professional Work (Xtrahera)</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Key Features</span>
+                            <span class="info-value">Design Catalog (Interior & Exterior), Real-time Booking System, Secure Payment Verification, Transaction Management, Inventory Data Management, Monthly Project Reporting, and Revenue Analytics Dashboard.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-proyek" class="modal-overlay">
+        <div class="modal-window">
+            <button class="modal-close" onclick="closeModal('modal-proyek')">&times;</button>
+            
+            <div class="modal-content-layout">
+                <div class="modal-gallery">
+                    <div class="slider-container" id="slider-proyek">
+                        <img src="assets/porto/proyek/1.png" alt="Detail 1">
+                        <img src="assets/porto/proyek/2.png" alt="Detail 2"> 
+                        <img src="assets/porto/proyek/3.png" alt="Detail 3"> 
+                    </div>
+
+                    <div class="slider-nav">
+                        <button class="slider-btn" onclick="slidePorto('slider-proyek', 'left')">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                <path d="M15 18l-6-6 6-6"/>
+                            </svg>
+                        </button>
+                        <button class="slider-btn" onclick="slidePorto('slider-proyek', 'right')">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                <path d="M9 18l6-6-6-6"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="modal-details">
+                    <span class="modal-category">WEB APPLICATION</span>
+                    <h2>ProTrack - Internal Project Management System</h2>
+                    <div class="modal-divider"></div>
+
+                    <p class="modal-description">
+                        ProTrack is a streamlined web-based project management tool developed to 
+                        enhance team productivity and task tracking. The application provides a 
+                        centralized dashboard where managers can assign tasks, monitor project 
+                        milestones, and track real-time progress through intuitive visual indicators. 
+                        It simplifies complex workflows into manageable task lists, ensuring that 
+                        every project phase is completed on schedule.
+                    </p>
+
+                    <div class="modal-info-list">
+                        <div class="info-item">
+                            <span class="info-label">Role</span>
+                            <span class="info-value">Full-stack Developer (UI/UX Design & Backend)</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Tech Stack</span>
+                            <span class="info-value">Laravel, MySQL, Tailwind CSS</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Context</span>
+                            <span class="info-value">Professional Work (Xtrahera)</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Key Features</span>
+                            <span class="info-value">Task Assignment & Prioritization, Real-time Progress Tracking, Project Categorization, Team Activity Logs, and Deadline Management Dashboard.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-jarkom" class="modal-overlay">
+        <div class="modal-window">
+            <button class="modal-close" onclick="closeModal('modal-jarkom')">&times;</button>
+            
+            <div class="modal-content-layout">
+                <div class="modal-gallery">
+                    <div class="slider-container" id="slider-jarkom">
+                        <img src="assets/porto/jarkom/1.png" alt="Detail 1">
+                    </div>
+
+                    <!-- <div class="slider-nav">
+                        <button class="slider-btn" onclick="slidePorto('slider-jarkom', 'left')">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                <path d="M15 18l-6-6 6-6"/>
+                            </svg>
+                        </button>
+                        <button class="slider-btn" onclick="slidePorto('slider-jarkom', 'right')">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                <path d="M9 18l6-6-6-6"/>
+                            </svg>
+                        </button>
+                    </div> -->
+                </div>
+
+                <div class="modal-details">
+                    <span class="modal-category">NETWORK ENGINEERING & IOT</span>
+                    <h2>Smart SME Network - Integrated IoT & Infrastructure Design</h2>
+                    <div class="modal-divider"></div>
+
+                    <p class="modal-description">
+                        This project involves designing a robust network infrastructure for 
+                        a Small and Medium Enterprise (SME) specializing in internet cafes 
+                        and gaming rentals. The design focuses on reliability and security 
+                        by integrating various IoT (Internet of Things) solutions into the 
+                        local area network. The system features automated climate control, 
+                        smart security access, and real-time environment monitoring to 
+                        optimize operational efficiency and customer comfort.
+                    </p>
+
+                    <div class="modal-info-list">
+                        <div class="info-item">
+                            <span class="info-label">Role</span>
+                            <span class="info-value">Network Designer (Team Project)</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Tech Stack</span>
+                            <span class="info-value">Cisco Packet Tracer, Networking Protocols, IoT Sensors & Actuators.</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Context</span>
+                            <span class="info-value">Final Project for Computer Networks Course</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Key Features</span>
+                            <span class="info-value">IoT-based Smoke Detection with Automatic Sirens, Smart Door Access Control, Automated AC Control with Motion Sensors, Comprehensive CCTV Surveillance, and Integrated Web Server for Local Services.</span>
+                        </div>
+                        <a href="https://drive.google.com/file/d/1nHkuD-KxRPVSAFNIy7toYDJTwxPaL1UI/view?usp=sharing" target="_blank" class="btn-visit">
+                            View Network Design Report
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-rental" class="modal-overlay">
+        <div class="modal-window">
+            <button class="modal-close" onclick="closeModal('modal-rental')">&times;</button>
+            
+            <div class="modal-content-layout">
+                <div class="modal-gallery">
+                    <div class="slider-container" id="slider-rental">
+                        <img src="assets/porto/rental/1.png" alt="Detail 1">
+                        <img src="assets/porto/rental/2.png" alt="Detail 2"> 
+                        <img src="assets/porto/rental/3.png" alt="Detail 3"> 
+                        <img src="assets/porto/rental/4.png" alt="Detail 4"> 
+                    </div>
+
+                    <div class="slider-nav">
+                        <button class="slider-btn" onclick="slidePorto('slider-rental', 'left')">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                <path d="M15 18l-6-6 6-6"/>
+                            </svg>
+                        </button>
+                        <button class="slider-btn" onclick="slidePorto('slider-rental', 'right')">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                <path d="M9 18l6-6-6-6"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="modal-details">
+                    <span class="modal-category">WEB APPLICATION</span>
+                    <h2>Car Rental Management System</h2>
+                    <div class="modal-divider"></div>
+
+                    <p class="modal-description">
+                        Developed as a final project for the Web Design & Programming course, 
+                        this application focuses on the core mechanics of a vehicle rental 
+                        service. Built with Laravel, the project emphasizes backend logic, 
+                        including fleet management, booking workflows, and user authentication. 
+                        The interface utilizes Bootstrap to ensure a clean, responsive experience, 
+                        allowing users to browse available cars and manage their rentals efficiently.
+                    </p>
+
+                    <div class="modal-info-list">
+                        <div class="info-item">
+                            <span class="info-label">Role</span>
+                            <span class="info-value">Full-stack Developer (Focus on Backend Logic)</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Tech Stack</span>
+                            <span class="info-value">Laravel, MySQL, Bootstrap.</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Context</span>
+                            <span class="info-value">Web Design & Programming Final Project</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Key Features</span>
+                            <span class="info-value">Vehicle Catalog & Availability Tracking, Booking & Reservation System, User Authentication (Login/Register), and Admin Dashboard for Fleet Management.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-search-engine" class="modal-overlay">
+        <div class="modal-window">
+            <button class="modal-close" onclick="closeModal('modal-search-engine')">&times;</button>
+            
+            <div class="modal-content-layout">
+                <div class="modal-gallery">
+                    <div class="slider-container" id="slider-search-engine">
+                        <img src="assets/porto/search-engine/1.png" alt="Detail 1">
+                        <img src="assets/porto/search-engine/2.png" alt="Detail 2"> 
+                    </div>
+
+                    <div class="slider-nav">
+                        <button class="slider-btn" onclick="slidePorto('slider-search-engine', 'left')">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                <path d="M15 18l-6-6 6-6"/>
+                            </svg>
+                        </button>
+                        <button class="slider-btn" onclick="slidePorto('slider-search-engine', 'right')">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                <path d="M9 18l6-6-6-6"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="modal-details">
+                    <span class="modal-category">ALGORITHMS & DATA STRUCTURES</span>
+                    <h2>Andal Search Engine - Web Crawler & Information Retrieval</h2>
+                    <div class="modal-divider"></div>
+
+                    <p class="modal-description">
+                        Andal Search Engine is a web-based exploration tool designed to crawl and index 
+                        internal website information. Developed for the Analysis & Design of Algorithms 
+                        course, the system utilizes Breadth-First Search (BFS) and Depth-First Search (DFS) 
+                        graph traversal algorithms to navigate through web pages from a seed URL. The 
+                        application systematically stores page content and provides a keyword-based search 
+                        interface, allowing users to find institutional information efficiently without manual browsing.
+                    </p>
+
+                    <div class="modal-info-list">
+                        <div class="info-item">
+                            <span class="info-label">Role</span>
+                            <span class="info-value">Backend & Algorithm Developer (Team Project)</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Tech Stack</span>
+                            <span class="info-value">Python, Flask (Web Framework), BeautifulSoup (Crawling).</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Context</span>
+                            <span class="info-value">Analysis & Design of Algorithms Final Project</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Key Features</span>
+                            <span class="info-value">Automated Web Crawling (BFS & DFS Implementation), Content Indexing, Keyword-based Information Retrieval, and Interactive Search Results Dashboard.</span>
+                        </div>
+                        <a href="https://github.com/alipa97/SearchEngineAndal" target="_blank" class="btn-visit">
+                            View on GitHub
+                        </a>
+                        <a href="https://drive.google.com/file/d/16l3HuitaidwggUnBI2rIJ7Q0BB2I4nqy/view" target="_blank" class="btn-visit">
+                            Watch Presentation Video
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-iot" class="modal-overlay">
+        <div class="modal-window">
+            <button class="modal-close" onclick="closeModal('modal-iot')">&times;</button>
+            
+            <div class="modal-content-layout">
+                <div class="modal-gallery">
+                    <div class="slider-container" id="slider-iot">
+                        <img src="assets/porto/iot/1.jpeg" alt="Detail 1">
+                        <img src="assets/porto/iot/2.png" alt="Detail 2"> 
+                        <img src="assets/porto/iot/3.png" alt="Detail 3"> 
+                    </div>
+
+                    <div class="slider-nav">
+                        <button class="slider-btn" onclick="slidePorto('slider-iot', 'left')">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                <path d="M15 18l-6-6 6-6"/>
+                            </svg>
+                        </button>
+                        <button class="slider-btn" onclick="slidePorto('slider-iot', 'right')">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                <path d="M9 18l6-6-6-6"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="modal-details">
+                    <span class="modal-category">IOT & COMPUTER VISION</span>
+                    <h2>SmartRation - IoT-Based Student Meal Monitoring System</h2>
+                    <div class="modal-divider"></div>
+
+                    <p class="modal-description">
+                        Developed as a final project for the Internet of Things course, 
+                        this system automates meal distribution tracking to prevent duplicate 
+                        consumption and improve transparency. The project integrates QR Code 
+                        identification with Computer Vision (Object Detection) to verify student 
+                        attendance and detect food portions. The entire process is documented 
+                        in a formal research journal, covering the system architecture from sensor 
+                        integration to real-time data logging.
+
+                    <div class="modal-info-list">
+                        <div class="info-item">
+                            <span class="info-label">Role</span>
+                            <span class="info-value">IoT Developer & Researcher (Team Project)</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Tech Stack</span>
+                            <span class="info-value">ESP32/Raspberry Pi, Python, YOLO (Object Detection), QR Code Scanner, MQTT Protocol, Flask (Web Dashboard).</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Context</span>
+                            <span class="info-value">Internet of Things Final Course Project</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Key Features</span>
+                            <span class="info-value">QR-based Attendance Verification, Real-time Food Object Detection, Automated Green/Red Indicator Lights, and Cloud-integrated Activity Monitoring Dashboard.</span>
+                        </div>
+                        <a href="https://github.com/alipa97/jatahmam" target="_blank" class="btn-visit">
+                            View on GitHub
+                        </a>
+                        <a href="https://drive.google.com/file/d/17gXnRoANLxgGmzjt0FCqbG6wv_-Osm-I/view?usp=sharing" target="_blank" class="btn-visit">
+                            View Research Paper
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-gor" class="modal-overlay">
+        <div class="modal-window">
+            <button class="modal-close" onclick="closeModal('modal-gor')">&times;</button>
+            
+            <div class="modal-content-layout">
+                <div class="modal-gallery">
+                    <div class="slider-container" id="slider-gor">
+                        <img src="assets/porto/gor/1.png" alt="Detail 1">
+                        <img src="assets/porto/gor/2.png" alt="Detail 2"> 
+                        <img src="assets/porto/gor/3.png" alt="Detail 3"> 
+                    </div>
+
+                    <div class="slider-nav">
+                        <button class="slider-btn" onclick="slidePorto('slider-gor', 'left')">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                <path d="M15 18l-6-6 6-6"/>
+                            </svg>
+                        </button>
+                        <button class="slider-btn" onclick="slidePorto('slider-gor', 'right')">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                <path d="M9 18l6-6-6-6"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="modal-details">
+                    <span class="modal-category">DATABASE SYSTEMS & WEB DEVELOPMENT</span>
+                    <h2>Kharisma Sports Center - Integrated Booking System</h2>
+                    <div class="modal-divider"></div>
+
+                    <p class="modal-description">
+                        This web-based reservation platform was designed to digitally transform GOR Kharisma, 
+                        a sports facility in Bandung. Developed for the Database Systems course, the project 
+                        focuses on optimizing complex scheduling data and user transaction workflows. The system 
+                        allows the community to check real-time court availability, book slots online, and access 
+                        facility information, effectively replacing conventional manual recording with a robust, 
+                        database-driven solution.
+
+                    <div class="modal-info-list">
+                        <div class="info-item">
+                            <span class="info-label">Role</span>
+                            <span class="info-value">Full-stack Developer & Database Designer (Team Project)</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Tech Stack</span>
+                            <span class="info-value">Native PHP, MySQL, Pure CSS.</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Context</span>
+                            <span class="info-value">Database Systems Final Project</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Key Features</span>
+                            <span class="info-value">Real-time Court Availability Tracking, Automated Booking & Scheduling System, User Transaction History, Secure Authentication, and Administrative Dashboard for Schedule Management.</span>
+                        </div>
+                        <a href="https://github.com/alipa97/TUBES_SBD_KELOMPOK_9_2023" target="_blank" class="btn-visit">
+                            View on GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-[#8C2F39] py-12 px-6 border-t border-white/5">
+        <div class="max-w-6xl mx-auto">
+            <div class="flex flex-wrap justify-center gap-8 md:gap-12 mb-10 text-gray-300 font-medium">
+                <a href="#home" class="hover:text-white transition-colors">Home</a>
+                <a href="#about" class="hover:text-white transition-colors">About me</a>
+                <a href="#portfolio" class="hover:text-white transition-colors">Work</a>
+                <a href="#contact" class="hover:text-white transition-colors">Contact</a>
+            </div>
+
+            <!-- <div class="flex justify-center gap-6 mb-10">
+                <a href="#" class="text-xl text-gray-400 hover:text-pink-500 transition-all"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="text-xl text-gray-400 hover:text-sky-400 transition-all"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="text-xl text-gray-400 hover:text-blue-500 transition-all"><i class="fab fa-linkedin"></i></a>
+                <a href="#" class="text-xl text-gray-400 hover:text-white transition-all"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="text-xl text-gray-400 hover:text-red-500 transition-all"><i class="fab fa-youtube"></i></a>
+            </div> -->
+
+            <div class="border-t border-white/5 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-white text-sm">© 2026 Alifa Salsabila. All rights reserved.</p>
+                <div class="flex gap-6 text-sm text-gray-500">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+    AOS.init({
+        duration: 1000,
+        once: true,
+        offset: 200
+    });
+    </script>
+</body>
+</html>

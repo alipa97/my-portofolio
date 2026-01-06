@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alifa Salsabila - Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<!-- <body class="smooth-scroll bg-gradient-to-br from-pink-50 via-purple-50 to-blue-50"> -->
+<body class="smooth-scroll bg-white">
+    <!-- Animated Background -->
+    <div class="blob-orbit">
+         <div class="blob blob-pink"></div>
+         <div class="blob blob-blue"></div>
+         <div class="blob blob-green"></div>
+    </div>
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-white/80 backdrop-blur-md shadow-sm z-50">
+        <div class="max-w-7xl mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <div class="text-2xl font-bold gradient-text">ALIFA</div>
+                
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="text-gray-700 hover:text-[#B23A48] transition">Home</a>
+                    <a href="#about" class="text-gray-700 hover:text-[#B23A48] transition">About</a>
+                    <a href="#portfolio" class="text-gray-700 hover:text-[#B23A48] transition">Portfolio</a>
+                    <a href="#contact" class="text-gray-700 hover:text-[#B23A48] transition">Contact</a>
+                </div>
+
+                <button id="menu-btn" class="md:hidden text-gray-700">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden mt-4 space-y-2">
+                <a href="#home" class="block text-gray-700 hover:text-[#B23A48] transition py-2">Home</a>
+                <a href="#about" class="block text-gray-700 hover:text-[#B23A48] transition py-2">About</a>
+                <a href="#portfolio" class="block text-gray-700 hover:text-[#B23A48] transition py-2">Portfolio</a>
+                <a href="#contact" class="block text-gray-700 hover:text-[#B23A48] transition py-2">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="pt-24 pb-12 px-6">
+        <div class="relative max-w-7xl mx-auto">
+        <div class="grid md:grid-cols-2 gap-14 items-center
+            bg-white/60 backdrop-blur-2xl
+            border border-white/40
+            rounded-[36px]
+            px-10 py-14
+            shadow-[0_40px_120px_rgba(0,0,0,0.12)]">
+                <div>
+                    <p class="text-[#B23A48] font-semibold text-2xl mb-3">
+                        Full-stack Developer & QA Engineer
+                    </p>
+
+                    <h1 class="text-6xl md:text-7xl font-extrabold text-gray-900 leading-tight mb-6">
+                        Alifa<br/>
+                        <span class="gradient-text">Salsabila</span>
+                    </h1>
+
+                    <p class="text-[#735751] text-lg leading-relaxed max-w-xl mb-10">
+                        Computer Science student at Universitas Pendidikan Indonesia with expertise in Full-stack Development and Software Quality Assurance. Proficient in Laravel, Node.js, Flutter, and comprehensive testing methodologies.
+                    </p>
+
+                    <a href="#contact" class="magic-btn">
+                        <span class="magic-icon-container">
+                            <span class="star-1">✦</span>
+                            <span class="star-2">✦</span>
+                        </span>
+                        <span class="magic-text">My Project</span>
+                    </a>
+
+                </div>
+                
+                <div class="relative flex justify-center">
+                    
+                    <div class="absolute inset-0 bg-gradient-to-tr from-[#B23A48] to-[#461220]
+                                rounded-[32px] blur-3xl opacity-30"></div>
+
+                    <img src="assets/img/profile.JPG"
+                        alt="Alifa Salsabila"
+                        class="relative rounded-[32px] shadow-2xl
+                                w-full max-w-sm object-cover">
+
+                    <!-- EXPERIENCE -->
+                    <div class="absolute -right-6 top-12 bg-white/80 backdrop-blur
+                                rounded-2xl shadow-xl px-6 py-4">
+                        <p class="text-gray-500 text-sm">Experience</p>
+                        <p class="text-4xl font-bold gradient-text">2+</p>
+                    </div>
+
+                    <!-- PROJECT -->
+                    <div class="absolute -left-6 bottom-12 bg-white/80 backdrop-blur
+                                rounded-2xl shadow-xl px-6 py-4">
+                        <p class="text-gray-500 text-sm">Projects</p>
+                        <p class="text-4xl font-bold gradient-text">15+</p>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 px-6 bg-white/50">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">About Me</h2>
+                <div class="w-20 h-1 bg-gradient-to-r from-[#B23A48] to-[#6E2C0B] mx-auto mb-4"></div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-12">
+                <div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Education</h3>
+                    <div class="bg-white rounded-2xl p-6 shadow-lg mb-6">
+                        <div class="flex items-start">
+                            <div class="bg-[#FCB9B2] rounded-lg p-3 mr-4">
+                                <svg class="w-6 h-6 text-[#B23A48]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 14l9-5-9-5-9 5 9 5z"></path>
+                                    <path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-800">Universitas Pendidikan Indonesia</h4>
+                                <p class="text-[#B23A48] font-medium">Computer Science</p>
+                                <p class="text-gray-600 text-sm">Sep 2023 - Present</p>
+                                <p class="text-gray-700 mt-2">GPA: <span class="font-bold">3.74/4.00</span></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4 mt-8">Skills & Technologies</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-4 py-2 bg-[#FED0BB] text-[#8C2F39] rounded-full text-sm font-medium">Laravel</span>
+                        <span class="px-4 py-2 bg-[#E7D7C1] text-[#6E2C0B] rounded-full text-sm font-medium">Node.js</span>
+                        <span class="px-4 py-2 bg-[#fbf2c0] text-[#48392a] rounded-full text-sm font-medium">Flutter</span>
+                        <span class="px-4 py-2 bg-[#FED0BB] text-[#8C2F39] rounded-full text-sm font-medium">React</span>
+                        <span class="px-4 py-2 bg-[#E7D7C1] text-[#6E2C0B] rounded-full text-sm font-medium">Python</span>
+                        <span class="px-4 py-2 bg-[#fbf2c0] text-[#48392a] rounded-full text-sm font-medium">PostgreSQL</span>
+                        <span class="px-4 py-2 bg-[#FED0BB] text-[#8C2F39] rounded-full text-sm font-medium">MongoDB</span>
+                        <span class="px-4 py-2 bg-[#E7D7C1] text-[#6E2C0B] rounded-full text-sm font-medium">Katalon Studio</span>
+                        <span class="px-4 py-2 bg-[#fbf2c0] text-[#48392a] rounded-full text-sm font-medium">JMeter</span>
+                        <span class="px-4 py-2 bg-[#FED0BB] text-[#8C2F39] rounded-full text-sm font-medium">Postman</span>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Experience</h3>
+                    
+                    <div class="space-y-6">
+                        <div class="bg-white rounded-2xl p-6 shadow-lg card-hover">
+                            <h4 class="font-bold text-gray-800 text-lg">Fullstack Developer</h4>
+                            <p class="text-[#B23A48] font-medium">XTRAHERA</p>
+                            <p class="text-gray-600 text-sm mb-3">Aug 2024 - Present</p>
+                            <p class="text-gray-700 text-sm leading-relaxed">
+                                Developed responsive web applications for international clients and Indonesian State-Owned Enterprises. 
+                                Led QA processes through manual and automation testing.
+                            </p>
+                        </div>
+
+                        <div class="bg-white rounded-2xl p-6 shadow-lg card-hover">
+                            <h4 class="font-bold text-gray-800 text-lg">Frontend Developer</h4>
+                            <p class="text-[#B23A48] font-medium">PT Rekayasa Industri (REKIND)</p>
+                            <p class="text-gray-600 text-sm mb-3">Mar 2024 - May 2024</p>
+                            <p class="text-gray-700 text-sm leading-relaxed">
+                                Developed enterprise digital solution with Laravel, translated Figma designs into pixel-perfect 
+                                responsive components.
+                            </p>
+                        </div>
+
+                        <div class="bg-white rounded-2xl p-6 shadow-lg card-hover">
+                            <h4 class="font-bold text-gray-800 text-lg">Member</h4>
+                            <p class="text-[#B23A48] font-medium">Competitive Programming Club UPI</p>
+                            <p class="text-gray-600 text-sm mb-3">Mar 2024 - Present</p>
+                            <p class="text-gray-700 text-sm leading-relaxed">
+                                Active participation in algorithmic problem-solving training using C++ and Python.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 px-6 bg-gray-50/50 relative overflow-hidden">
+        <div class="max-w-6xl mx-auto relative z-10">
+            
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">Skills</h2>
+                <div class="w-20 h-1 bg-[#B23A48] mx-auto mb-6"></div>
+            </div>
+
+            <div class="mb-14">
+                <h3 class="text-center text-gray-600 uppercase tracking-[0.3em] text-md font-bold mb-8">Technologies I Use</h3>
+                <div class="flex flex-wrap justify-center gap-4 max-w-4xl mx-auto">
+                    <!-- Programming Languages -->
+                    <div class="skill-pill">
+                        <img src="assets/icons/c.svg" alt="C">
+                        <span>C</span>
+                    </div>
+                    <div class="skill-pill">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C++">
+                        <span>C++</span>
+                    </div>
+                    <div class="skill-pill">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java">
+                        <span>Java</span>
+                    </div>
+                    <div class="skill-pill">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP">
+                        <span>PHP</span>
+                    </div>
+                    <div class="skill-pill">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
+                        <span>Python</span>
+                    </div>
+                    <div class="skill-pill">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
+                        <span>JavaScript</span>
+                    </div>
+                    <div class="skill-pill">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dart/dart-original.svg" alt="Dart">
+                        <span>Dart</span>
+                    </div>
+                    <div class="skill-pill">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg" alt="SQLite">
+                        <span>SQL</span>
+                    </div>
+                    <!-- database -->
+                    <div class="skill-pill">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL">
+                        <span>MySQL</span>
+                    </div>
+                    <div class="skill-pill">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB">
+                        <span>MongoDB</span>
+                    </div>
+                    <div class="skill-pill">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg" alt="SQLite">
+                        <span>SQLite</span>
+                    </div>
+                    <div class="skill-pill">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git">
+                        <span>Git</span>
+                    </div>
+                    <div class="skill-pill">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-original.svg" alt="Laravel">
+                        <span>Laravel</span>
+                    </div>
+                    <div class="skill-pill">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js">
+                        <span>Node.js</span>
+                    </div>
+                    <div class="skill-pill">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg" alt="Flutter">
+                        <span>Flutter</span>
+                    </div>
+                    <div class="skill-pill">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" alt="Flask">
+                        <span>Flask</span>
+                    </div>
+                    <div class="skill-pill">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" alt="Tailwind CSS">
+                        <span>Tailwind CSS</span>
+                    </div>
+                    <div class="skill-pill">
+                        <img src="https://www.svgrepo.com/show/375531/api.svg" alt="REST API">
+                        <span>REST API</span>
+                    </div>
+                    <div class="skill-pill">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5">
+                        <span>HTML5</span>
+                    </div>
+                    <div class="skill-pill">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3">
+                        <span>CSS3</span>
+                    </div>
+                    <div class="skill-pill">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap">
+                        <span>Bootstrap</span>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <h3 class="text-center text-gray-600 uppercase tracking-[0.3em] text-md font-bold mb-8">Development & Productivity Tools</h3>
+                <div class="flex flex-wrap justify-center gap-4 max-w-4xl mx-auto">
+                    <div class="skill-pill">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="VS Code">
+                        <span>VS Code</span>
+                    </div>
+                    <div class="skill-pill">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="Github">
+                        <span>Github</span>
+                    </div>
+                    <div class="skill-pill">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma">
+                        <span>Figma</span>
+                    </div>
+                    <div class="skill-pill">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/canva/canva-original.svg" alt="Canva">
+                        <span>Canva</span>
+                    </div>
+                    <div class="skill-pill">
+                        <img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" alt="Postman">
+                        <span>Postman</span>
+                    </div>
+                    <div class="skill-pill">
+                        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNTYiIGhlaWdodD0iMzkzIiB2aWV3Qm94PSIwIDAgMjU2IDM5MyI+PHBhdGggZmlsbD0iIzE5ZDg5ZiIgZD0iTTI1NiAyNjEuNDA3SDEyNy45OTh2MTMwLjcyNUgyNTZ6Ii8+PHBhdGggZD0iTTEyOC4wMDEgMEwwIDEzMC43MjV2MTMwLjcyNmgxMjguMDAxbDEyNy45NTgtMTMwLjcyNlYweiIvPjwvc3ZnPg==" alt="Katalon Studio">
+                        <span>Katalon Studio</span>
+                    </div>
+                    <div class="skill-pill">
+                        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBmaWxsPSJjdXJyZW50Q29sb3IiIGQ9Ik00LjM1IDcuNzlzLS4yNDctLjQtLjUzNy0uMjI4Yy0uMTQuMDg0LS4zNzQuMzE4LS42NTMuNjU4bC4yNTcuNDg0YTYgNiAwIDAgMSAuNTE3LS42NTNjLS4wNzkuMDktLjI0Ni4yOTgtLjQ4NC42NjJxLjUwMS0uMDM1Ljk5Ni0uMTIzYy4wOTktLjU0OS0uMDk2LS44LS4wOTYtLjhtLS4zODYuMjI4bC4wMjItLjAyNHpNLjkxIDE0LjAyYTQ1IDQ1IDAgMCAwLS43NzQgMi4zM2EuMi4yIDAgMCAxLS4xMzYuMTMyYy4yMy0uNzYuNDU4LTEuNDc2LjY4Ny0yLjEyNGMtLjE0My0uMDMzLS4zNDYuMDA3LS41OTQuMTFjLjE3LS4xMy4zMzktLjI0Mi41LS4yNTJjLS4wNTEtLjAxMS0uMTgzLS4wNTctLjM2LS4yMmMuMTY5LjA2My4zMTYuMDk0LjQyMi4wNzJjLS4wMjItLjI4Mi0uMTc0LS41Ny0uMzc0LS44NmMtLjAwMS0uMDAyLjI4LjE2MS4zODMuMzNsLjAwMi0uMDIzcS4wMjUtLjMzLjA5My0uNjU0di0uMDAycS4wNS0uMjYxLjEyNy0uNTIybC4wNjYtLjIyM3EuMDQzLS4xMy4wOTMtLjI3cS4xNjUtLjQ1Mi4zNzUtLjg4NGwuMDM2LS4wNzJxLjE5Mi0uMzg2LjQwOC0uNzZxLjExNS0uMTk5LjIzMS0uMzlxLjAxLS4wMTEuMDE3LS4wMjZMMi4xMSA5LjcxbC4wMDgtLjAxM3EuMzU1LS41Ny43NTQtMS4xMDhhOCA4IDAgMCAxIC4yMjktLjI5NmwuMDU4LS4wNzJsLjI1Ni40ODJhMTEgMTEgMCAwIDAtLjI2OC40MDRxLS4yNTkuNDE1LS40ODcuODQ2bC0uMjE3LjQxNGwtLjIyMi0uNDM5bC4yMi40NGwtLjAwNy4wMTVsLS4xMzMuMjdsLS4wNzcuMTZsLS4yMDYuNDQ0YTQzIDQzIDAgMCAwLS41NyAxLjM0NGwtLjE4LjQ1N2wtLjA0LjEwM2wtLjEzNC4zNTd2LjAwNGwtLjAzMy4wODhsLS4xNDEuMzgxem0zLjIzNS00LjYyM2E1IDUgMCAwIDEtLjMzNC41NjJjLS4xMDYuMTQ5LS4yMTYuMjUtLjQ1Ny4zNjNsLjAyMi0uMDA0cS4wMDItLjAwMi4wMDYtLjAwMmMuMTI1LS4wMjMuMjgtLjA3NC4zNy0uMTI3YS4yLjIgMCAwIDAgLjAzNi0uMDI0YTEgMSAwIDAgMS0uMDIuMDg5cS0uMDEuMDM4LS4wMjYuMDg1bC0uMDEyLjAzM2wtLjAzNi4wOTJhMyAzIDAgMCAxLS4xMDIuMjI2bC0uMDI4LjA1N2wtLjAyNC4wMzlhMSAxIDAgMCAxLS4wODQuMTE2bC0uMDQuMDQ0YTEgMSAwIDAgMS0uMTEzLjEwMWExLjIgMS4yIDAgMCAxLS4yNy4xNTFsLjAxNy0uMDAybC4wNjQtLjAxMXEuMTk1LS4wNDcuMzYxLS4xNmMtLjEzOC4yNzUtLjMyNi40OTctLjYyOC42MTJsLjA1Mi0uMDA3bC4wNS0uMDExYTEgMSAwIDAgMCAuMjU0LS4wODdhNyA3IDAgMCAxLS4xOC40OTJxLS4xMDYuMjYtLjIyNS40N2EyLjYgMi42IDAgMCAxLS4zNS40ODdjLS4yNzYuMjk4LS43MDUuNTQtMS4wMjcuNThsLjAxNi4wMDNjLjM2Ni4wNzYuNzQ1LS4wNDcuOTk2LS4zMjRhMyAzIDAgMCAxLS4xMDYuMTg3Yy0uMTQ4LjI0LS4zMTguMzg2LS42NTQuNTM3Yy4yMy4wMTMuMzUtLjA0MS40NDgtLjE2NWExIDEgMCAwIDEtLjA1Mi4xYy0uMjE1LjM1Ni0uNjM0LjQ3OC0xLjExNy40NTZhLjU0LjU0IDAgMCAxIC4xNzQuMzdjLS4wNzQtLjEzNC0uMTUyLS4yNTEtLjI1MS0uMjk3bC4xMTYtLjMzNGwuMDItLjA1NHYtLjAwNmwuMTMyLS4zN2wuMDI2LS4wN2wuMDAzLS4wMWwuMTctLjQ1NGwuMDA3LS4wMjJsLjE2OC0uNDM1cS4wOTMtLjIzOC4xODQtLjQ2cS4xODQtLjQ1Mi4zODItLjg5N3EuMDc3LS4xNzQuMTUyLS4zMzZsLjA1LS4xMDhsLjA5Ny0uMjA1cS4wNDMtLjA5My4wODgtLjE4M2wuMDI3LS4wNThxLjAwMy0uMDAzLjAwMi0uMDExbC4wMDYtLjAwMXEuMTEtLjIyNS4yMTMtLjQyM3EuMjI2LS40MzUuNDc0LS44NTdsLjAxMy0uMDIzcS4xMzMtLjIyMi4yNDYtLjM5NnEuNS0uMDM1Ljk5NS0uMTJxLS4wMTUuMDc4LS4wMzguMTY1YTMgMyAwIDAgMS0uMDc1LjIyNWE0IDQgMCAwIDEtLjE4Ny40MTN6bTIuMzUxLjY3NHY0LjU5NmMwIC4yOC0uMDQxLjUyNy0uMTI1LjczMmExLjM0IDEuMzQgMCAwIDEtLjM1LjUxMmExLjQgMS40IDAgMCAxLS41MzEuM3EtLjMwNi4wOTUtLjY3NC4wOTVhMi43IDIuNyAwIDAgMS0uNjU5LS4wNzRhLjA2LjA2IDAgMCAxLS4wNDYtLjA2di0uODQyYS4wNjMuMDYzIDAgMCAxIC4wNzYtLjA2MnEuMTE3LjAyNy4yNS4wNDVjLjE2Mi4wMjQuMzc2LjAzLjU0LS4wMWEuNDguNDggMCAwIDAgLjMzMi0uMjlhLjguOCAwIDAgMCAuMDUyLS4zMTN2LTQuNjNjMC0uMDM1LjAyNy0uMDYzLjA2Mi0uMDYzaDEuMDFjLjAzNiAwIC4wNjMuMDI4LjA2My4wNjN6bTguNTg4IDEuNDRhMS4zNSAxLjM1IDAgMCAwLS41MTgtLjMzNGExLjkgMS45IDAgMCAwLS42NzUtLjExNHEtLjM4MyAwLS43MDIuMTI1Yy0uMjA4LjA4Mi0uMzk1LjIxLS41NDUuMzc3YTEuNzUgMS43NSAwIDAgMC0uMzUuNjE5YTIuNyAyLjcgMCAwIDAtLjEyMy44NTljMCAuMzIuMDQ0LjYwNi4xMzUuODQ4cS4xMzkuMzYxLjM4Ni42MDNjLjE2NC4xNTcuMzY0LjI3Ni41OS4zNTVhMi4zIDIuMyAwIDAgMCAuNzQyLjExOHEuMjEzIDAgLjM3Ny0uMDE1YTIuMyAyLjMgMCAwIDAgLjYxLS4xM3EuMTQzLS4wNS4yNzMtLjEyYS4wNi4wNiAwIDAgMCAuMDMzLS4wNTV2LS43N2EuMDYzLjA2MyAwIDAgMC0uMDktLjA1NWEyLjUgMi41IDAgMCAxLS44MjcuMjY1cS0uMTUzLjAxNS0uMzA3LjAxNGEuOS45IDAgMCAxLS4zMzItLjA1NWEuNy43IDAgMCAxLS4yNDMtLjE2MmEuOC44IDAgMCAxLS4xNTUtLjI2M2ExLjIgMS4yIDAgMCAxLS4wNTgtLjI5NWgyLjE1N2EuMDYzLjA2MyAwIDAgMCAuMDYzLS4wNjJ2LS40ODNhMi4xIDIuMSAwIDAgMC0uMTE0LS43MjVhMS41IDEuNSAwIDAgMC0uMzI3LS41NDR6bS0xLjc1OCAxLjAyOXEuMDMzLS4zMjUuMTc2LS40NzhhLjUyLjUyIDAgMCAxIC4zOTUtLjE2N2EuNTUuNTUgMCAwIDEgLjI0Ni4wNTJxLjEwNi4wNTEuMTc2LjE0NGEuNy43IDAgMCAxIC4xMDUuMjJxLjAzLjEwNy4wMzguMjI5em0xMC42NzMtMS4zODd2LjkzNGEuMDYyLjA2MiAwIDAgMS0uMDc3LjA2YS43LjcgMCAwIDAtLjI1NC0uMDI3bC0uMDgtLjAwNHEtLjE4MSAwLS4zMzcuMDQ3YS42NC42NCAwIDAgMC0uMjUzLjE0NWEuNy43IDAgMCAwLS4xNjMuMjY0cS0uMDU5LjE2Ni0uMDU5LjQxMXYxLjg1NmEuMDYzLjA2MyAwIDAgMS0uMDYzLjA2M2gtLjk5NGEuMDYzLjA2MyAwIDAgMS0uMDYzLS4wNjN2LTMuNjQ1YzAtLjAzNS4wMjgtLjA2My4wNjMtLjA2M2guNzUzYy4wMjggMCAuMDUzLjAyLjA2LjA0NmwuMTI0LjQ2MnEuMDYtLjEuMTMzLS4xOTFhLjkzLjkzIDAgMCAxIC40ODctLjMzOGExLjEgMS4xIDAgMCAxIC40MzQtLjA0NHEuMDUtLjAwMi4wOTYuMDA2bC4wODQuMDExYS4zLjMgMCAwIDEgLjA2Ni4wMTFhLjA2LjA2IDAgMCAxIC4wNDQuMDU5em0tNS45NTYgMi43OTRhLjA2LjA2IDAgMCAxIC4wMjcuMDV2Ljc0MWEuMDYuMDYgMCAwIDEtLjAzMy4wNTVhMS41IDEuNSAwIDAgMS0uMzY0LjEyNWMtLjMwNC4wNjgtLjYyLjA2Ni0uOTI0LS4wMDhhLjkuOSAwIDAgMS0uMzgxLS4yMDdhMS4wNCAxLjA0IDAgMCAxLS4yNTYtLjM5N2ExLjggMS44IDAgMCAxLS4wODgtLjYwOFYxMmgtLjQxNGEuMDYzLjA2MyAwIDAgMS0uMDYyLS4wNjJ2LS40MmEuMDYuMDYgMCAwIDEgLjAzLS4wNTNsLjUyOS0uMzIzbC4yOC0uNzVhLjA2LjA2IDAgMCAxIC4wNTgtLjA0aC42MzZjLjAzNSAwIC4wNjIuMDI4LjA2Mi4wNjN2LjcxNGguODI1Yy4wMzQgMCAuMDYzLjAyOC4wNjMuMDYydi43NDdhLjA2My4wNjMgMCAwIDEtLjA2My4wNjNoLS44MjV2MS42OTVxMCAuMTg3LjA4NS4yNjhhLjMyLjMyIDAgMCAwIC4yMzEuMDg0cS4xNCAwIC4yNjMtLjAzcS4xMzMtLjAzNC4yNjQtLjA4YS4wNi4wNiAwIDAgMSAuMDU3LjAwN3ptLTYuMTA1LTMuODc2djQuNzdhLjA2My4wNjMgMCAwIDEtLjA2Mi4wNjFoLS45NDNhLjA2My4wNjMgMCAwIDEtLjA2My0uMDYzdi0yLjQ1bC4wMTQtLjQ3M2wuMDEtLjI0MmwuMDA4LS4xODdsLTEuMDE4IDMuMzdhLjA2LjA2IDAgMCAxLS4wNi4wNDRoLS45M2EuMDYuMDYgMCAwIDEtLjA2LS4wNDRsLS45MjktMy4zMmEyNSAyNSAwIDAgMSAuMDMzLjg4cS4wMDUuMTExLjAwNS4yMDR2Mi4yMThhLjA2My4wNjMgMCAwIDEtLjA2My4wNjNoLS45MDNhLjA2My4wNjMgMCAwIDEtLjA2My0uMDYzVjEwLjA3YzAtLjAzNC4wMjctLjA2My4wNjItLjA2M2gxLjM3NmMuMDMgMCAuMDUzLjAyLjA2MS4wNDdsLjk4MSAzLjQ3M2wxLjA0Ni0zLjQ3NGEuMDYuMDYgMCAwIDEgLjA2LS4wNDRoMS4zNzZjLjAzNCAwIC4wNjIuMDI3LjA2Mi4wNjF6bTkuMTM1IDEuNDRhMS4zNSAxLjM1IDAgMCAwLS41MTctLjMzNGExLjkgMS45IDAgMCAwLS42NzYtLjExNGMtLjI1MyAwLS40OS4wNDEtLjcwMS4xMjVjLS4yMDguMDgyLS4zOTUuMjEtLjU0NS4zNzdhMS43NSAxLjc1IDAgMCAwLS4zNS42MTljLS4wODcuMjc4LS4xMy41NjgtLjEyNC44NTljMCAuMzIuMDQ2LjYwNi4xMzUuODQ4cS4xNC4zNjEuMzg3LjYwM2MuMTY0LjE1Ny4zNjQuMjc2LjU5LjM1NWEyLjMgMi4zIDAgMCAwIC43NDIuMTE4cS4yMTMgMCAuMzc2LS4wMTVhMi4zIDIuMyAwIDAgMCAuODg0LS4yNWEuMDYuMDYgMCAwIDAgLjAzMy0uMDU1di0uNzdhLjA2My4wNjMgMCAwIDAtLjA5LS4wNTVhMi41IDIuNSAwIDAgMS0uODI4LjI2NXEtLjE1Mi4wMTUtLjMwNi4wMTRhLjkuOSAwIDAgMS0uMzMyLS4wNTVhLjcuNyAwIDAgMS0uMjQyLS4xNjJhLjguOCAwIDAgMS0uMTU3LS4yNjNhMS4yIDEuMiAwIDAgMS0uMDU3LS4yOTVoMi4xNTdhLjA2My4wNjMgMCAwIDAgLjA2My0uMDYydi0uNDgzYTIuMSAyLjEgMCAwIDAtLjExNC0uNzI1YTEuNSAxLjUgMCAwIDAtLjMyOC0uNTQ0em0tLjc2NS41OGEuNy43IDAgMCAxIC4xMDYuMjJxLjAzLjEwNy4wMzguMjI5aC0xLjEzN3EuMDM0LS4zMjUuMTc3LS40NzhhLjUyLjUyIDAgMCAxIC4zOTUtLjE2N2EuNTUuNTUgMCAwIDEgLjI0Ni4wNTJhLjUuNSAwIDAgMSAuMTc1LjE0NE02LjI2IDcuNjNoLS4xMzdMNS40MSA5LjMzNmguMTc5bC4yMTgtLjUzNGguNzY5bC4yMi41MzRoLjE4bC0uNzE0LTEuNzA4SDYuMjZ6bS0uNDE5IDEuMDRsLjM1Mi0uODQ0bC4zNDEuODQ0em0xLjQ4My4wMzVoLjU1NWMuMjkyIDAgLjQ4OS0uMjYyLjQ4OS0uNTRjMC0uMjY1LS4yMTEtLjUzNi0uNTAzLS41MzZoLS43MDh2MS43MDhoLjE2NnptMC0uOTI2aC41MzJjLjE4NyAwIC4zNDYuMTcyLjM0Ni4zODZjMCAuMjA3LS4xMy4zOTItLjMzMi4zOTJoLS41NDZ6bTEuMTI5IDEuNTU4bC4yMTgtLjUzNGguNzY3bC4yMi41MzRoLjE4NGwtLjcxNC0xLjcwOEg4Ljk5bC0uNzE1IDEuNzA4em0uNjA2LTEuNTFsLjM0Mi44NDNIOC43MWwuMzUyLS44NDRIOS4wNnptLjc3OC42NDNjMC0uNDEuMjk3LS44NS44MS0uODVhLjY3LjY3IDAgMCAxIC42MzEuMzcybC0uMTM1LjA4MWEuNTQuNTQgMCAwIDAtLjUwNC0uMzAzYy0uNDA4IDAtLjYzMi4zNjUtLjYzMi43MDljMCAuMzc2LjI3Ni43MTguNjM5LjcxOGEuNTguNTggMCAwIDAgLjUyNi0uMzE4bC4xNC4wNzNjLS4xMTEuMjU2LS40MTQuMzk3LS42NzYuMzk3Yy0uNDY4IDAtLjc5OS0uNDQ3LS43OTktLjg4em0xLjg3NS44NjdoLS4xNjVWNy42MjloLjE2NXYuNzZoMS4wMTF2LS43NmguMTY5djEuNzA4aC0uMTY5di0uNzk5aC0xLjAxem0yLjcxIDBoLTEuMTQ1VjcuNjI5aDEuMTI0di4xNWgtLjk1OXYuNjE2aC44MzZ2LjE0MmgtLjgzN3YuNjVoLjk4MnYuMTV6Ii8+PC9zdmc+" alt="Apache JMeter">
+                        <span>Apache JMeter</span>
+                    </div>
+                    <div class="skill-pill">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/trello/trello-original.svg" alt="Trello">
+                        <span>Trello</span>
+                    </div>
+                    <div class="skill-pill">
+                        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgdmlld0JveD0iMCAwIDMyIDMyIj48ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9IlNWR1N1VWlpMHB0IiB4MT0iNC40OTQiIHgyPSIxMy44MzIiIHkxPSItMjA5Mi4wODYiIHkyPSItMjA3NS45MTQiIGdyYWRpZW50VHJhbnNmb3JtPSJ0cmFuc2xhdGUoMCAyMTAwKSIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiPjxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iIzE4ODg0ZiIvPjxzdG9wIG9mZnNldD0iLjUiIHN0b3AtY29sb3I9IiMxMTdlNDMiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiMwYjY2MzEiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cGF0aCBmaWxsPSIjMTg1YzM3IiBkPSJNMTkuNTgxIDE1LjM1TDguNTEyIDEzLjR2MTQuNDA5QTEuMTkgMS4xOSAwIDAgMCA5LjcwNSAyOWgxOS4xQTEuMTkgMS4xOSAwIDAgMCAzMCAyNy44MDlWMjIuNVoiLz48cGF0aCBmaWxsPSIjMjFhMzY2IiBkPSJNMTkuNTgxIDNIOS43MDVhMS4xOSAxLjE5IDAgMCAwLTEuMTkzIDEuMTkxVjkuNUwxOS41ODEgMTZsNS44NjEgMS45NUwzMCAxNlY5LjVaIi8+PHBhdGggZmlsbD0iIzEwN2M0MSIgZD0iTTguNTEyIDkuNWgxMS4wNjlWMTZIOC41MTJaIi8+PHBhdGggZD0iTTE2LjQzNCA4LjJIOC41MTJ2MTYuMjVoNy45MjJhMS4yIDEuMiAwIDAgMCAxLjE5NC0xLjE5MVY5LjM5MUExLjIgMS4yIDAgMCAwIDE2LjQzNCA4LjIiIG9wYWNpdHk9IjAuMSIvPjxwYXRoIGQ9Ik0xNS43ODMgOC44NUg4LjUxMlYyNS4xaDcuMjcxYTEuMiAxLjIgMCAwIDAgMS4xOTQtMS4xOTFWMTAuMDQxYTEuMiAxLjIgMCAwIDAtMS4xOTQtMS4xOTEiIG9wYWNpdHk9IjAuMiIvPjxwYXRoIGQ9Ik0xNS43ODMgOC44NUg4LjUxMlYyMy44aDcuMjcxYTEuMiAxLjIgMCAwIDAgMS4xOTQtMS4xOTFWMTAuMDQxYTEuMiAxLjIgMCAwIDAtMS4xOTQtMS4xOTEiIG9wYWNpdHk9IjAuMiIvPjxwYXRoIGQ9Ik0xNS4xMzIgOC44NWgtNi42MlYyMy44aDYuNjJhMS4yIDEuMiAwIDAgMCAxLjE5NC0xLjE5MVYxMC4wNDFhMS4yIDEuMiAwIDAgMC0xLjE5NC0xLjE5MSIgb3BhY2l0eT0iMC4yIi8+PHBhdGggZmlsbD0idXJsKCNTVkdTdVVpaTBwdCkiIGQ9Ik0zLjE5NCA4Ljg1aDExLjkzOGExLjE5MyAxLjE5MyAwIDAgMSAxLjE5NCAxLjE5MXYxMS45MThhMS4xOTMgMS4xOTMgMCAwIDEtMS4xOTQgMS4xOTFIMy4xOTRBMS4xOSAxLjE5IDAgMCAxIDIgMjEuOTU5VjEwLjA0MUExLjE5IDEuMTkgMCAwIDEgMy4xOTQgOC44NSIvPjxwYXRoIGZpbGw9IiNmZmYiIGQ9Im01LjcgMTkuODczbDIuNTExLTMuODg0bC0yLjMtMy44NjJoMS44NDdMOS4wMTMgMTQuNmMuMTE2LjIzNC4yLjQwOC4yMzguNTI0aC4wMTdxLjEyMy0uMjgxLjI2LS41NDZsMS4zNDItMi40NDdoMS43bC0yLjM1OSAzLjg0bDIuNDE5IDMuOTA1aC0xLjgwOWwtMS40NS0yLjcxMUEyLjQgMi40IDAgMCAxIDkuMiAxNi44aC0uMDI0YTEuNyAxLjcgMCAwIDEtLjE2OC4zNTFsLTEuNDkzIDIuNzIyWiIvPjxwYXRoIGZpbGw9IiMzM2M0ODEiIGQ9Ik0yOC44MDYgM2gtOS4yMjV2Ni41SDMwVjQuMTkxQTEuMTkgMS4xOSAwIDAgMCAyOC44MDYgMyIvPjxwYXRoIGZpbGw9IiMxMDdjNDEiIGQ9Ik0xOS41ODEgMTZIMzB2Ni41SDE5LjU4MVoiLz48L3N2Zz4=" alt="Excel">
+                        <span>Excel</span>
+                    </div>
+                    <div class="skill-pill">
+                        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMjgiIGhlaWdodD0iMTI4IiB2aWV3Qm94PSIwIDAgMTI4IDEyOCI+PHBhdGggZmlsbD0iI2ZmZiIgZD0ibTc2LjI1LjI1bDEzLjA1OS4wODZjLjI0Ni4xOTEuNDQ1LjMxNi42NTYuNDFjMi4zNjcgMS4wNyA0LjkzMyAxLjgzNiA3LjA2NiAzLjI1OGM2LjE4NCA0LjExIDEyLjIyMyA4LjQ0MSAxOC4yNTggMTIuNzdjMi44MDUgMi4wMDcgNS41NyA0LjA5NyA4LjE1NiA2LjM3YzEuOTIyIDEuNjg4IDIuNzg1IDQuMDgzIDIuNzkgNi42MzdsLS4wMDUgODAuMzcxYy0uMDAzIDEuMTIxLS4xOTUgMi4yNzQtLjUwNyAzLjM1MmMtMS40MTggNC45MTQtNC41NjMgOC4yNzctOS41MTIgOS41OWMtMi42MS42OTEtNS4zNjcuOTA2LTguMDc0IDEuMTI5Yy00LjIyMy4zNTEtOC40NjEuNTIzLTEyLjY5Mi43NzdsLTguMDA0LjVsLTEyLjgxNi43NTRsLTcuODc5LjQ5MmwtMTIuOTQxLjc1bC02LjY4OC4yNzRjLS4yMTUuMDExLS40MTQuMzEyLS42MTcuNDhjLTUuMDkgMC0xMC4xNzYgMC0xNS4zMDktLjA4MmMtLjI0Ni0uMTk1LS40MzMtLjM1Mi0uNjUyLS40MTRjLTMuMTAyLS44OTktNS43MDMtMi42MTMtNy43MDMtNS4xMDJjLTIuNzctMy40NDEtNS40MDItNi45ODgtOC4wNjYtMTAuNTExYy0zLjI3NC00LjMyOS02LjYzMy04LjU5NC05LjcyNy0xMy4wNDdhMTUuNDcgMTUuNDcgMCAwIDEtMi43OS04Ljg3NWE3MjEyMiA3MjEyMiAwIDAgMSAuMDA5LTcxLjIxMWMwLS42ODQuMTItMS4zNzUuMjM4LTIuMDU1QzMuNzQyIDkuNjQ1IDkuMTUyIDUuNzQ2IDE1LjU4NiA1LjAyM2MzLjM0LS4zNzUgNi43MDMtLjU0MyAxMC4wNTktLjc2NWw4Ljg3LS41MTJsMy44MTMtLjI1bDExLjUtLjk5Mmw2LjM3NS0uNWwxMC41NTktLjc1bDguODctLjUyNGMuMjE2LS4wMTUuNDE1LS4zMTIuNjE4LS40OE0yNS45NDUgMTE0LjE4NGMuNTMyLjY5MSAxLjEyNSAxLjM0NyAxLjU5IDIuMDgyYzIuMjU0IDMuNTI3IDUuNDg1IDQuODA4IDkuNTkgNC41MzVsMjcuODA5LTEuNjU2bDMxLjI5Ni0xLjg5MWwxNS41ODItMS4wMDRjNC42MTgtLjM3MSA2Ljg0OC0yLjg2NyA2LjkzOC03LjV2LTFsLjAzNS03NS44NjNjLjAwNC0yLjI4NS0uNzg1LTMuODgzLTIuNjEzLTUuMTZsLTIyLjAyNC0xNS41MmMtMy41NDMtMi41NzgtNy4zMDQtMy43ODEtMTEuNjYtMy40MzdMNTcuODI0IDkuNTk0bC0yNS43ODkgMS45MDJsLTE2LjE4NyAxLjI2MmMtMy4yNy4zLTUuMjk3IDIuMy01Ljg4MyA1LjUwOGExNCAxNCAwIDAgMC0uMjA3IDIuNDhsLS4wNjcgNjYuMjQyYy0uMDIzIDQuMzQgMS4zMDUgNy45NSAzLjkwMyAxMS4yN3ptMCAwIi8+PHBhdGggZD0ibTI1Ljg4NyAxMTQuMTE3bC0xMi4yOTMtMTUuODZjLTIuNTk4LTMuMzItMy45MjYtNi45MjktMy45MDMtMTEuMjY5bC4wNjctNjYuMjQyYzAtLjgyOC4wNjItMS42NjguMjA3LTIuNDhjLjU4Ni0zLjIwNyAyLjYxMy01LjIwNyA1Ljg4My01LjUwOGwxNi4xODctMS4yNjJsMjUuNzktMS45MDJMODIuNDg4IDcuNzdjNC4zNTYtLjM0NCA4LjExNy44NTkgMTEuNjYgMy40MzdjNy4yNjIgNS4yODUgMTQuNjYgMTAuMzgzIDIyLjAyNCAxNS41MmMxLjgyOCAxLjI3NyAyLjYxNyAyLjg3NSAyLjYxMyA1LjE2bC0uMDM1IDc1Ljg2N3YxYy0uMDkgNC42MjktMi4zMiA3LjEyNS02LjkzOCA3LjQ5NmMtNS4xODcuNDE4LTEwLjM4Ni42ODgtMTUuNTgyIDEuMDA0bC0zMS4yOTYgMS44OWwtMjcuODA5IDEuNjU3Yy00LjEwNS4yNzMtNy4zMzYtMS4wMDgtOS41OS00LjUzNWMtLjQ2NS0uNzM1LTEuMDU4LTEuMzkxLTEuNjQ4LTIuMTQ5bTYuNDA2LTQ1Ljk5MnYzMy40ODhsLjAwOCA2LjI0NmMuMDU0IDIuODAxIDEuNDI2IDQuMTk2IDQuMjI2IDQuMzU2Yy43MDMuMDM5IDEuNDE0LjAxNSAyLjEyMS0uMDI4bDIzLjQ0Mi0xLjM4Mmw0NC43NjUtMi41NTljMi43OS0uMTU2IDQuMDc5LTEuMzc5IDQuMzQtNC4xNDRjLjA1MS0uNDk3LjAzNS0xIC4wMzUtMS41bC4wMDQtNjQuNDc3YzAtLjM3NS4wMTItLjc1LS4wMTEtMS4xMjVjLS4xNjgtMi41NjYtMS4yNy0zLjYxMy0zLjgyLTMuNDc3bC0yMy4wNzEgMS4zMjlhNDM3OTEgNDM3OTEgMCAwIDAtMzIuNDE4IDEuODk4bC0xNi4yMDcuOTczYy0yLjA2Ni4xMzItMyAxLjAyMy0zLjMxMiAzLjA0M2ExMC42IDEwLjYgMCAwIDAtLjA5OCAxLjYxN3ptNTcuMTcyLTUyLjcyN2MtMS45NTctMS4wNjItNC4wODItMS40MTQtNi4yNy0xLjI5M2MtMy4zNjMuMTg0LTYuNzI2LjQ2MS0xMC4wOS43MDRsLTQ3Ljk0OSAzLjQ4NGMtMS40NDkuMTA1LTIuOTA2LjIxLTQuMzM2LjQ2OWMtLjQ4LjA4Ni0xLjA4Ni41Ny0xLjIzNCAxLjAwOGMtLjExLjMwOC4zNzUuOTMuNzMgMS4yN2MuNjU3LjYyOCAxLjQxNCAxLjE1NSAyLjEzIDEuNzIyYzEuNjk5IDEuMzQgMy41MDcgMi41NjIgNS4wNjYgNC4wNDNjMi45NTcgMi44MDggNi4zOTggMy40NTcgMTAuMzQgMy4xNzJsMzEuMDM1LTEuOTQ2bDMzLjQxLTIuMDA0Yy4zMDUtLjAxNS42MS0uMTA5IDEuMjgxLS4yMzRjLS42MTMtLjYzNy0uOTY5LTEuMTI1LTEuNDMzLTEuNDY5YTIzNCAyMzQgMCAwIDAtNC45NTctMy41NjJhNjk4IDY5OCAwIDAgMC03LjcyMy01LjM2NG0wIDAiLz48cGF0aCBmaWxsPSIjZmZmIiBkPSJtMzIuMjkzIDY4bC4wMDQtMjUuNjE3YzAtLjU0LjAxNi0xLjA4Ni4wOTgtMS42MTdjLjMxMi0yLjAyIDEuMjQ2LTIuOTEgMy4zMTItMy4wNDNsMTYuMjA3LS45NzNsMzIuNDE4LTEuODk4bDIzLjA3LTEuMzI5YzIuNTUxLS4xMzYgMy42NTMuOTE0IDMuODIgMy40NzdjLjAyNC4zNzUuMDEyLjc1LjAxMiAxLjEyNWwtLjAwNCA2NC40NzdsLS4wMzUgMS41Yy0uMjYxIDIuNzY1LTEuNTUgMy45ODgtNC4zNCA0LjE0NGwtNDQuNzY1IDIuNTU5bC0yMy40NDIgMS4zODJsLTIuMTIuMDI4Yy0yLjgwMS0uMTYtNC4xNzMtMS41NTUtNC4yMjctNC4zNTJsLS4wMDgtNi4yNXptNDUuNzY2LjA2Nkw2NS4xOTEgNDguNDYxYy0uNDQ5LS42ODQtLjg5LS45MS0xLjcxOC0uODJsLTUuNDg1LjM3bC0xMC4wOS43MzljLTIuNDguMjI3LTMuOTggMi41NTktMy4yOTMgNC45NzdsNS4zNDQuNDU3djQzLjI5M2wtMy42NCAxLjAyN2MtMS42MTQuNDc2LTIuMzA1IDEuODM2LTEuNzYyIDMuNTc0bDEyLjMwOC0uNzA3bDQuODQ4LS4zOThjMi4wOS0uMzQ0IDMuMjE1LTEuNjI1IDMuNDk2LTMuNzE1bC02LjczLTEuNTM1VjYzLjE2bC41LjdsMTUuNDY4IDI0LjE1MmEzNjEgMzYxIDAgMCAwIDcuMDA0IDEwLjQ2YzEuNzA3IDIuNDUgNC4yMjMgMy4yIDcuMDUxIDIuNTljMS43Ny0uMzc4IDMuNDY5LTEuMDk3IDUuMjAzLTEuNjU2Yy45MDMtLjI5MyAxLjIxMS0uODMyIDEuMjA3LTEuODQ0bC0uMDMtNDQuNWMwLTIuNjAxIDAtMi42MDEgMi41NzMtMy4xMmMyLjYwMi0uNTI0IDMuMjU0LTEuNTYzIDIuNjYtNC4zNDRsLTE1LjU1Ljk0NWMtMS42OTIuMTIxLTIuOTczIDEuNTM1LTMuMjMgMy4xOGMtLjEyNi43OTMuMDM4IDEuMjMuOTg3IDEuMjg1bDQuNzA4LjUydjMwLjE3OWE3NDM1IDc0MzUgMCAwIDAtOC45NjEtMTMuNjM3ek04OS41NSAxNS40NDFhMTEyMyAxMTIzIDAgMCAxIDcuNjM2IDUuMzJhMjM0IDIzNCAwIDAgMSA0Ljk1OCAzLjU2M2MuNDY0LjM0NC44Mi44MzIgMS40MzMgMS40NjlsLTEuMjgxLjIzNGwtMzMuNDEgMi4wMDRsLTMxLjAzNSAxLjk0NmMtMy45NDIuMjg1LTcuMzgzLS4zNjQtMTAuMzQtMy4xNzJjLTEuNTU5LTEuNDgtMy4zNjctMi43MDMtNS4wNjctNC4wNDNjLS43MTUtLjU2Ny0xLjQ3Mi0xLjA5NC0yLjEyOS0xLjcyM2MtLjM1NS0uMzQtLjg0LS45Ni0uNzMtMS4yN2MuMTQ4LS40MzcuNzU4LS45MjEgMS4yMzQtMS4wMDdjMS40My0uMjU4IDIuODg3LS4zNjQgNC4zMzYtLjQ2OWw0Ny45NS0zLjQ4NGwxMC4wOS0uNzA0YzIuMTg3LS4xMiA0LjMxMi4yMyA2LjM1NSAxLjMzNm0wIDAiLz48cGF0aCBkPSJtNzguMTEzIDY4LjE0bDguOTA3IDEzLjU2N3YtMzAuMThsLTQuNzA3LS41MmMtLjk1LS4wNTQtMS4xMTQtLjQ5MS0uOTg5LTEuMjg0Yy4yNTgtMS42NDUgMS41NC0zLjA1OSAzLjIzLTMuMThsMTUuNTUxLS45NDVjLjU5NCAyLjc4LS4wNTggMy44Mi0yLjY2IDQuMzQzYy0yLjU3NC41MTYtMi41NzQuNTE2LTIuNTc0IDMuMTIxbC4wMzEgNDQuNWMuMDA0IDEuMDEyLS4zMDQgMS41NTEtMS4yMDcgMS44NDRsLTUuMjAzIDEuNjU2Yy0yLjgyOC42MDYtNS4zNDQtLjE0LTcuMDUtMi41OWEzNjcgMzY3IDAgMCAxLTcuMDA0LTEwLjQ2bC0xNS40Ny0yNC4xNTNjLS4xMDktLjE3Mi0uMjM0LS4zMzItLjUtLjY5OXYzMi41NjNsNi43MzEgMS41MzVjLS4yODEgMi4wOS0xLjQwNiAzLjM3LTMuNDk2IDMuNzE1Yy0xLjU5NC4yNjEtMy4yMy4zLTQuODQ4LjM5OGwtMTIuMzA4LjcwN2MtLjU0My0xLjczOC4xNDgtMy4wOTggMS43NjItMy41NzRsMy42NC0xLjAyN1Y1NC4xODRsLTUuMzQ0LS40NTdjLS42ODctMi40MTguODEzLTQuNzUgMy4yOTMtNC45NzdjMy4zNTYtLjMxMyA2LjcyNy0uNTA0IDEwLjA5LS43MzhjMS44MjgtLjEyNSAzLjY2NC0uMTcyIDUuNDg1LS4zNzFjLjgyOC0uMDkgMS4yNy4xMzYgMS43MTguODJ6bTAgMCIvPjwvc3ZnPg==" alt="Notion">
+                        <span>Notion</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-20">
+                <h3 class="text-center text-gray-600 uppercase tracking-[0.3em] text-md font-bold mb-10">Soft Skills & Coordination</h3>
+                
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
+                    <div class="soft-skill-card">
+                        <div class="soft-skill-icon bg-blue-50 text-blue-600">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v4"/><path d="m16.2 7.8 2.9-2.9"/><path d="M18 12h4"/><path d="m16.2 16.2 2.9 2.9"/><path d="M12 18v4"/><path d="m4.9 19.1 2.9-2.9"/><path d="M2 12h4"/><path d="m4.9 4.9 2.9 2.9"/></svg>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-800 text-sm">Agile/Scrum</h4>
+                            <p class="text-xs text-gray-500 mt-1">Efficient project management & sprint planning.</p>
+                        </div>
+                    </div>
+
+                    <div class="soft-skill-card">
+                        <div class="soft-skill-icon bg-purple-50 text-purple-600">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-800 text-sm">Cross-functional Teamwork</h4>
+                            <p class="text-xs text-gray-500 mt-1">Collaborating with designers & stakeholders.</p>
+                        </div>
+                    </div>
+
+                    <div class="soft-skill-card">
+                        <div class="soft-skill-icon bg-pink-50 text-pink-600">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10"/><path d="m9 12 2 2 4-4"/></svg>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-800 text-sm">International Client Communication</h4>
+                            <p class="text-xs text-gray-500 mt-1">Fluent in technical & cross-cultural discussion.</p>
+                        </div>
+                    </div>
+
+                    <div class="soft-skill-card">
+                        <div class="soft-skill-icon bg-green-50 text-green-600">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14 2 14 8 20 8"/></svg>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-800 text-sm">Technical Documentation</h4>
+                            <p class="text-xs text-gray-500 mt-1">Writing clear SRS and Test Case documents.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio-section">
+        <div class="portfolio-container">
+            
+            <div class="portfolio-header">
+                <div class="header-glow"></div>
+                
+                <h2 class="portfolio-title">Projects I've <span class="highlight">Worked on</span></h2>
+                <span class="porto-count text-gray-700">Total Projects: 06</span>
+                <a href="projects.html" class="see-more-btn">
+                    <span>See More Projects</span>
+                    <div class="btn-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14m-4 4l4-4m-4-4l4 4"/></svg>
+                        
+                    </div>
+                </a>
+            </div>
+
+            <div class="porto-grid">
+                <div class="porto-card" onclick="openModal('modal-vpn')">
+                    <div class="porto-thumb">
+                        <button class="porto-expand-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+                                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M11.1 3.002c-3.648.007-5.56.096-6.78 1.317C3.002 5.637 3.002 7.758 3.002 12s0 6.363 1.318 7.681c1.317 1.318 3.438 1.318 7.68 1.318s6.363 0 7.68-1.318c1.222-1.22 1.312-3.132 1.318-6.78m-.518-9.383l-5.549 5.534m5.55-5.534c-.495-.495-3.822-.449-4.526-.439m4.525.439c.494.494.448 3.825.438 4.53"/>
+                            </svg>
+                        </button>
+                        <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?w=600" alt="Project">
+                    </div>
+                    <div class="porto-info">
+                        <h3 class="project-name">VPN Mobile App</h3>
+                        <p class="project-cat">Mobile App</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="modal-vpn" class="modal-overlay">
+        <div class="modal-window">
+            <button class="modal-close" onclick="closeModal('modal-vpn')">&times;</button>
+            <div class="modal-content-layout">
+                <div class="modal-gallery">
+                    <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?w=800" alt="Detail">
+                </div>
+                <div class="modal-details">
+                    <h2 style="font-size: 28px; margin-bottom: 15px;">VPN Mobile App</h2>
+                    <p style="color: #8b949e; line-height: 1.6;">Deskripsi singkat: Project ini dikerjakan untuk meningkatkan keamanan akses internet...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Achievements Section -->
+    <section class="py-20 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">Awards & Achievements</h2>
+                <div class="w-20 h-1 bg-gradient-to-r from-[#B23A48] to-[#6E2C0B] mx-auto"></div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="bg-white rounded-2xl p-6 shadow-lg card-hover flex items-start">
+                    <div class="bg-[#FED0BB] rounded-lg p-3 mr-4">
+                        <svg class="w-6 h-6 text-[#B23A48]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"></path>
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-gray-800">Gemastik 2025 Participant</h3>
+                        <p class="text-gray-600 text-sm">ICT Business & Competitive Programming - Kemendikbudristek</p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-2xl p-6 shadow-lg card-hover flex items-start">
+                    <div class="bg-[#E7D7C1] rounded-lg p-3 mr-4">
+                        <svg class="w-6 h-6 text-purple-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"></path>
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-gray-800">Arkavidia 9.0 Participant</h3>
+                        <p class="text-gray-600 text-sm">Competitive Programming & UXvidia - ITB</p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-2xl p-6 shadow-lg card-hover flex items-start">
+                    <div class="bg-[#fbf2c0] rounded-lg p-3 mr-4">
+                        <svg class="w-6 h-6 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"></path>
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-gray-800">Compfest 16 Participant</h3>
+                        <p class="text-gray-600 text-sm">Competitive Programming - Universitas Indonesia</p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-2xl p-6 shadow-lg card-hover flex items-start">
+                    <div class="bg-[#FED0BB] rounded-lg p-3 mr-4">
+                        <svg class="w-6 h-6 text-[#B23A48]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"></path>
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-gray-800">National Science Olympiad Representative</h3>
+                        <p class="text-gray-600 text-sm">City-Level Mathematics - 2022</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 px-6 bg-white/50">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-4xl font-bold text-gray-800 mb-4">Want to create something awesome together?</h2>
+                    <div class="w-20 h-1 bg-gradient-to-r from-[#B23A48] to-[#6E2C0B] mb-6"></div>
+                    <p class="text-gray-600 mb-8">
+                        Let's discuss your project and make it a reality. I'm always open to new opportunities and collaborations.
+                    </p>
+                    
+                    <div class="space-y-4 mb-8">
+                        <div class="flex items-center">
+                            <div class="bg-[#FED0BB] rounded-lg p-3 mr-4">
+                                <svg class="w-6 h-6 text-[#B23A48]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 12a4 4 0 10-8 0 4 4 0 008 0zm0 0v1.5a2.5 2.5 0 005 0V12a9 9 0 10-9 9m4.5-1.206a8.959 8.959 0 01-4.5 1.207"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <p class="text-gray-600 text-sm">Email</p>
+                                <p class="font-medium text-gray-800">mkanzaki97@gmail.com</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center">
+                            <div class="bg-[#E7D7C1] rounded-lg p-3 mr-4">
+                                <svg class="w-6 h-6 text-purple-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <p class="text-gray-600 text-sm">Phone</p>
+                                <p class="font-medium text-gray-800">+62 823-8647-8746</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex space-x-4">
+                        <a href="https://www.linkedin.com/in/alifasalsabilacomsci/" target="_blank" class="bg-[#FED0BB] hover:bg-pink-200 text-[#B23A48] w-12 h-12 rounded-full flex items-center justify-center transition">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                            </svg>
+                        </a>
+                        <a href="https://github.com" target="_blank" class="bg-[#E7D7C1] hover:bg-purple-200 text-purple-500 w-12 h-12 rounded-full flex items-center justify-center transition">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                        </a>
+                        <a href="mailto:mkanzaki97@gmail.com" class="bg-[#fbf2c0] hover:bg-blue-200 text-blue-500 w-12 h-12 rounded-full flex items-center justify-center transition">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="relative">
+                    <div class="absolute inset-0 bg-gradient-to-r from-pink-400 to-purple-500 rounded-3xl blur-3xl opacity-20"></div>
+                    <img src="https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?w=600&h=400&fit=crop" 
+                         alt="Contact" 
+                         class="relative rounded-3xl shadow-2xl w-full">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid md:grid-cols-3 gap-8 mb-8">
+                <div>
+                    <h3 class="text-2xl font-bold gradient-text mb-4">ALIFA*</h3>
+                    <p class="text-gray-600 mb-4">Full-stack Developer & QA Engineer passionate about creating quality software solutions.</p>
+                </div>
+
+                <div>
+                    <h4 class="font-bold mb-4">Quick Links</h4>
+                    <div class="space-y-2">
+                        <a href="#home" class="block text-gray-400 hover:text-[#B23A48] transition">Home</a>
+                        <a href="#about" class="block text-gray-400 hover:text-[#B23A48] transition">About</a>
+                        <a href="#portfolio" class="block text-gray-400 hover:text-[#B23A48] transition">Portfolio</a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="font-bold mb-4">Connect With Me</h4>
+                    <div class="flex space-x-4">
+                        <a href="https://www.linkedin.com/in/alifasalsabilacomsci/" target="_blank" class="bg-gray-800 hover:bg-[#B23A48] w-10 h-10 rounded-full flex items-center justify-center transition">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                            </svg>
+                        </a>
+                        <a href="https://github.com" target="_blank" class="bg-gray-800 hover:bg-purple-500 w-10 h-10 rounded-full flex items-center justify-center transition">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                        </a>
+                        <a href="mailto:mkanzaki97@gmail.com" class="bg-gray-800 hover:bg-blue-500 w-10 h-10 rounded-full flex items-center justify-center transition">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-800 pt-8 text-center">
+                <p class="text-gray-400">© 2025 Alifa Salsabila. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
